@@ -2,7 +2,7 @@
 title: 知识库索引
 ---
 
-> 最后更新：2026-06-29
+> 最后更新：2026-06-30
 
 ---
 template: default
@@ -13,8 +13,8 @@ page-info: false
 ## 概览
 
 - 主题：AI Agent 控制 PC 电脑
-- 素材总数：96（+8）
-- Wiki 页面总数：162（+9）
+- 素材总数：102
+- Wiki 页面总数：172（+1）
 
 ---
 
@@ -32,6 +32,7 @@ page-info: false
 
 ### 桌面自动化领域
 - [[Goose]] — Linux Foundation 本地 AI Agent（49.7K+ Stars，2026-06-29新增）
+- [[Bytebot]] — 开源容器化虚拟桌面AI Desktop Agent（Apache 2.0，2026-06-29新增）
 - [[UI-TARS]] — 字节跳动开发的GUI Agent桌面应用
 - [[PyAutoGUI]] — Python跨平台GUI自动化库
 - [[Pywinauto]] — Python Windows GUI自动化库（双后端支持）
@@ -199,6 +200,14 @@ page-info: false
 - [[CUA Sandbox 设置文档]] — 5种沙箱部署方式详解
 - [[CUA 深度解析]] — 问题分析、四大组件深度解读
 
+### Bytebot素材(2026-06-29新增)
+- [[2026-06-29-bytebot-github-readme]] — 官方GitHub仓库README，开源AI桌面代理项目介绍
+- [[2026-06-29-bytebot-architecture-docs]] — 官方架构文档，系统四大组件、数据流、安全架构详解
+- [[2026-06-29-bytebot-desktop-environment]] — 虚拟桌面环境技术文档，Ubuntu+XFCE4容器化桌面
+- [[2026-06-29-bytebot-agent-system]] — AI代理系统文档，多模型集成、任务管理、能力列表
+- [[2026-06-29-bytebot-vs-rpa-comparison]] — 与传统RPA工具对比分析
+- [[2026-06-29-bytebot-api-reference]] — API参考文档，Agent API和Desktop API两套接口
+
 ### 系统服务控制素材(2026-06-28新增)
 - [[PowerShell Automation官方指南]] — Microsoft跨平台自动化框架文档
 - [[WMI Official Documentation]] — Windows管理规范官方文档
@@ -324,3 +333,6 @@ page-info: false
 - [[Filesystem-MCP-深度报告]] — 文件系统 MCP 协议层分析与安全机制深度剖析（2026-06-29新增）
 - [[Tool Calling对比报告]] — Anthropic Tool Use vs OpenAI Function Calling对比分析（2026-06-29新增）
 - [[Multi-Agent协作-深度报告]] — Multi-Agent系统架构、协作模式、框架选型深度分析（2026-06-29新增）
+- [[浏览器控制-深度报告]] — 7个核心项目、21个素材深度综合分析（2026-06-29新增）
+- [[硬件接口控制-深度报告]] — 5大领域、18个素材深度综合分析（2026-06-29新增）
+- [[系统服务控制-深度报告]] — Windows/Linux双栈体系、14个素材深度综合分析（2026-06-30新增）

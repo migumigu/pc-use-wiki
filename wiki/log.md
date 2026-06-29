@@ -4,7 +4,59 @@
 
 ---
 
+## 2026-06-30
+
+### ingest | bb-browser 浏览器控制研究 — 自动研究工作流
+
+新增页面：
+- wiki/sources/2026-06-30-bb-browser-github-readme.md
+- wiki/sources/2026-06-30-bb-browser-analysis.md
+- wiki/entities/bb-browser.md
+
+更新页面：
+- wiki/topics/浏览器控制.md（添加 bb-browser 到素材列表、关键概念、技术栈分层、相关页面）
+- wiki/index.md（添加 bb-browser 素材和实体到浏览器控制分类）
+
+知识库统计：
+- 素材摘要：104（+2）
+- 实体页：88（+1）
+- 浏览器控制素材：24（+2）
+
+证伪验证：
+- ✅ v0.11.6 (2026-05-11) 验证通过
+- ✅ 263 commits 验证通过
+- ✅ TypeScript 83.7% 验证通过
+- ✅ 36 平台 103 命令 验证通过
+- ⚠️ Stars 数量标注为"第三方数据，待 GitHub API 验证"
+
+---
+
 ## 2026-06-29
+
+### ingest | 文件系统权限模型研究 — 自动研究工作流
+
+新增页面：
+- wiki/sources/2026-06-29-windows-security-descriptors.md
+- wiki/sources/2026-06-29-windows-dacls-aces.md
+- wiki/sources/2026-06-29-linux-acl-man-page.md
+- wiki/sources/2026-06-29-linux-getfacl-man-page.md
+- wiki/sources/2026-06-29-linux-setfacl-man-page.md
+- wiki/sources/2026-06-29-posix-acl-project.md
+- wiki/entities/Security-Descriptor.md
+- wiki/entities/ACL.md
+- wiki/entities/DACL.md
+- wiki/entities/SACL.md
+- wiki/entities/getfacl.md
+- wiki/entities/setfacl.md
+
+更新页面：
+- wiki/topics/文件系统控制.md（添加权限控制视角、更新技术栈分层、添加相关实体）
+- wiki/index.md（添加新素材、新实体、更新统计）
+
+知识库统计：
+- 素材摘要：63（+6）
+- 实体页：52（+6）
+- 文件系统控制素材：11（达标）
 
 ### ingest | OpenClaw 全栈 AI Agent 研究 — 自动研究工作流
 

@@ -4,6 +4,109 @@
 
 ---
 
+## 2026-06-30 — 深度综合 Digest 工作流：系统服务控制
+
+- **操作**：深度综合 digest 工作流（知识缺口分析 → 方向选择 → 报告生成 → 索引更新）
+- **生成报告**：
+  - [[系统服务控制-深度报告]] — Windows/Linux 双栈体系、14 个素材深度综合分析
+- **知识库更新**：
+  - 新增综合分析：1 份（wiki/synthesis/）
+  - 更新 index.md：添加综合分析条目，更新页面计数（172 页面）
+  - 更新 log.md：记录本次操作
+- **研究背景**：
+  - 系统服务控制素材已达 15+，满足深度综合条件
+  - 其他控制对象分类（浏览器、桌面、文件系统、硬件）均已完成深度报告
+  - 系统服务控制缺少分类级深度综合报告，本次填补空白
+- **核心发现**：
+  - Windows/Linux 双栈并立：PowerShell/WMI/pywin32 vs systemd/pystemd
+  - psutil 成为跨平台主流：340M+ 月下载，Agent 系统感知首选
+  - Prefect 补充工作流编排维度：任务调度 + 失败重试 + 监控 UI
+  - Agent 集成层标准化：MCP + Function Calling + Open Interpreter
+- **素材覆盖**：
+  - 系统基础层：WMI、pywin32、systemd
+  - 协议/接口层：PowerShell、WinRM、D-Bus
+  - 工具实现层：psutil、pystemd、Prefect、GPUtil、netifaces、py-cpuinfo
+  - Agent集成层：Open Interpreter、MCP、Function Calling
+- **待补充方向**：
+  - Linux systemd 深度使用指南
+  - PowerShell DSC 生产部署案例
+  - MCP PowerShell Server 实战
+  - netifaces 替代方案（已停止维护）
+
+---
+
+## 2026-06-29 — 深度综合 Digest 工作流：浏览器控制 + 硬件接口控制
+
+- **操作**：深度综合 digest 工作流（趋势分析 → 方向选择 → 报告生成 → 消化入库）
+- **生成报告**：
+  - [[浏览器控制-深度报告]] — 7 个核心项目、21 个素材深度综合分析
+  - [[硬件接口控制-深度报告]] — 5 大领域、18 个素材深度综合分析
+- **知识库更新**：
+  - 新增综合分析：2 份（wiki/synthesis/）
+  - 更新 index.md：添加综合分析条目，更新页面计数
+  - 更新 workflow-status.md：记录工作流状态
+- **研究背景**：
+  - 知识库各分类素材均达 10+，满足深度综合条件
+  - 浏览器控制和硬件接口控制缺少分类级深度报告
+  - 通过评分矩阵选择这两个分类作为本次 digest 目标
+- **关键发现**：
+  - 浏览器控制：MCP 协议正在成为标准接口，Token 效率是核心优化方向
+  - 硬件接口控制：OpenCV/libusb/pySerial 构成成熟生态，多模态融合是发展趋势
+
+---
+
+## 2026-06-29 — 自动研究工作流：Bytebot 容器化虚拟桌面 AI Desktop Agent
+
+- **操作**：完整自动研究工作流（趋势分析 → 素材收集 → 报告生成 → 证伪验证 → digest 消化入库）
+- **研究方向**：Bytebot（开源容器化虚拟桌面 AI Desktop Agent，Docker+Ubuntu+XFCE）
+- **素材数量**：6个（Tier1: 6）
+- **素材列表**：
+  - raw/articles/2026-06-29-bytebot-github-readme.md — 官方 GitHub 仓库 README（Apache 2.0）
+  - raw/articles/2026-06-29-bytebot-architecture-docs.md — 官方架构文档
+  - raw/articles/2026-06-29-bytebot-desktop-environment.md — 虚拟桌面环境文档
+  - raw/articles/2026-06-29-bytebot-agent-system.md — AI Agent 系统文档
+  - raw/articles/2026-06-29-bytebot-vs-rpa-comparison.md — 与传统 RPA 对比
+  - raw/articles/2026-06-29-bytebot-api-reference.md — API 参考文档
+
+**新增 Wiki 页面**：
+- wiki/sources/2026-06-29-bytebot-github-readme.md — GitHub README 素材摘要
+- wiki/sources/2026-06-29-bytebot-architecture-docs.md — 架构文档素材摘要
+- wiki/sources/2026-06-29-bytebot-desktop-environment.md — 桌面环境素材摘要
+- wiki/sources/2026-06-29-bytebot-agent-system.md — Agent 系统素材摘要
+- wiki/sources/2026-06-29-bytebot-vs-rpa-comparison.md — RPA 对比素材摘要
+- wiki/sources/2026-06-29-bytebot-api-reference.md — API 参考素材摘要
+- wiki/entities/Bytebot.md — Bytebot 实体页
+
+**更新页面**：
+- wiki/topics/桌面应用控制.md — 添加 Bytebot 到 Agent 集成层，新增部署模式分类
+- index.md — 添加 Bytebot 实体和素材条目，更新计数（102 素材，169 页面）
+- log.md — 记录本次操作
+
+**证伪验证**：
+- Apache 2.0 许可证 — ✅ 已验证（GitHub 官方确认）
+- TypeScript 主要语言 — ✅ 已验证（GitHub 语言统计）
+- nutjs 框架使用 — ✅ 已验证（package.json 和源码确认）
+- MCP 协议支持 — ✅ 已验证（SSE 端点和 MCP 工具文件确认）
+- 项目归档状态 — ✅ 已验证（GitHub Archive 标记确认）
+- Docker 容器化部署 — ✅ 已验证（docker-compose.yml 和 Dockerfile 确认）
+- Ubuntu + XFCE4 桌面 — ✅ 已验证（Dockerfile 和文档确认）
+- 多模型支持（Claude/GPT/Gemini）— ✅ 已验证（官方文档和代码确认）
+
+**研究价值**：
+- 填补桌面应用控制领域容器化部署范式的空白
+- 与 UI-TARS、CUA、Goose 形成技术参照系
+- 容器化 + 虚拟桌面的安全隔离架构具有参考价值
+- 原生 MCP Server 设计展示了桌面控制接入 MCP 生态的模式
+- nutjs 自动化栈与 UI-TARS 等项目形成技术参照
+
+**知识积累成果**：
+- 桌面应用控制领域新增 Bytebot 实体（容器化虚拟桌面方案）
+- 新增部署模式分类：本地安装型 vs 容器化/沙箱型
+- 完善 Computer Use 技术谱系：本地型（UI-TARS/Goose）vs 容器型（Bytebot/CUA）
+- 桌面自动化素材增加 6 篇一级来源
+
+**状态**：完成
+
 ## 2026-06-29 — 自动研究工作流：A2A Protocol (Agent-to-Agent)
 
 - **操作**：完整自动研究工作流（趋势分析 → 素材收集 → 报告生成 → 证伪验证 → digest 消化入库）

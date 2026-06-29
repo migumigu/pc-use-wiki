@@ -1,6 +1,6 @@
 # AI Agent PC 控制 — 知识库索引
 
-> 创建于 2026-06-27 | 最后更新：2026-06-28
+> 创建于 2026-06-27 | 最后更新：2026-06-30
 
 ---
 
@@ -14,8 +14,8 @@
 
 ### 浏览器控制
 - 主题页：[[浏览器控制]]
-- 素材摘要：[[browser-use GitHub README]] [[browser-use 官方文档]] [[browser-use 技术架构分析]] [[browser-use vs Playwright MCP 对比]] [[Playwright MCP Server 官方文档]] [[page-agent GitHub README]] [[page-agent MCP Server 文档]] [[page-agent 技术分析报告]] [[Chrome DevTools Protocol 官方文档]] [[Chrome DevTools MCP 官方介绍]] [[Chrome DevTools MCP 技术分析]] [[Playwright CDP/WebSocket 对比分析]] [[Playwright GitHub README]] [[OpenClaw GitHub README]] [[OpenClaw Browser Control]]
-- 相关实体：[[browser-use]] [[Playwright]] [[浏览器自动化]] [[Agent]] [[LLM]] [[MCP]] [[chrome-devtools-mcp]] [[agent-browser]] [[page-agent]] [[OpenClaw]]
+- 素材摘要：[[browser-use GitHub README]] [[browser-use 官方文档]] [[browser-use 技术架构分析]] [[browser-use vs Playwright MCP 对比]] [[Playwright MCP Server 官方文档]] [[page-agent GitHub README]] [[page-agent MCP Server 文档]] [[page-agent 技术分析报告]] [[Chrome DevTools Protocol 官方文档]] [[Chrome DevTools MCP 官方介绍]] [[Chrome DevTools MCP 技术分析]] [[Playwright CDP/WebSocket 对比分析]] [[Playwright GitHub README]] [[OpenClaw GitHub README]] [[OpenClaw Browser Control]] [[bb-browser GitHub README]] [[bb-browser 技术分析]]
+- 相关实体：[[browser-use]] [[Playwright]] [[浏览器自动化]] [[Agent]] [[LLM]] [[MCP]] [[chrome-devtools-mcp]] [[agent-browser]] [[page-agent]] [[OpenClaw]] [[bb-browser]]
 
 ### 桌面应用控制
 - 主题页：[[桌面应用控制]]
@@ -31,8 +31,8 @@
 ### 文件系统控制
 - 主题页：[[文件系统控制]]
 - 综合分析：[[文件系统控制-深度报告]]（新增）
-- 素材摘要：[[File System as Meta Tool：AI Agent 基础设施新思路]] [[planning-with-files GitHub 项目分析]] [[AI代理的上下文工程：构建Manus的经验教训]] [[上下文工程终极指南：从提示工程到Claude Code]] [[Claude Code Agent 设计分析]]
-- 相关实体：[[上下文工程]] [[状态显式化]] [[KV-Cache]] [[上下文窗口极简主义]] [[思考与行动分离]] [[掩码而非移除工具]] [[单一真理来源]]
+- 素材摘要：[[File System as Meta Tool：AI Agent 基础设施新思路]] [[planning-with-files GitHub 项目分析]] [[AI代理的上下文工程：构建Manus的经验教训]] [[上下文工程终极指南：从提示工程到Claude Code]] [[Claude Code Agent 设计分析]] [[Windows Security Descriptors 官方文档]] [[Windows DACLs and ACEs 官方文档]] [[Linux ACL 官方手册页]] [[Linux getfacl 命令官方手册页]] [[Linux setfacl 命令官方手册页]] [[POSIX ACL 官方项目页面]]
+- 相关实体：[[上下文工程]] [[状态显式化]] [[KV-Cache]] [[上下文窗口极简主义]] [[思考与行动分离]] [[掩码而非移除工具]] [[单一真理来源]] [[Security-Descriptor]] [[ACL]] [[DACL]] [[SACL]] [[getfacl]] [[setfacl]]
 
 ### 硬件接口控制
 - 主题页：[[硬件接口控制]]
@@ -54,8 +54,8 @@
 
 | 类型 | 数量 |
 |------|------|
-| 素材摘要 | 57 |
-| 实体页 | 46 |
+| 素材摘要 | 63 |
+| 实体页 | 52 |
 | 主题页 | 6 |
 | 对比分析 | 1 |
 | 综合分析 | 3 |
@@ -63,6 +63,16 @@
 ---
 
 ## 最近更新
+
+- **2026-06-29**：文件系统权限模型研究（自动研究工作流）
+  - 收集 6 个官方素材（Windows Security Descriptor×2、Linux ACL×4）
+  - 创建 6 个素材摘要页
+  - 创建 6 个实体页（Security-Descriptor、ACL、DACL、SACL、getfacl、setfacl）
+  - 更新主题页（文件系统控制）
+  - 执行证伪验证（所有 P1/P2 声明已验证）
+  - 知识库素材：63（+6）
+  - 知识库实体：52（+6）
+  - 文件系统控制素材：11（达标）
 
 - **2026-06-29**：OpenClaw 全栈 AI Agent 研究（自动研究工作流）
   - 收集 6 个官方素材（GitHub README、Gateway架构、Tools、Skills、Browser、Sandbox）

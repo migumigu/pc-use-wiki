@@ -94,6 +94,9 @@
 - [x] **OpenClaw Skills 系统** ✓ (2026-06-29) — AgentSkills 规范
 - [x] **OpenClaw 浏览器控制** ✓ (2026-06-29) — 内置 CDP 浏览器模块
 - [x] **OpenClaw 沙箱安全** ✓ (2026-06-29) — 3 种沙箱后端
+- [x] **浏览器控制深度综合报告** ✓ (2026-06-29) — 已完成 digest
+- [x] **bb-browser GitHub README** ✓ (2026-06-30) — 复用登录态的 MCP 浏览器控制
+- [x] **bb-browser 技术分析** ✓ (2026-06-30) — 12 大核心能力详解
 
 **桌面应用控制**：
 - [x] UI-TARS-desktop GitHub README ✓ (2026-06-28)
@@ -152,8 +155,14 @@
 - [x] **MCP Tools Protocol Specification** ✓ (2026-06-29) — MCP 工具协议规范
 - [x] **MCP Roots Protocol** ✓ (2026-06-29) — MCP Roots 协调机制
 - [x] **Filesystem MCP 深度解析** ✓ (2026-06-29) — 技术分析与安全评估
-- [ ] 文件系统权限模型（ACL、POSIX）
-- [ ] 跨平台文件操作最佳实践
+- [x] **Windows Security Descriptors 官方文档** ✓ (2026-06-29) — DACL/SACL/ACE
+- [x] **Windows DACLs and ACEs 官方文档** ✓ (2026-06-29) — ACE 顺序规则
+- [x] **Linux ACL 官方手册页** ✓ (2026-06-29) — POSIX ACL Entry 类型
+- [x] **Linux getfacl 命令官方手册页** ✓ (2026-06-29) — ACL 获取工具
+- [x] **Linux setfacl 命令官方手册页** ✓ (2026-06-29) — ACL 设置工具
+- [x] **POSIX ACL 官方项目页面** ✓ (2026-06-29) — getfacl/setfacl/chacl
+- [ ] 文件系统权限模型（ACL、POSIX） — 已完成（2026-06-29）
+- [ ] 跨平台文件操作最佳实践 — 待补充
 
 **硬件接口控制**：
 - [x] DirectShow API 文档与视频捕获 ✓ (2026-06-28) — 已填补知识空白
@@ -174,6 +183,7 @@
 - [x] **PyUSB GitHub README** ✓ (2026-06-29) — 33,800+ 依赖的 Python USB 库
 - [x] **PyUSB 官方教程** ✓ (2026-06-29) — API 使用指南
 - [x] **libusb 1.0 API Reference** ✓ (2026-06-29) — 底层 USB 协议规范
+- [x] **硬件接口控制深度综合报告** ✓ (2026-06-29) — 已完成 digest
 
 **Agent 集成层**：
 - [x] MCP 协议基础 ✓（browser-use 文档中涉及）
