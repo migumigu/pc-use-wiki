@@ -12,11 +12,11 @@
 
 | 控制对象 | 说明 | 主要技术 |
 |---------|------|---------|
-| 浏览器控制 | Web 自动化、CDP 协议、浏览器工具生态 | Playwright、Puppeteer、Selenium、browser-use、agent-browser |
-| 桌面应用控制 | GUI 操作、Office/IDE/PS 等专业软件自动化 | PyAutoGUI、AutoHotkey、UI Automation、pywinauto、UI-TARS |
-| 系统服务控制 | 进程管理、网络配置、权限控制、系统监控 | PowerShell、WMI、Windows API、systemd、psutil |
-| 文件系统控制 | 文件操作、目录管理、权限设置 | Filesystem MCP、watchdog、shutil、filelock |
-| 硬件接口控制 | 摄像头、麦克风、传感器、外设调用 | OpenCV、DirectShow、Media Foundation、libusb、pySerial |
+| 浏览器控制 | Web 自动化、CDP 协议、浏览器工具生态 | Playwright、browser-use、agent-browser |
+| 桌面应用控制 | GUI 操作、Office/IDE/PS 等专业软件自动化 | PyAutoGUI、AutoHotkey、UI Automation、pywinauto |
+| 系统服务控制 | 进程管理、网络配置、权限控制、系统监控 | PowerShell、WMI、systemd、psutil |
+| 文件系统控制 | 文件操作、目录管理、权限设置 | Filesystem MCP、watchdog、shutil |
+| 硬件接口控制 | 摄像头、麦克风、传感器、外设调用 | OpenCV、DirectShow、libusb、pySerial |
 
 ### 四层技术栈
 
@@ -29,28 +29,20 @@
 
 ```
 wiki/
-├── entities/     # 实体页：工具、技术概念（44个）
-├── sources/      # 素材摘要：原始资料消化（46篇）
-├── topics/       # 主题页：按控制对象分类（6个）
-├── synthesis/    # 深度报告：综合分析（9篇）
+├── entities/     # 实体页：工具、技术概念
+├── sources/      # 素材摘要：原始资料消化
+├── topics/       # 主题页：按控制对象分类
+├── synthesis/   # 深度报告：综合分析
 ├── comparisons/  # 对比分析：工具对比
 └── index.md      # 知识库索引
 ```
 
-## 核心成果
-
-- **素材积累**：46+ 篇权威素材（GitHub README、官方文档、技术博客）
-- **实体沉淀**：44+ 实体页（工具、概念、技术术语）
-- **深度报告**：9 篇综合分析报告
-- **覆盖领域**：浏览器自动化、桌面 GUI、系统服务、文件系统、硬件接口
-
 ## 关键技术栈
 
 ### 浏览器控制
-- [Playwright](https://github.com/microsoft/playwright) — 37k+ Stars，微软主导
-- [browser-use](https://github.com/browser-use/browser-use) — 37k+ Stars，AI 浏览器自动化
-- [agent-browser](https://github.com/browser-use/agent-browser) — 37k+ Stars，命令驱动的浏览器 Agent
-- [page-agent](https://github.com/browser-use/page-agent) — MCP 服务器实现
+- [Playwright](https://github.com/microsoft/playwright) — 微软主导的浏览器自动化框架
+- [browser-use](https://github.com/browser-use/browser-use) — AI 浏览器自动化
+- [agent-browser](https://github.com/browser-use/agent-browser) — 命令驱动的浏览器 Agent
 
 ### 桌面应用控制
 - [PyAutoGUI](https://github.com/asweigart/pyautogui) — Python GUI 自动化
@@ -60,13 +52,13 @@ wiki/
 
 ### 系统服务与文件
 - [PowerShell](https://learn.microsoft.com/powershell/) — Windows 系统管理
-- [psutil](https://github.com/giampaolo/psutil) — 340M+ 月下载，系统监控
+- [psutil](https://github.com/giampaolo/psutil) — 系统监控
 - [Filesystem MCP](https://github.com/modelcontextprotocol/servers) — MCP 文件系统协议
 - [watchdog](https://github.com/gorakhargosh/watchdog) — 跨平台文件监控
 
 ### 硬件接口
-- [OpenCV](https://github.com/opencv/opencv) — 88k+ Stars，计算机视觉
-- [pySerial](https://github.com/pyserial/pyserial) — 103k+ 项目使用的串口库
+- [OpenCV](https://github.com/opencv/opencv) — 计算机视觉
+- [pySerial](https://github.com/pyserial/pyserial) — 串口通信
 - [libusb](https://github.com/libusb/libusb) — 跨平台 USB 底层库
 - [hidapi](https://github.com/libusb/hidapi) — USB HID 设备库
 
@@ -115,15 +107,6 @@ llm-wiki digest <素材文件>
 llm-wiki lint
 llm-wiki status
 ```
-
-## 统计信息
-
-| 类型 | 数量 |
-|------|------|
-| 素材摘要 | 46+ |
-| 实体页 | 44+ |
-| 主题页 | 6 |
-| 深度报告 | 9 |
 
 ## 相关链接
 
