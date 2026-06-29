@@ -1,0 +1,212 @@
+---
+tags: [主题]
+created: 2026-06-27
+updated: 2026-06-29
+sources:
+  - wiki/sources/2026-06-27-browser-use-docs-index.md
+  - wiki/sources/2026-06-27-browser-use-research-report.md
+  - wiki/sources/2026-06-28-mcp-anthropic-announcement.md
+  - wiki/sources/2026-06-28-mcp-official-docs-home.md
+  - wiki/sources/2026-06-28-mcp-servers-github.md
+  - wiki/sources/2026-06-28-mcp-architecture.md
+  - wiki/sources/2026-06-28-mcp-specification.md
+  - wiki/sources/2026-06-28-mcp-python-sdk.md
+  - wiki/sources/2026-06-28-mcp-typescript-sdk.md
+  - wiki/sources/2026-06-28-mcp-claude-desktop-integration.md
+  - wiki/sources/2026-06-28-anthropic-build-with-claude-overview.md
+  - wiki/sources/2026-06-28-anthropic-tool-use-overview.md
+  - wiki/sources/2026-06-28-anthropic-tool-use-how-it-works.md
+  - wiki/sources/2026-06-28-anthropic-tool-reference.md
+  - wiki/sources/2026-06-28-anthropic-define-tools-guide.md
+  - wiki/sources/2026-06-28-anthropic-handle-tool-calls-guide.md
+  - wiki/sources/2026-06-28-anthropic-server-tools-guide.md
+  - wiki/sources/2026-06-28-anthropic-parallel-tool-use-guide.md
+  - wiki/sources/2026-06-28-anthropic-strict-tool-use-guide.md
+  - wiki/sources/2026-06-28-anthropic-writing-tools-for-agents.md
+  - wiki/sources/2026-06-28-openai-function-calling-intro.md
+  - wiki/sources/2026-06-28-openai-function-calling-best-practices.md
+  - wiki/sources/2026-06-28-openai-function-calling-2.0-updates.md
+  - wiki/sources/2026-06-28-langgraph-multi-agent-systems.md
+  - wiki/sources/2026-06-28-microsoft-autogen-overview.md
+  - wiki/sources/2026-06-28-multi-agent-architecture-analysis.md
+  - wiki/sources/2026-06-28-agent-error-recovery-strategies.md
+  - wiki/sources/2026-06-28-langgraph-checkpoint-persistence.md
+  - wiki/sources/2026-06-29-copilotkit-github-readme.md
+  - wiki/sources/2026-06-29-ag-ui-protocol-readme.md
+---
+
+# Agent 集成层
+
+> AI Agent 与外部工具和系统集成的技术与协议
+
+## 核心观点
+
+Agent 集成层负责将 AI Agent 与外部工具、系统、资源连接起来，实现：
+- **工具调用**：标准化、可扩展的工具使用方式
+- **状态管理**：跨会话的状态保持和共享
+- **多工具协同**：多个工具的协调使用
+- **错误恢复**：异常处理和自动重试
+
+## 关键概念
+
+### Tool Calling核心
+- [[Tool Use]] — Anthropic的工具调用机制（新增）
+- [[Function Calling]] — OpenAI的函数调用机制（新增）
+- [[MCP]] — 标准化工具调用协议（核心）
+
+### 用户交互协议
+- [[CopilotKit]] — AI Agent 前端基础设施（新增）
+- [[AG-UI Protocol]] — Agent-User Interaction Protocol（新增）
+
+### Tool Calling机制
+- [[Agentic Loop]] — Client Tools的循环调用机制（新增）
+- [[Client Tools]] — 应用端执行的工具类型（新增）
+- [[Server Tools]] — Anthropic服务器端执行的工具类型（新增）
+- [[Parallel Tool Use]] — 并行调用多个工具的能力（新增）
+- [[Strict Tool Use]] — Grammar-constrained sampling保证Schema一致性（新增）
+
+### Multi-Agent协作
+- [[Multi-Agent协作]] — 多Agent协同工作的系统架构（新增）
+- [[Handoffs]] — Agent间任务传递机制（新增）
+- [[Checkpoint]] — LangGraph的状态持久化机制（新增）
+- [[错误恢复]] — Agent系统的错误恢复策略（新增）
+
+### Agent核心
+- [[Computer Use]] — 桌面环境控制能力（已有）
+- [[Agent]] — 自主执行和决策的智能代理
+- [[LLM]] — 任务理解和规划的智能核心
+- [[browser-use]] — 浏览器控制的 Agent 集成示例
+
+## MCP 协议（完整体系）
+
+MCP（Model Context Protocol）是 Agent 集成层的核心协议：
+
+### 架构组成
+- **MCP Host**：AI应用（Claude Desktop、VS Code）
+- **MCP Client**：Host内维护连接的组件
+- **MCP Server**：提供上下文和能力的程序
+
+### 核心原语
+- **Tools**：AI可调用的可执行函数
+- **Resources**：提供上下文信息的数据源
+- **Prompts**：可重用的交互模板
+
+### 多语言SDK
+支持10种语言：C#、Go、Java、Kotlin、PHP、Python、Ruby、Rust、Swift、TypeScript
+
+### 预构建Servers
+- Google Drive、Slack、GitHub、Git、Postgres、Puppeteer
+- Everything、Fetch、Filesystem、Memory
+
+### 生态系统支持
+- AI应用：Claude Desktop、ChatGPT、VS Code、Cursor
+- 开发工具：Zed、Replit、Codeium、Sourcegraph
+- 早期采用者：Block、Apollo
+
+## Computer Use（桌面控制）
+
+Computer Use 是 Agent 集成层的桌面控制能力：
+
+### 实现架构
+- Docker容器化（X11 + VNC + Streamlit）
+- macOS本地（pyautogui + sandbox-exec）
+- Agent Loop（Claude API循环调用）
+
+### 关键优化
+- 点击精度（分辨率缩放、坐标映射）
+- Prompt Caching + Image Pruning
+- Server-side Autocompaction
+
+### 安全风险
+- Prompt Injection（Browser Use场景风险放大）
+- VM隔离必要性
+- Constitutional Classifiers防御
+
+## browser-use 的 Agent 集成
+
+browser-use 展示了 Agent 集成层的浏览器控制实现：
+- **工具扩展**：通过 @tools.action 装饰器添加自定义工具
+- **状态管理**：支持浏览器配置文件、持久文件系统
+- **MCP 集成**：可作为 MCP Server 使用
+
+## 素材汇总表（2026-06-28新增17篇，2026-06-29新增2篇）
+
+### MCP Protocol系列（8篇）
+| 素材 | 核心内容 |
+|------|----------|
+| [[MCP 发布公告]] | MCP正式发布,解决AI数据隔离问题 |
+| [[MCP 官方文档索引]] | "AI应用的USB-C接口"类比 |
+| [[MCP Servers GitHub]] | 参考实现集合（10种SDK） |
+| [[MCP 架构概览]] | Client-server架构+双层设计 |
+| [[MCP 协议规范]] | JSON-RPC 2.0+安全原则 |
+| [[MCP Python SDK]] | FastMCP简化开发 |
+| [[MCP TypeScript SDK]] | v2 pre-alpha,分包架构 |
+| [[MCP Claude Desktop集成]] | Filesystem Server配置教程 |
+
+### CopilotKit & AG-UI Protocol系列（2篇，2026-06-29新增）
+| 素材 | 核心内容 |
+|------|----------|
+| [[CopilotKit GitHub README]] | AI Agent 前端基础设施，33k+ Stars |
+| [[AG-UI Protocol GitHub README]] | Agent-User Interaction Protocol，被主流厂商采纳 |
+
+### Anthropic Tool Use系列（9篇）
+| 素材 | 核心内容 |
+|------|----------|
+| [[Anthropic Tool Use Overview]] | Tool Use总览、Client/Server Tools分类、定价机制 |
+| [[Anthropic How Tool Use Works]] | Tool-Use Contract、三类工具边界、Agentic Loop、适用场景 |
+| [[Anthropic Tool Reference]] | 工具目录大全、版本管理、可选属性参考 |
+| [[Anthropic Define Tools Guide]] | Tool Schema定义、最佳实践、tool_choice控制 |
+| [[Anthropic Handle Tool Calls Guide]] | tool_use/tool_result格式、错误处理、格式禁忌 |
+| [[Anthropic Server Tools Guide]] | server_tool_use block、pause_turn续传、ZDR、域过滤 |
+| [[Anthropic Parallel Tool Use Guide]] | 并行调用机制、消息历史格式、性能优化 |
+| [[Anthropic Strict Tool Use Guide]] | Grammar-constrained sampling、HIPAA合规、适用场景 |
+| [[Writing Effective Tools for Agents]] | Agent工具设计原则、评估方法、Namespacing |
+
+### OpenAI Function Calling系列（3篇）
+| 素材 | 核心内容 |
+|------|----------|
+| [[OpenAI Function Calling Intro]] | 官方基础介绍、五大用途、实现流程 |
+| [[OpenAI Function Calling Best Practices]] | 函数定义最佳实践、参数验证、错误处理 |
+| [[OpenAI Function Calling 2.0 Updates]] | 两大核心应用（数据获取、执行动作）、全新最佳实践 |
+
+### Multi-Agent协作系列（5篇）
+| 素材 | 核心内容 |
+|------|----------|
+| [[LangGraph Multi-Agent Systems]] | LangGraph官方文档、五大协作架构、Handoffs机制 |
+| [[Microsoft AutoGen Overview]] | AutoGen v0.4、异步事件驱动、六大特性 |
+| [[Multi-Agent Architecture Analysis]] | 六大框架对比分析（LangGraph、AutoGen等） |
+| [[Agent Error Recovery Strategies]] | 错误分类、多层级防御、五大恢复策略 |
+| [[LangGraph Checkpoint Persistence]] | Checkpoint机制、四大能力（记忆、容错、时间旅行） |
+
+### Computer Use系列（已有）
+| 素材 | 核心内容 |
+|------|----------|
+| [[Anthropic Academy门户]] | Computer Use开发者文档汇总 |
+
+## 相关页面
+
+### Tool Calling实体页
+- [[Tool Use]]（实体页,新增）
+- [[Function Calling]]（实体页,新增）
+- [[Agentic Loop]]（实体页,新增）
+- [[Client Tools]]（实体页,新增）
+- [[Server Tools]]（实体页,新增）
+- [[Parallel Tool Use]]（实体页,新增）
+- [[Strict Tool Use]]（实体页,新增）
+
+### Multi-Agent实体页
+- [[Multi-Agent协作]]（实体页,新增）
+- [[Handoffs]]（实体页,待创建）
+- [[Checkpoint]]（实体页,待创建）
+- [[错误恢复]]（实体页,待创建）
+
+### 用户交互协议实体页（2026-06-29新增）
+- [[CopilotKit]]（实体页,新增）
+- [[AG-UI Protocol]]（实体页,新增）
+
+### 已有实体页
+- [[MCP]]（实体页,已更新）
+- [[Computer Use]]（实体页,已有）
+- [[Agent]]（实体页）
+- [[LLM]]（实体页）
+- [[browser-use]]（实体页）
