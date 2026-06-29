@@ -157,6 +157,9 @@
 - [x] **inputs 库官方文档** ✓ (2026-06-28) — 键盘/鼠标/游戏手柄控制
 - [x] **libusb GitHub README** ✓ (2026-06-28) — 跨平台 USB 底层库
 - [x] **libusb 官方网站** ✓ (2026-06-28) — USB 1.0-4.0 支持
+- [x] **PyUSB GitHub README** ✓ (2026-06-29) — 33,800+ 依赖的 Python USB 库
+- [x] **PyUSB 官方教程** ✓ (2026-06-29) — API 使用指南
+- [x] **libusb 1.0 API Reference** ✓ (2026-06-29) — 底层 USB 协议规范
 
 **Agent 集成层**：
 - [x] MCP 协议基础 ✓（browser-use 文档中涉及）

@@ -6,6 +6,29 @@
 
 ## 2026-06-29
 
+### ingest | PyUSB 硬件接口控制研究（3个素材）— 自动研究工作流
+
+新增页面：
+- wiki/sources/2026-06-29-pyusb-github-readme.md
+- wiki/sources/2026-06-29-pyusb-tutorial.md
+- wiki/sources/2026-06-29-libusb-api-reference.md
+- wiki/entities/PyUSB.md
+
+更新页面：
+- wiki/topics/硬件接口控制.md（添加 PyUSB、更新工具列表）
+- wiki/index.md（添加新素材、新实体、更新统计）
+- wiki/log.md（追加操作记录）
+
+知识库统计：
+- 素材摘要：88（+3）
+- 实体页：82（+1）
+- 硬件接口控制素材：8（接近目标）
+
+证伪验证：
+- ✅ USB 4.0 支持验证通过（通过 libusb 后端）
+- ✅ asyncio 支持验证（可通过 to_thread() 实现）
+- ⚠️ MCP 集成可行性待验证
+
 ### ingest | Playwright 实现原理分析（4个素材）— 自动研究工作流
 
 新增页面：

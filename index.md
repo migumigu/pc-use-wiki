@@ -13,8 +13,8 @@ page-info: false
 ## 概览
 
 - 主题：AI Agent 控制 PC 电脑
-- 素材总数：85（+2）
-- Wiki 页面总数：144（+4）
+- 素材总数：88（+3）
+- Wiki 页面总数：148（+4）
 
 ---
 
@@ -87,6 +87,7 @@ page-info: false
 - [[hidapi]] — USB HID 设备库（2,500+ Stars）
 - [[inputs]] — 跨平台输入设备库（键盘/鼠标/游戏手柄）
 - [[libusb]] — 跨平台 USB 底层库
+- [[PyUSB]] — Python USB 设备控制库（33,800+ 依赖，2026-06-29新增）
 
 ### 组织/团队
 - [[字节跳动]] — 开发UI-TARS的中国科技公司
@@ -279,6 +280,9 @@ page-info: false
 - [[opencv-python PyPI Package]] — OpenCV Python 绑定包官方文档
 - [[DirectShow (Legacy API)]] — 遗留视频捕获 API 文档
 - [[OpenCV GitHub Repository]] — 88K+ Stars 官方仓库
+- [[PyUSB GitHub README]] — Python USB 设备控制库（33,800+ 依赖，2026-06-29新增）
+- [[PyUSB 1.0 Tutorial]] — 官方教程（2026-06-29新增）
+- [[libusb 1.0 API Reference]] — 底层 USB 协议规范（2026-06-29新增）
 
 ---
 
