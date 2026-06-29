@@ -70,7 +70,7 @@
 - [x] browser-use 技术架构分析 ✓
 - [x] browser-use vs Playwright MCP 对比 ✓
 - [ ] Chromium 源码架构文档
-- [ ] Chrome DevTools Protocol 官方文档
+- [x] Chrome DevTools Protocol 官方文档 ✓ (2026-06-29) — 已消化
 - [x] Playwright 实现原理分析 ✓ (2026-06-29) — 新增
 - [ ] Puppeteer vs Selenium 对比文章
 - [x] Playwright MCP Server 官方文档 ✓ (2026-06-28)
@@ -84,6 +84,16 @@
 - [x] **Playwright Test Agents 官方文档** ✓ (2026-06-28) — 三 Agent 智能测试系统
 - [x] **Playwright Test Agents 深度分析** ✓ (2026-06-28) — UI 自动化工作流演进
 - [x] **Playwright Test Agents 自愈式测试** ✓ (2026-06-28) — Healer 机制详解
+- [x] **chrome-devtools-mcp GitHub README** ✓ (2026-06-29) — 43k+ Stars 官方 MCP Server
+- [x] **chrome-devtools-mcp 技术深度分析** ✓ (2026-06-29) — 44 个工具详细解析
+- [x] **Playwright CDP/WebSocket 架构分析** ✓ (2026-06-29) — Playwright 与 CDP 关系
+- [x] **Playwright GitHub README** ✓ (2026-06-29) — 官方项目数据
+- [x] **OpenClaw GitHub README** ✓ (2026-06-29) — 20万+ Stars 全栈 AI Agent
+- [x] **OpenClaw Gateway 架构** ✓ (2026-06-29) — 中心化架构
+- [x] **OpenClaw Tools 概览** ✓ (2026-06-29) — 10+ 工具类别
+- [x] **OpenClaw Skills 系统** ✓ (2026-06-29) — AgentSkills 规范
+- [x] **OpenClaw 浏览器控制** ✓ (2026-06-29) — 内置 CDP 浏览器模块
+- [x] **OpenClaw 沙箱安全** ✓ (2026-06-29) — 3 种沙箱后端
 
 **桌面应用控制**：
 - [x] UI-TARS-desktop GitHub README ✓ (2026-06-28)
@@ -100,6 +110,10 @@
 - [x] **CUA 技术分析报告** ✓ (2026-06-28) — 新增
 - [x] **AutoHotkey GitHub README** ✓ (2026-06-28) — 新增
 - [x] **AutoHotkey 官方教程** ✓ (2026-06-28) — 新增
+- [x] **Goose GitHub README** ✓ (2026-06-29) — 49.7K+ Stars
+- [x] **Goose Getting Started** ✓ (2026-06-29) — 安装配置指南
+- [x] **Goose 官方教程索引** ✓ (2026-06-29) — 20+ 教程
+- [x] **Goose 深度解析** ✓ (2026-06-29) — 架构与竞品分析
 - [ ] Office 自动化最佳实践（Excel、Word VBA调用）
 - [ ] Accessibility API 跨平台对比
 
@@ -168,6 +182,8 @@
 - [x] Open Interpreter Computer Use API ✓ (2026-06-28)
 - [x] Tool Calling 最佳实践与错误处理 ✓ (2026-06-28) — 已消化12个素材（Anthropic 9个、OpenAI 3个），生成深度分析报告和对比报告
 - [x] 多 Agent 协作模式与状态同步 ✓ (2026-06-28) — 已消化5个素材（LangGraph 2个、AutoGen 1个、分析2个），生成技术分析报告和深度综合报告
+- [x] **A2A Protocol** ✓ (2026-06-29) — Google 官方 Agent 间通信协议，4个素材
+- [x] **OpenClaw 全栈 AI Agent** ✓ (2026-06-29) — 20万+ Stars，Gateway 架构 + Skills + 沙箱，6个素材
 
 ### digest 提取指导原则
 

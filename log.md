@@ -4,6 +4,98 @@
 
 ---
 
+## 2026-06-29 — 自动研究工作流：A2A Protocol (Agent-to-Agent)
+
+- **操作**：完整自动研究工作流（趋势分析 → 素材收集 → 报告生成 → 证伪验证 → digest 消化入库）
+- **研究方向**：A2A Protocol（Google 发布的 Agent 间通信协议，与 MCP 互补）
+- **素材数量**：4个（Tier1: 4）
+- **素材列表**：
+  - raw/articles/2026-06-29-a2a-protocol-github.md — 官方 GitHub 仓库（Google, Apache 2.0）
+  - raw/articles/2026-06-29-a2a-protocol-homepage.md — 官方文档站点
+  - raw/articles/2026-06-29-a2a-python-sdk.md — Python SDK（v1.1.0）
+  - raw/articles/2026-06-29-a2a-key-concepts.md — 核心概念文档
+
+**新增 Wiki 页面**：
+- wiki/sources/2026-06-29-a2a-protocol-github.md — GitHub 仓库素材摘要
+- wiki/sources/2026-06-29-a2a-protocol-homepage.md — 官方文档站点素材摘要
+- wiki/sources/2026-06-29-a2a-python-sdk.md — Python SDK 素材摘要
+- wiki/sources/2026-06-29-a2a-key-concepts.md — 核心概念素材摘要
+- wiki/entities/A2A.md — A2A Protocol 实体页
+
+**更新页面**：
+- wiki/topics/Agent集成层.md — 添加 A2A Protocol 到关键概念和素材表
+- index.md — 添加 A2A 实体和素材条目，更新计数（96 素材，162 页面）
+- log.md — 记录本次操作
+
+**证伪验证**：
+- Google 发布 — ✅ 已验证（GitHub 官方确认）
+- 捐赠给 Linux Foundation — ✅ 已验证（官方文档确认）
+- v0.3.0 于 2025-04-09 发布 — ✅ 已验证
+- Python SDK 3.10+ — ✅ 已验证
+- 720+ Commits — ✅ 已验证
+- A2A 与 MCP 互补 — ✅ 已验证（官方文档确认）
+
+**研究价值**：
+- 填补 Agent 集成层中 Agent 通信协议的空白
+- A2A 与 MCP 形成互补，完善 Agent 协议栈（工具调用 + Agent 通信）
+- Google 官方发布，具有行业影响力
+- 支持跨框架（LangGraph、CrewAI、Semantic Kernel）互操作
+- Linux Foundation 托管，开放治理
+
+**知识积累成果**：
+- Agent 集成层新增 A2A Protocol（Agent 间通信协议）
+- 协议栈三大支柱完善：MCP（工具层）+ A2A（Agent通信层）+ AG-UI（用户交互层）
+- 与现有 Multi-Agent 协作框架（LangGraph、AutoGen）形成技术栈组合
+
+**状态**：完成
+
+---
+
+## 2026-06-29 — 自动研究工作流：Goose AI Agent
+
+- **操作**：完整自动研究工作流（趋势分析 → 素材收集 → 报告生成 → 证伪验证 → digest 消化入库）
+- **研究方向**：Goose AI Agent（Linux Foundation AAIF 孵化的开源本地 AI Agent）
+- **素材数量**：4个（Tier1: 3, Tier2: 1）
+- **素材列表**：
+  - raw/articles/2026-06-29-goose-github-readme.md — GitHub README（49.7K+ Stars）
+  - raw/articles/2026-06-29-goose-getting-started.md — 官方 Getting Started 文档
+  - raw/articles/2026-06-29-goose-tutorials.md — 官方教程索引
+  - raw/articles/2026-06-29-goose-deep-analysis.md — 技术深度分析
+
+**新增 Wiki 页面**：
+- wiki/sources/2026-06-29-goose-github-readme.md — GitHub README 素材摘要
+- wiki/sources/2026-06-29-goose-getting-started.md — Getting Started 素材摘要
+- wiki/sources/2026-06-29-goose-tutorials.md — 教程索引素材摘要
+- wiki/sources/2026-06-29-goose-deep-analysis.md — 深度分析素材摘要
+- wiki/entities/Goose.md — Goose 实体页
+
+**更新页面**：
+- index.md — 添加 Goose 实体和素材条目，更新计数（92 素材，153 页面）
+- log.md — 记录本次操作
+
+**证伪验证**：
+- 49.7K+ Stars — ✅ 已验证（多个来源确认）
+- 500+ 贡献者 — ✅ 已验证
+- 4,820+ Commits — ✅ 已验证
+- Apache 2.0 许可证 — ✅ 已验证
+- Rust 构建 — ✅ 已验证
+- 15+ Provider / 70+ MCP 扩展 — ⚠️ UNVERIFIED（官方提及但未确认具体数量）
+
+**研究价值**：
+- 填补桌面应用控制的本地 Agent 运行时空白
+- Goose 是 AAIF/Linux Foundation 孵化的开源项目，具有开放治理优势
+- 多入口设计（Desktop+CLI+API）覆盖不同使用场景
+- MCP 生态连接 70+ 扩展，支持多 Provider 切换
+- 与 CUA、UI-TARS、Open Interpreter 形成桌面控制工具矩阵
+
+**知识积累成果**：
+- 桌面应用控制新增 Goose（49.7K+ Stars 开源本地 AI Agent）
+- 补充 Agent 集成层的多入口交互架构参考
+- 补充系统服务控制的本地 Agent 运行时范式
+- 桌面应用控制素材数量：8 → 12（+4）
+
+**状态**：完成
+
 ## 2026-06-29 — digest 深度综合：Tool Calling 对比 + Multi-Agent 协作
 
 - **操作**：digest 深度综合分析报告生成（精简版自动研究工作流）

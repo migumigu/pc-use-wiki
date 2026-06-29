@@ -1,5 +1,5 @@
 ---
-tags: [素材, 官方文档]
+tags: [素材, 浏览器控制, 协议层]
 created: 2026-06-29
 updated: 2026-06-29
 sources:
@@ -8,50 +8,50 @@ sources:
 
 # Chrome DevTools Protocol 官方文档
 
-> Chrome 官方调试协议，是 Playwright 控制 Chromium 的底层协议
+> CDP 是 Chrome 浏览器与外部工具通信的底层协议，Playwright 和 chrome-devtools-mcp 都建立在其之上。
 
 ## 一句话摘要
 
-Chrome DevTools Protocol (CDP) 允许工具 instrument、inspect、debug 和 profile Chromium、Chrome 及其他基于 Blink 的浏览器。
+Chrome DevTools Protocol (CDP) 是用于与 Chromium、Chrome 及基于 Blink 的浏览器进行 instrument、inspect、debug 和 profile 的协议。
 
-## 关键信息
+## 核心内容
 
-- **来源**：[chromedevtools.github.io/devtools-protocol/](https://chromedevtools.github.io/devtools-protocol/)
-- **类型**：official_docs
-- **Tier**：1（官方来源）
-- **控制对象**：browser_control
-- **技术层级**：protocol
-- **收集日期**：2026-06-29
+### 协议版本
 
-## 协议结构
+| 版本 | 说明 |
+|------|------|
+| **Tip-of-tree** | 最新协议，频繁变化，无向后兼容性保证 |
+| **v8-inspector** | Node.js 应用调试和性能分析 |
+| **stable 1.3** | 稳定版本，Chrome 64 标记 |
 
-Instrumentation 按多个域（Domain）划分，每个域定义支持的命令和生成的事件。
+### 协议结构
+
+协议按多个域（Domain）划分：DOM、Debugger、Network 等。每个域定义支持的命令和生成的事件，命令和事件都序列化为固定结构的 JSON 对象。
 
 ### 主要域
 
-- **Browser**：浏览器控制
-- **Page**：页面操作
-- **DOM**：文档对象模型
-- **CSS**：样式操作
-- **Debugger**：调试功能
-- **Input**：输入模拟
-- **Network**：网络请求
-- **Emulation**：设备模拟
+- DOM、Debugger、Network、Page、Console
+- CSS、Input、Performance、Memory
+- Storage、ServiceWorker、WebMCP
 
-## HTTP 端点
+### HTTP 端点
 
-| 端点 | 用途 |
-|------|------|
-| `GET /json/version` | 获取浏览器版本和 WebSocket URL |
-| `GET /json/list` | 列出所有 targets |
-| `PUT /json/new?{url}` | 打开新标签页 |
-| `WebSocket /devtools/page/{targetId}` | 双向通信端点 |
+当用 `remote-debugging-port` 启动时，提供 HTTP 端点：
+- `GET /json/version` — 浏览器版本元数据
+- `GET /json` — 所有 WebSocket targets 列表
+- `GET /json/protocol/` — 当前协议 JSON
+- `PUT /json/new?{url}` — 打开新标签页
+
+### WebSocket 连接
+
+通过 `webSocketDebuggerUrl` 在 `/json/version` 中暴露端点。协议支持 Chrome 63 引入的多客户端同时连接。
 
 ## 与 Playwright 的关系
 
-Playwright 使用 Chrome DevTools Protocol 与 Chromium 通信。对于 Firefox 和 WebKit，Playwright 实现了自己的协议。
+Playwright 使用 Chrome DevTools Protocol 与 Chromium 通信。对于 Firefox 和 WebKit，Playwright 实现了自己的协议。**Playwright 是建立在 CDP 之上的高层 API**，提供了更易用的接口。
 
 ## 相关页面
 
-- [[Playwright]] — 主实体页
-- [[浏览器控制]] — 主题页
+- [[浏览器控制]]（主题页）
+- [[Playwright]]（实体页）
+- [[chrome-devtools-mcp]]（实体页）

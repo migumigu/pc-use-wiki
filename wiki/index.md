@@ -14,8 +14,8 @@
 
 ### 浏览器控制
 - 主题页：[[浏览器控制]]
-- 素材摘要：[[browser-use GitHub README]] [[browser-use 官方文档]] [[browser-use 技术架构分析]] [[browser-use vs Playwright MCP 对比]] [[Playwright MCP Server 官方文档]] [[page-agent GitHub README]] [[page-agent MCP Server 文档]] [[page-agent 技术分析报告]]
-- 相关实体：[[browser-use]] [[Playwright]] [[浏览器自动化]] [[Agent]] [[LLM]] [[MCP]]
+- 素材摘要：[[browser-use GitHub README]] [[browser-use 官方文档]] [[browser-use 技术架构分析]] [[browser-use vs Playwright MCP 对比]] [[Playwright MCP Server 官方文档]] [[page-agent GitHub README]] [[page-agent MCP Server 文档]] [[page-agent 技术分析报告]] [[Chrome DevTools Protocol 官方文档]] [[Chrome DevTools MCP 官方介绍]] [[Chrome DevTools MCP 技术分析]] [[Playwright CDP/WebSocket 对比分析]] [[Playwright GitHub README]] [[OpenClaw GitHub README]] [[OpenClaw Browser Control]]
+- 相关实体：[[browser-use]] [[Playwright]] [[浏览器自动化]] [[Agent]] [[LLM]] [[MCP]] [[chrome-devtools-mcp]] [[agent-browser]] [[page-agent]] [[OpenClaw]]
 
 ### 桌面应用控制
 - 主题页：[[桌面应用控制]]
@@ -25,8 +25,8 @@
 ### 系统服务控制
 - 主题页：[[系统服务控制]]
 - 深度报告：[[系统服务控制-深度报告]]
-- 素材摘要：[[PowerShell 官方指南]] [[WMI 官方文档]] [[pywin32 GitHub README]] [[PowerShell Overview 文档]] [[pywinauto GitHub README]] [[Windows UI Automation 官方文档]] [[systemd.io 官方文档首页]] [[Prefect GitHub README]] [[pystemd GitHub README]]
-- 相关实体：[[PowerShell]] [[Cmdlet]] [[WMI]] [[pywin32]] [[systemd]] [[Prefect]] [[pystemd]]
+- 素材摘要：[[PowerShell 官方指南]] [[WMI 官方文档]] [[pywin32 GitHub README]] [[PowerShell Overview 文档]] [[pywinauto GitHub README]] [[Windows UI Automation 官方文档]] [[systemd.io 官方文档首页]] [[Prefect GitHub README]] [[pystemd GitHub README]] [[OpenClaw Gateway Architecture]] [[OpenClaw Sandboxing & Security]]
+- 相关实体：[[PowerShell]] [[Cmdlet]] [[WMI]] [[pywin32]] [[systemd]] [[Prefect]] [[pystemd]] [[OpenClaw]]
 
 ### 文件系统控制
 - 主题页：[[文件系统控制]]
@@ -45,8 +45,8 @@
 
 ### Agent 集成层
 - 主题页：[[Agent集成层]]
-- 素材摘要：[[MCP 协议基础]] [[MCP 协议设计文档]] [[Anthropic Computer Use 实现原理]] [[Open Interpreter Computer Use API]]
-- 相关实体：[[MCP]] [[Computer-Use]] [[Agent]] [[LLM]]
+- 素材摘要：[[MCP 协议基础]] [[MCP 协议设计文档]] [[Anthropic Computer Use 实现原理]] [[Open Interpreter Computer Use API]] [[A2A Protocol GitHub Official Repository]] [[A2A Protocol Official Documentation Site]] [[A2A Python SDK Official Repository]] [[A2A Protocol Core Concepts]] [[OpenClaw GitHub README]] [[OpenClaw Gateway Architecture]] [[OpenClaw Tools Overview]] [[OpenClaw Skills System]] [[OpenClaw Browser Control]] [[OpenClaw Sandboxing & Security]]
+- 相关实体：[[MCP]] [[Computer-Use]] [[Agent]] [[LLM]] [[A2A]] [[OpenClaw]]
 
 ---
 
@@ -54,8 +54,8 @@
 
 | 类型 | 数量 |
 |------|------|
-| 素材摘要 | 46 |
-| 实体页 | 44 |
+| 素材摘要 | 57 |
+| 实体页 | 46 |
 | 主题页 | 6 |
 | 对比分析 | 1 |
 | 综合分析 | 3 |
@@ -63,6 +63,25 @@
 ---
 
 ## 最近更新
+
+- **2026-06-29**：OpenClaw 全栈 AI Agent 研究（自动研究工作流）
+  - 收集 6 个官方素材（GitHub README、Gateway架构、Tools、Skills、Browser、Sandbox）
+  - 创建 6 个素材摘要页
+  - 创建 1 个实体页（OpenClaw）
+  - 更新 3 个主题页（浏览器控制、系统服务控制、Agent集成层）
+  - 执行证伪验证（Stars 数量添加置信度标注）
+  - 知识库素材：57（+6）
+  - 知识库实体：46（+1）
+
+- **2026-06-29**：chrome-devtools-mcp 浏览器控制研究（自动研究工作流）
+  - 收集 5 个权威素材（chrome-devtools-mcp×2、CDP×1、Playwright×2）
+  - 创建 5 个素材摘要页
+  - 创建 1 个实体页（chrome-devtools-mcp）
+  - 更新主题页（浏览器控制）
+  - 执行证伪验证（Stars 数量已更新为 43,000+）
+  - 知识库素材：51（+5）
+  - 知识库实体：45（+1）
+  - 浏览器控制素材：13（接近目标 10+）
 
 - **2026-06-28**：填补知识缺口研究（自动研究工作流 v6）
   - 收集 6 个官方素材（AutoHotkey×2、inputs×2、libusb×2）

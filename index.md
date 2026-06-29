@@ -13,8 +13,8 @@ page-info: false
 ## 概览
 
 - 主题：AI Agent 控制 PC 电脑
-- 素材总数：88（+3）
-- Wiki 页面总数：148（+4）
+- 素材总数：96（+8）
+- Wiki 页面总数：162（+9）
 
 ---
 
@@ -31,6 +31,7 @@ page-info: false
 - [[浏览器自动化]] — 通过程序控制浏览器的技术
 
 ### 桌面自动化领域
+- [[Goose]] — Linux Foundation 本地 AI Agent（49.7K+ Stars，2026-06-29新增）
 - [[UI-TARS]] — 字节跳动开发的GUI Agent桌面应用
 - [[PyAutoGUI]] — Python跨平台GUI自动化库
 - [[Pywinauto]] — Python Windows GUI自动化库（双后端支持）
@@ -135,6 +136,9 @@ page-info: false
 - [[CopilotKit]] — AI Agent 前端基础设施（33k+ Stars）
 - [[AG-UI Protocol]] — Agent-User Interaction Protocol（被主流厂商采纳）
 
+**Agent 通信协议相关**（2026-06-29新增）：
+- [[A2A]] — Google 发布的 Agent 间通信协议，与 MCP 互补
+
 ---
 
 ## 主题页
@@ -183,6 +187,12 @@ page-info: false
 - [[Open Interpreter GitHub README]] — 代码执行和Computer Use框架
 - [[Open Interpreter Computer Use文档]] — 桌面控制模式详细文档
 - [[Windows UI Automation官方文档]] — Microsoft无障碍框架文档
+
+### Goose素材(2026-06-29新增)
+- [[Goose GitHub README]] — Linux Foundation AAIF 孵化的开源本地 AI Agent（49.7K+ Stars）
+- [[Goose Getting Started]] — 安装配置、Provider 设置、扩展使用指南
+- [[Goose 官方教程索引]] — 20+ 官方教程，覆盖工作流、集成、可观测性
+- [[Goose 深度解析]] — AAIF 架构、竞品与安全考量分析
 
 ### CUA素材(2026-06-28新增)
 - [[CUA GitHub README]] — 开源基础设施项目介绍（14.8k+ Stars）
@@ -245,6 +255,12 @@ page-info: false
 **CopilotKit & AG-UI Protocol系列（2篇，2026-06-29新增）**：
 - [[CopilotKit GitHub README]] — AI Agent 前端基础设施（33k+ Stars）
 - [[AG-UI Protocol GitHub README]] — Agent-User Interaction Protocol
+
+**A2A Protocol系列（4篇，2026-06-29新增）**：
+- [[A2A Protocol GitHub Official Repository]] — Google 官方仓库，Apache 2.0
+- [[A2A Protocol Official Documentation Site]] — 官方文档，与 MCP 互补
+- [[A2A Python SDK Official Repository]] — 官方 Python SDK，v1.1.0
+- [[A2A Protocol Core Concepts]] — 核心概念和组件详细定义
 
 ### 文件系统控制素材(2026-06-28新增)
 

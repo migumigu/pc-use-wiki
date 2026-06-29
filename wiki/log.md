@@ -6,6 +6,62 @@
 
 ## 2026-06-29
 
+### ingest | OpenClaw 全栈 AI Agent 研究 — 自动研究工作流
+
+新增页面：
+- wiki/sources/2026-06-29-openclaw-github-readme.md
+- wiki/sources/2026-06-29-openclaw-gateway-architecture.md
+- wiki/sources/2026-06-29-openclaw-tools-overview.md
+- wiki/sources/2026-06-29-openclaw-skills-system.md
+- wiki/sources/2026-06-29-openclaw-browser-control.md
+- wiki/sources/2026-06-29-openclaw-sandboxing-security.md
+- wiki/entities/OpenClaw.md
+
+更新页面：
+- wiki/topics/浏览器控制.md（添加 OpenClaw、更新关键概念和技术栈）
+- wiki/topics/系统服务控制.md（添加 OpenClaw、更新 Agent 集成层）
+- wiki/topics/Agent集成层.md（添加 OpenClaw 系列素材、更新 Agent 核心）
+- wiki/index.md（添加新素材、新实体、更新统计）
+
+知识库统计：
+- 素材摘要：57（+6）
+- 实体页：46（+1）
+- 浏览器控制素材：15
+- 系统服务控制素材：12
+- Agent 集成层素材：16
+
+证伪验证：
+- ✅ 25+ 消息平台验证通过
+- ✅ 58,222 次提交验证通过
+- ✅ v2026.6.1 最新版本验证通过
+- ✅ 4.3k Issues 验证通过
+- ✅ TypeScript 91.7% 验证通过
+- ⚠️ Stars 数量添加置信度标注（20万+，第三方报道范围 20.9万~38万）
+
+### ingest | chrome-devtools-mcp 浏览器控制研究 — 自动研究工作流
+
+新增页面：
+- wiki/sources/2026-06-29-chrome-devtools-protocol.md
+- wiki/sources/2026-06-29-chrome-devtools-mcp-official.md
+- wiki/sources/2026-06-29-chrome-devtools-mcp-analysis.md
+- wiki/sources/2026-06-29-playwright-cdp-websocket.md
+- wiki/sources/2026-06-29-playwright-github-readme.md
+- wiki/entities/chrome-devtools-mcp.md
+
+更新页面：
+- wiki/topics/浏览器控制.md（添加新素材、更新关键概念）
+- wiki/index.md（添加新素材、新实体、更新统计）
+
+知识库统计：
+- 素材摘要：51（+5）
+- 实体页：45（+1）
+- 浏览器控制素材：13
+
+证伪验证：
+- ✅ 44 个 MCP 工具验证通过
+- ✅ 底层 Puppeteer 技术验证通过
+- ⚠️ Stars 数量从 38,866 更新为 43,000+（持续增长）
+
 ### ingest | PyUSB 硬件接口控制研究（3个素材）— 自动研究工作流
 
 新增页面：

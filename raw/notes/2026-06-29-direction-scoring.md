@@ -1,40 +1,25 @@
-# 方向评分结果
+## 方向评分结果（2026-06-29）
 
-## 趋势分析摘要
+| 方向 | 热度(30%) | 契合度(30%) | 可获取性(25%) | 研究价值(15%) | 总分 | 排名 |
+|------|-----------|-------------|---------------|---------------|------|------|
+| OpenClaw | 10 | 10 | 10 | 9 | 9.85 | 1 |
+| CopilotKit (AG-UI Protocol) | 7 | 8 | 9 | 8 | 7.95 | 2 |
+| Hermes Desktop | 5 | 7 | 7 | 6 | 6.30 | 3 |
 
-**发现的关键趋势**：
-1. **OpenClaw** — GitHub 史上增长最快的开源项目之一，基于 CDP 的浏览器自动化工具
-2. **chrome-devtools-mcp** — Google 官方 MCP 服务器，将 Chrome DevTools 能力暴露给 AI Agent（38,866 Stars）
-3. **Browser Agent Frameworks** — 2026 年 AI Agent 生态核心组成部分
-4. **Playwright vs Selenium vs Puppeteer** — 主流浏览器自动化工具的持续演进与对比
+### 评分详解
 
-## 方向评分矩阵
-
-| 维度 | 权重 | 评分标准 |
-|------|------|----------|
-| **热度指标** | 30% | Stars > 50K = 10, > 10K = 7, > 1K = 5, > 100 = 3 |
-| **契合度** | 30% | 命中核心分类 = 10, 辅助分类 = 5, 无匹配 = 0 |
-| **可获取性** | 25% | 官方文档 = 10, 权威媒体 = 7, 社区文档 = 5, 仅社交 = 2 |
-| **研究价值** | 15% | 技术深度(5) × 可扩展性(5) |
-
-| 方向 | 热度 | 契合度 | 可获取性 | 研究价值 | 总分 | 排名 |
-|------|------|--------|----------|----------|------|------|
-| chrome-devtools-mcp | 8 | 10 | 9 | 9 | 8.85 | 1 |
-| OpenClaw | 9 | 10 | 7 | 8 | 8.6 | 2 |
-| Playwright vs Selenium vs Puppeteer | 7 | 8 | 8 | 7 | 7.5 | 3 |
-| Chromium 架构 | 6 | 9 | 6 | 8 | 7.2 | 4 |
-
-## 选定方向
-
-**TOP 1：chrome-devtools-mcp**
+**OpenClaw（选定方向）**
+- **热度**：10/10 - 33万+ Stars，GitHub Trending 屠榜，现象级项目
+- **契合度**：10/10 - 完美契合五大控制对象：浏览器控制（内置 Browser Relay）、桌面应用控制（Windows Hub/macOS app）、系统服务控制（daemon模式、cron、sandbox）、文件系统控制（workspace、文件工具）、硬件接口控制（语音、摄像头、屏幕捕获）；同时覆盖 Agent 集成层（MCP、Skills、多 Agent 路由）
+- **可获取性**：10/10 - GitHub README 完整，官方文档齐全（docs.openclaw.ai），架构文档清晰
+- **研究价值**：9/10 - 技术深度高（Gateway 架构、多 Agent 路由、沙箱机制、Skills 体系），可扩展性强，是完整的 Agent 运行时环境
 
 **选择理由**：
-1. Google 官方发布的 MCP Server，权威性最高
-2. 38,866 Stars（8个月），增长势头强劲
-3. 完美契合浏览器控制研究框架（协议/接口层 + Agent 集成层）
-4. 官方文档可直接获取，Tier 1 来源充足
-5. 连接 Chrome DevTools 与 AI Agent，是重要的 MCP 生态组成部分
+OpenClaw 是当前最热门且与知识库研究范围最契合的项目。它不仅覆盖了所有五大控制对象，还提供了完整的 Agent 集成框架（MCP、Skills、多 Agent 路由），是研究 AI Agent 控制 PC 的绝佳样本。项目热度极高（33万+ Stars），官方文档完善，技术深度足够，研究价值巨大。
 
-**次选：OpenClaw**
-- 作为 2026 年现象级项目，值得后续跟进
-- 但目前中文资料为主，英文官方文档可获取性待确认
+### 研究子方向
+1. OpenClaw 整体架构分析（Gateway、Agent、Session 模型）
+2. 浏览器控制模块（Browser Relay、三种模式）
+3. Skills 体系与 MCP 集成
+4. 多 Agent 路由与沙箱机制
+5. 跨平台支持（Windows/macOS/Linux/iOS/Android）
