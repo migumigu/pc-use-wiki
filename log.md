@@ -4,6 +4,150 @@
 
 ---
 
+## 2026-06-30 — 深度综合 Digest 工作流：Agent 集成层
+
+- **操作**：深度综合 digest 工作流（知识缺口分析 → 方向选择 → 报告生成 → 索引更新）
+- **生成报告**：
+  - [[Agent集成层-深度报告]] — 三层协议架构、全栈运行时、代码智能、50+素材深度综合分析
+- **知识库更新**：
+  - 新增综合分析：1 份（wiki/synthesis/Agent集成层-深度报告.md）
+  - 更新 index.md：添加综合分析条目，更新页面计数（258 页面）
+  - 更新 log.md：记录本次操作
+- **研究背景**：
+  - Agent 集成层素材已达 50+，涵盖 MCP、Tool Calling、Multi-Agent、A2A、OpenClaw、codebase-memory-mcp 等
+  - 五大控制对象分类均已完成深度报告
+  - Agent 集成层作为横切技术层级，缺少系统性深度综合报告
+  - 本次 codebase-memory-mcp 研究后，触发 Agent 集成层 digest
+- **核心发现**：
+  - 协议栈分层清晰：MCP（工具层）+ A2A（Agent通信层）+ AG-UI（用户交互层）
+  - 全栈 Agent 运行时兴起：OpenClaw、Goose 等从工具调用转向完整执行环境
+  - 代码智能成为新热点：知识图谱 + MCP 组合改变 Agent 代码理解方式
+  - MCP 生态快速扩张：文件系统、浏览器、代码智能等专用 Server 不断涌现
+- **素材覆盖**：
+  - 协议标准：MCP、A2A、AG-UI Protocol
+  - 工具调用：Anthropic Tool Use、OpenAI Function Calling
+  - 多 Agent 协作：LangGraph、AutoGen
+  - 运行时平台：OpenClaw、Goose、CUA、UI-TARS
+  - MCP Server 生态：Filesystem MCP、Chrome DevTools MCP、codebase-memory-mcp、Playwright MCP
+- **待补充方向**：
+  - MCP 与其他工具调用协议的深度对比
+  - 企业级 MCP Server 的安全与权限管理机制
+  - 多 Agent 系统的性能与可扩展性边界
+  - 代码智能 Agent 的实际效果评估
+  - Agent 集成层的性能优化最佳实践
+
+---
+
+## 2026-06-30 — 自动研究工作流：codebase-memory-mcp 代码智能 MCP Server
+
+- **操作**：自动研究工作流（趋势扫描 → 项目评估 → 素材收集 → 报告生成 → 证伪验证 → 消化入库）
+- **研究对象**：codebase-memory-mcp（高性能代码智能 MCP Server）
+- **研究方向**：Agent 集成层 - MCP Server 生态新趋势
+- **素材数量**：3 个（Tier1: 1, Tier2: 2）
+- **素材列表**：
+  - raw/articles/2026-06-30-codebase-memory-mcp-github-readme.md
+  - raw/articles/2026-06-30-codebase-memory-mcp-architecture-analysis.md
+  - raw/articles/2026-06-30-codebase-memory-mcp-vs-others-comparison.md
+
+- **新增 Wiki 页面**：
+  - wiki/sources/2026-06-30-codebase-memory-mcp-github-readme.md
+  - wiki/sources/2026-06-30-codebase-memory-mcp-architecture-analysis.md
+  - wiki/sources/2026-06-30-codebase-memory-mcp-vs-others-comparison.md
+  - wiki/entities/codebase-memory-mcp.md
+
+- **更新页面**：
+  - wiki/topics/Agent集成层.md — 添加 codebase-memory-mcp 到关键概念和素材表
+  - index.md — 添加 codebase-memory-mcp 实体和素材条目，更新计数（148 素材，257 页面）
+  - log.md — 记录本次操作
+
+- **证伪验证**：
+  - Star 数数据不一致（4K-20K） — ⚠️ 待验证，以 GitHub 实际数据为准
+  - 纯 C 实现 — ⚠️ 待官方确认
+  - 120x Token 效率提升 — ⚠️ 对比基准为"直接读整个文件"，实际场景可能不同
+  - 14 个 MCP 工具 — ⚠️ 基于同类产品合理推断，以官方文档为准
+  - MIT 开源协议 — ⚠️ 推测，待官方确认
+
+- **研究价值**：
+  - 发现 2026 年新兴的代码智能 MCP Server 项目
+  - 补充 Agent 集成层中代码智能工具的空白
+  - 纯 C 实现 + 知识图谱的技术路线具有参考价值
+  - 与 Filesystem MCP、Chrome DevTools MCP 形成 MCP Server 生态矩阵
+
+- **知识积累成果**：
+  - Agent 集成层新增 codebase-memory-mcp（代码智能 MCP Server）
+  - MCP Server 生态扩展：文件系统 + 浏览器 + 代码智能
+  - 新增知识图谱索引技术路线参考
+
+---
+
+## 2026-06-30 — 自动研究工作流：TuriX-CUA 新项目研究
+
+- **操作**：自动研究工作流（趋势扫描 → 项目评估 → 素材收集 → 报告生成 → 证伪验证 → 消化入库）
+- **研究对象**：TuriX-CUA（Computer Use Agent）
+- **研究方向**：桌面应用控制领域新项目
+- **素材数量**：3 个（Tier1: 2, Tier2: 1）
+- **素材列表**：
+  - raw/articles/2026-06-30-turix-cua-github-readme.md
+  - raw/articles/2026-06-30-turix-cua-readme-zh.md
+  - raw/articles/2026-06-30-turix-cua-technical-analysis.md
+
+- **新增 Wiki 页面**：
+  - wiki/sources/2026-06-30-turix-cua-github-readme.md
+  - wiki/sources/2026-06-30-turix-cua-readme-zh.md
+  - wiki/sources/2026-06-30-turix-cua-technical-analysis.md
+  - wiki/entities/TuriX-CUA.md
+
+- **更新页面**：
+  - index.md — 添加 TuriX-CUA 实体和素材条目，更新计数（106 素材，177 页面）
+  - log.md — 记录本次操作
+
+- **证伪验证**：
+  - OSWorld 64.2% 成功率 — ⚠️ 待验证（官方声称）
+  - macOS 80%+ 成功率 — ⚠️ 待验证（内部基准）
+  - MIT 协议 — ✅ 已验证
+  - 多模型架构 — ✅ 已验证
+  - OpenClaw 集成 — ✅ 已验证
+
+- **研究价值**：
+  - 发现 2025 年新发布的多模型架构 Computer Use Agent
+  - 补充桌面应用控制领域的新兴开源方案
+  - OSWorld Benchmark 第3名，性能领先
+
+---
+
+## 2026-06-30 — 自动研究工作流：WMI 参考文档
+
+- **操作**：自动研究工作流（趋势分析 → 素材收集 → 报告生成 → 证伪验证 → 消化入库）
+- **研究方向**：WMI Reference 官方文档（系统服务控制领域深度补充）
+- **素材数量**：7 个 Tier 1 来源（Microsoft Learn 官方文档）
+- **素材列表**：
+  - raw/articles/2026-06-30-wmi-reference-official.md — WMI Reference 官方总览
+  - raw/notes/2026-06-30-wmi-reference-collection.md — 素材收集清单
+  - raw/notes/2026-06-30-wmi-falsification.md — 证伪验证记录
+
+- **新增 Wiki 页面**：
+  - wiki/sources/2026-06-30-wmi-reference-official.md — WMI Reference 素材摘要
+
+- **更新页面**：
+  - wiki/entities/WMI.md — 添加新素材引用
+  - wiki/topics/系统服务控制.md — 添加新素材引用
+  - index.md — 添加素材条目，更新计数（103 素材，173 页面）
+  - log.md — 记录本次操作
+
+- **证伪验证**：
+  - WMI 类分类体系 — ✅ 已验证（Microsoft Learn 官方文档）
+  - Win32 Provider 接口 — ✅ 已验证（官方文档）
+  - WQL 说明 — ✅ 已验证（官方文档）
+  - Provider 状态 — ✅ 已验证（官方文档）
+
+- **研究价值**：
+  - 填补 WMI 参考文档完整参考的空白
+  - 补充 Win32 Provider 核心类详细信息
+  - 补充 WMI 提供商完整列表
+  - 补充 WMI 系统类、MSFT 类、CIM 类、Standard Consumer 类分类体系
+
+---
+
 ## 2026-06-30 — 深度综合 Digest 工作流：系统服务控制
 
 - **操作**：深度综合 digest 工作流（知识缺口分析 → 方向选择 → 报告生成 → 索引更新）

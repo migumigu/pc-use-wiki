@@ -1,6 +1,6 @@
 # AI Agent PC 控制 — 知识库索引
 
-> 创建于 2026-06-27 | 最后更新：2026-06-30
+> 创建于 2026-06-27 | 最后更新：2026-06-30（codebase-memory-mcp 研究）
 
 ---
 
@@ -45,8 +45,9 @@
 
 ### Agent 集成层
 - 主题页：[[Agent集成层]]
-- 素材摘要：[[MCP 协议基础]] [[MCP 协议设计文档]] [[Anthropic Computer Use 实现原理]] [[Open Interpreter Computer Use API]] [[A2A Protocol GitHub Official Repository]] [[A2A Protocol Official Documentation Site]] [[A2A Python SDK Official Repository]] [[A2A Protocol Core Concepts]] [[OpenClaw GitHub README]] [[OpenClaw Gateway Architecture]] [[OpenClaw Tools Overview]] [[OpenClaw Skills System]] [[OpenClaw Browser Control]] [[OpenClaw Sandboxing & Security]]
-- 相关实体：[[MCP]] [[Computer-Use]] [[Agent]] [[LLM]] [[A2A]] [[OpenClaw]]
+- 深度报告：[[MCP-Protocol-深度报告]] [[Computer-Use-深度报告]] [[Tool-Calling-对比报告]] [[Multi-Agent协作-深度报告]]
+- 素材摘要：[[MCP 协议基础]] [[MCP 协议设计文档]] [[Anthropic Computer Use 实现原理]] [[Open Interpreter Computer Use API]] [[A2A Protocol GitHub Official Repository]] [[A2A Protocol Official Documentation Site]] [[A2A Python SDK Official Repository]] [[A2A Protocol Core Concepts]] [[OpenClaw GitHub README]] [[OpenClaw Gateway Architecture]] [[OpenClaw Tools Overview]] [[OpenClaw Skills System]] [[OpenClaw Browser Control]] [[OpenClaw Sandboxing & Security]] [[codebase-memory-mcp GitHub README]] [[codebase-memory-mcp 技术架构深度分析]] [[三款代码智能工具对比]]
+- 相关实体：[[MCP]] [[Computer-Use]] [[Agent]] [[LLM]] [[A2A]] [[OpenClaw]] [[codebase-memory-mcp]] [[CopilotKit]] [[AG-UI-Protocol]]
 
 ---
 
@@ -54,15 +55,24 @@
 
 | 类型 | 数量 |
 |------|------|
-| 素材摘要 | 63 |
-| 实体页 | 52 |
+| 素材摘要 | 148 |
+| 实体页 | 92 |
 | 主题页 | 6 |
 | 对比分析 | 1 |
-| 综合分析 | 3 |
+| 综合分析 | 12 |
 
 ---
 
 ## 最近更新
+
+- **2026-06-30**：codebase-memory-mcp 代码智能 MCP Server 研究（自动研究工作流）
+  - 收集 3 个素材（GitHub README ×1、技术分析 ×2）
+  - 创建 3 个素材摘要页
+  - 创建 1 个实体页（codebase-memory-mcp）
+  - 更新主题页（Agent 集成层）
+  - 执行证伪验证（Star 数、性能数据等标注置信度）
+  - 知识库素材：148（+3）
+  - 知识库实体：92（+1）
 
 - **2026-06-29**：文件系统权限模型研究（自动研究工作流）
   - 收集 6 个官方素材（Windows Security Descriptor×2、Linux ACL×4）

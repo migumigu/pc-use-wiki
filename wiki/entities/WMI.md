@@ -2,7 +2,7 @@
 tags: [Windows管理, WMI, 系统监控, COM, WBEM]
 created: 2026-06-28
 updated: 2026-06-28
-sources: [raw/articles/2026-06-28-wmi-official-docs.md]
+sources: [raw/articles/2026-06-28-wmi-official-docs.md, 2026-06-30-wmi-reference-official]
 ---
 
 # WMI

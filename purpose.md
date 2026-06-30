@@ -135,7 +135,7 @@
 - [x] **GPUtil GitHub README** ✓ (2026-06-28) — NVIDIA GPU 状态监控
 - [x] **netifaces GitHub README** ✓ (2026-06-28) — 跨平台网络接口信息
 - [x] **py-cpuinfo GitHub README** ✓ (2026-06-28) — 纯 Python CPU 信息检测
-- [ ] WMI 完整参考文档
+- [x] **WMI Reference 官方文档** ✓ (2026-06-30) — WMI 参考文档完整参考，包含类、提供商、API
 - [ ] 进程通信机制深度解析
 
 **文件系统控制**：
@@ -194,6 +194,7 @@
 - [x] 多 Agent 协作模式与状态同步 ✓ (2026-06-28) — 已消化5个素材（LangGraph 2个、AutoGen 1个、分析2个），生成技术分析报告和深度综合报告
 - [x] **A2A Protocol** ✓ (2026-06-29) — Google 官方 Agent 间通信协议，4个素材
 - [x] **OpenClaw 全栈 AI Agent** ✓ (2026-06-29) — 20万+ Stars，Gateway 架构 + Skills + 沙箱，6个素材
+- [x] **codebase-memory-mcp** ✓ (2026-06-30) — 高性能代码智能 MCP Server，纯 C 实现，知识图谱索引，3个素材
 
 ### digest 提取指导原则
 

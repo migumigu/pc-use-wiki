@@ -2,7 +2,7 @@
 title: 知识库索引
 ---
 
-> 最后更新：2026-06-30
+> 最后更新：2026-06-30（codebase-memory-mcp 研究）
 
 ---
 template: default
@@ -13,8 +13,8 @@ page-info: false
 ## 概览
 
 - 主题：AI Agent 控制 PC 电脑
-- 素材总数：102
-- Wiki 页面总数：172（+1）
+- 素材总数：148
+- Wiki 页面总数：258
 
 ---
 
@@ -34,6 +34,7 @@ page-info: false
 - [[Goose]] — Linux Foundation 本地 AI Agent（49.7K+ Stars，2026-06-29新增）
 - [[Bytebot]] — 开源容器化虚拟桌面AI Desktop Agent（Apache 2.0，2026-06-29新增）
 - [[UI-TARS]] — 字节跳动开发的GUI Agent桌面应用
+- [[TuriX-CUA]] — 多模型架构Computer Use Agent，OSWorld第3名（2026-06-30新增）
 - [[PyAutoGUI]] — Python跨平台GUI自动化库
 - [[Pywinauto]] — Python Windows GUI自动化库（双后端支持）
 - [[Python-UIAutomation]] — Windows UI Automation的Python封装
@@ -140,6 +141,9 @@ page-info: false
 **Agent 通信协议相关**（2026-06-29新增）：
 - [[A2A]] — Google 发布的 Agent 间通信协议，与 MCP 互补
 
+**代码智能 MCP Server 相关**（2026-06-30新增）：
+- [[codebase-memory-mcp]] — 高性能代码智能 MCP Server，纯 C 实现，知识图谱索引
+
 ---
 
 ## 主题页
@@ -208,6 +212,11 @@ page-info: false
 - [[2026-06-29-bytebot-vs-rpa-comparison]] — 与传统RPA工具对比分析
 - [[2026-06-29-bytebot-api-reference]] — API参考文档，Agent API和Desktop API两套接口
 
+### TuriX-CUA素材(2026-06-30新增)
+- [[2026-06-30-turix-cua-github-readme]] — TuriX-CUA GitHub README，官方项目介绍
+- [[2026-06-30-turix-cua-readme-zh]] — TuriX-CUA GitHub 中文自述，完整技术文档
+- [[2026-06-30-turix-cua-technical-analysis]] — 第三方技术分析，竞品对比
+
 ### 系统服务控制素材(2026-06-28新增)
 - [[PowerShell Automation官方指南]] — Microsoft跨平台自动化框架文档
 - [[WMI Official Documentation]] — Windows管理规范官方文档
@@ -219,6 +228,7 @@ page-info: false
 - [[GPUtil GitHub README]] — NVIDIA GPU状态监控库（2026-06-28新增）
 - [[netifaces GitHub README]] — 跨平台网络接口信息库（2026-06-28新增）
 - [[py-cpuinfo GitHub README]] — 纯Python CPU信息检测库（2026-06-28新增）
+- [[WMI Reference 官方文档]] — WMI 参考文档完整参考，包含类、提供商、API（2026-06-30新增）
 
 ### Agent集成层素材(2026-06-28新增)
 **MCP Protocol系列（8篇）**：
@@ -270,6 +280,11 @@ page-info: false
 - [[A2A Protocol Official Documentation Site]] — 官方文档，与 MCP 互补
 - [[A2A Python SDK Official Repository]] — 官方 Python SDK，v1.1.0
 - [[A2A Protocol Core Concepts]] — 核心概念和组件详细定义
+
+**codebase-memory-mcp 系列（3篇，2026-06-30新增）**：
+- [[codebase-memory-mcp GitHub README]] — 高性能代码智能 MCP Server，纯 C 实现
+- [[codebase-memory-mcp 技术架构深度分析]] — 三层架构、知识图谱、14+ MCP 工具
+- [[三款代码智能工具对比]] — codebase-memory-mcp vs GitNexus vs codegraph
 
 ### 文件系统控制素材(2026-06-28新增)
 
@@ -336,3 +351,4 @@ page-info: false
 - [[浏览器控制-深度报告]] — 7个核心项目、21个素材深度综合分析（2026-06-29新增）
 - [[硬件接口控制-深度报告]] — 5大领域、18个素材深度综合分析（2026-06-29新增）
 - [[系统服务控制-深度报告]] — Windows/Linux双栈体系、14个素材深度综合分析（2026-06-30新增）
+- [[Agent集成层-深度报告]] — 三层协议架构、全栈运行时、代码智能、50+素材深度综合分析（2026-06-30新增）
