@@ -2,7 +2,7 @@
 title: 知识库索引
 ---
 
-> 最后更新：2026-06-30（gstack 新趋势研究）
+> 最后更新：2026-07-01（MAF + Windows Agent + OpenAI Agents SDK 研究）
 
 ---
 template: default
@@ -13,8 +13,8 @@ page-info: false
 ## 概览
 
 - 主题：AI Agent 控制 PC 电脑
-- 素材总数：154
-- Wiki 页面总数：261
+- 素材总数：167
+- Wiki 页面总数：277
 
 ---
 
@@ -29,6 +29,7 @@ page-info: false
 - [[Playwright]] — 底层浏览器自动化引擎
 - [[Playwright-Test-Agents]] — 官方 AI 测试智能体系统（Planner/Generator/Healer）
 - [[浏览器自动化]] — 通过程序控制浏览器的技术
+- [[Agent-Reach]] — AI Agent 全网访问脚手架，15+平台零API费用（2026-07-01新增）
 
 ### 桌面自动化领域
 - [[Goose]] — Linux Foundation 本地 AI Agent（49.7K+ Stars，2026-06-29新增）
@@ -141,11 +142,18 @@ page-info: false
 **Agent 通信协议相关**（2026-06-29新增）：
 - [[A2A]] — Google 发布的 Agent 间通信协议，与 MCP 互补
 
+**Agent 开发框架相关**（2026-07-01新增）：
+- [[Microsoft-Agent-Framework]] — 微软统一 Semantic Kernel + AutoGen 的企业级 Agent 框架，MAF 1.0 GA
+- [[OpenAI-Agents-SDK]] — OpenAI 官方轻量级多 Agent 框架，极简设计，原生 MCP + 沙箱
+- [[CLI-Anything]] — HKUDS 开发的 CLI 工具生成框架，43k+ Stars（2026-07-01新增）
+- [[OpenFang]] — Rust Agent 操作系统，9k+ Stars，7×24 自主运行（2026-07-01新增）
+
 **代码智能 MCP Server 相关**（2026-06-30新增）：
 - [[codebase-memory-mcp]] — 高性能代码智能 MCP Server，纯 C 实现，知识图谱索引
 
 **Skills 框架相关**（2026-06-30新增）：
 - [[gstack]] — YC CEO Garry Tan 的 Claude Code 团队扩展，23个slash commands
+- [[OpenMontage]] — 首个开源 Agentic 视频制作系统，24K+ Stars（2026-07-01新增）
 
 ---
 
@@ -291,6 +299,18 @@ page-info: false
 
 **gstack 系列（1篇，2026-06-30新增）**：
 - [[gstack GitHub README]] — YC CEO Garry Tan 的 Claude Code 团队扩展，104K+ Stars
+
+**OpenAI Agents SDK 系列（4篇，2026-07-01新增）**：
+- [[OpenAI Agents SDK GitHub README]] — 官方项目介绍，九大核心概念
+- [[OpenAI Agents SDK 重大进化]] — 2026.4.15 四大新能力详解，生产级基础设施
+- [[OpenAI Agents SDK 运行时骨架图]] — 七层架构解析，功能地图，平台边界
+- [[LangGraph vs OpenAI Agents SDK vs Google ADK]] — 三大框架深度对比，选型指南
+
+**CLI-Anything & OpenFang 系列（4篇，2026-07-01新增）**：
+- [[CLI-Anything GitHub README]] — HKUDS CLI 工具生成框架，43k+ Stars
+- [[OpenFang GitHub README]] — Rust Agent 操作系统，9k+ Stars，7×24 自主运行
+- [[CLI-Anything 技术分析报告]] — 7 阶段 Harness 生成流水线、CLI-Hub 生态
+- [[OpenFang 技术分析报告]] — Hands 架构、16 层安全、40 Channel Adapters
 
 ### 文件系统控制素材(2026-06-28新增)
 

@@ -4,6 +4,114 @@
 
 ---
 
+## 2026-07-01 — 自动研究工作流：CLI-Anything & OpenFang 新趋势研究
+
+- **操作**：全自动研究工作流（趋势扫描 → 评分矩阵 → 素材收集 → 报告生成 → 证伪验证 → 消化入库）
+- **研究方向**：2026年AI Agent PC控制新趋势
+- **选定项目**：CLI-Anything（43k+ Stars）、OpenFang（9k+ Stars）
+- **素材数量**：4个（Tier1: 4）
+- **素材列表**：
+  - raw/notes/2026-07-01-new-trend-research-report.md
+  - raw/notes/2026-07-01-falsification-record.md
+  - raw/notes/2026-07-01-trend-workflow-status.md
+
+- **新增 Wiki 页面**：
+  - wiki/sources/2026-07-01-cli-anything-github-readme.md
+  - wiki/sources/2026-07-01-openfang-github-readme.md
+  - wiki/entities/CLI-Anything.md
+  - wiki/entities/OpenFang.md
+
+- **更新页面**：
+  - index.md — 添加新实体和素材条目，更新计数（167 素材，277 Wiki 页面）
+
+- **证伪验证**：
+  - CLI-Anything 43,937 Stars：✅ 已验证
+  - OpenFang 9,078 Stars：✅ 已验证
+  - OpenFang 7 Hands：✅ 已验证
+  - OpenFang 16 层安全：✅ 已验证
+
+- **研究价值**：
+  - CLI-Anything：43k+ Stars，HKUDS，桌面应用控制的 CLI 工具生成框架
+  - OpenFang：9k+ Stars，Rust Agent 操作系统，7×24 自主运行
+  - 两者都是 2026 年新兴项目，不在知识库中
+
+- **知识库增长**：
+  - 素材总数：165 → 167（+2）
+  - Wiki 页面总数：273 → 277（+4）
+
+---
+
+## 2026-07-01 — 自动研究工作流：Microsoft Agent Framework + Windows Agent 研究
+
+- **操作**：全自动研究工作流（趋势扫描 → 评分矩阵 → 素材收集 → 报告生成 → 证伪验证 → 消化入库）
+- **研究方向**：2026年AI Agent开发框架新趋势
+- **选定项目**：Microsoft Agent Framework (MAF) 1.0 + Windows Agent 原生支持
+- **素材数量**：3个（Tier1: 1, Tier2: 2）
+- **素材列表**：
+  - raw/articles/2026-07-01-microsoft-agent-framework-github-readme.md
+  - raw/articles/2026-07-01-maf-architecture-analysis.md
+  - raw/articles/2026-07-01-windows-agent-framework-build-2026.md
+
+- **新增 Wiki 页面**：
+  - wiki/sources/2026-07-01-microsoft-agent-framework-github-readme.md
+  - wiki/sources/2026-07-01-maf-architecture-analysis.md
+  - wiki/sources/2026-07-01-windows-agent-framework-build-2026.md
+  - wiki/entities/Microsoft-Agent-Framework.md
+
+- **更新页面**：
+  - wiki/topics/Agent集成层.md — 添加 MAF 相关条目
+  - index.md — 添加新实体和素材条目，更新计数（161 素材，268 Wiki 页面）
+
+- **证伪验证**：
+  - MAF 发布信息（2026-04-03 GA）：✅ 已验证
+  - MAF GitHub 统计（2,435 Commits, 97 Releases）：✅ 已验证
+  - Windows Agent 原生支持：✅ 已验证（Build 2026）
+  - Stars 数据：⚠️ 标注为第三方估算
+
+- **研究价值**：
+  - MAF 是 Semantic Kernel + AutoGen 的战略统一继承者
+  - Windows Agent 代表操作系统层面的 Agent 原生支持趋势
+  - 五层架构、Agent/Workflow 职责分离是重要技术演进
+
+- **知识库增长**：
+  - 素材总数：158 → 161（+3）
+  - Wiki 页面总数：265 → 268（+3）
+
+---
+
+## 2026-07-01 — 自动研究工作流：Agent-Reach + OpenMontage 新趋势研究
+
+- **操作**：全自动研究工作流（趋势扫描 → 评分矩阵 → 素材收集 → 报告生成 → 证伪验证 → 消化入库）
+- **研究方向**：2026年AI Agent PC控制新趋势
+- **选定项目**：Agent-Reach（补充研究）、OpenMontage（初步探索）
+- **素材数量**：2个（Tier1: 2）
+- **素材列表**：
+  - raw/articles/2026-07-01-agent-reach-github-readme.md
+  - raw/articles/2026-07-01-openmontage-github-readme.md
+
+- **新增 Wiki 页面**：
+  - wiki/sources/2026-07-01-agent-reach-github-readme.md
+  - wiki/sources/2026-07-01-openmontage-github-readme.md
+  - wiki/entities/Agent-Reach.md（更新）
+  - wiki/entities/OpenMontage.md（新增）
+
+- **更新页面**：
+  - index.md — 添加新实体和素材条目，更新计数
+
+- **证伪验证**：
+  - Agent-Reach 45,702 Stars：✅ 已验证
+  - OpenMontage 24K Stars：⚠️ 基本验证（截止7月1日约24K，增长迅速）
+
+- **研究价值**：
+  - Agent-Reach：45K+ Stars，AI Agent 全网访问脚手架，填补网络访问缺口
+  - OpenMontage：24K+ Stars，首个开源 Agentic 视频制作系统，扩展 AI Agent 能力边界
+
+- **知识库增长**：
+  - 素材总数：154 → 158（+4）
+  - Wiki 页面总数：261 → 265（+4）
+
+---
+
 ## 2026-06-30 — 自动研究工作流：gstack（YC CEO 的 Claude Code 团队扩展）
 
 - **操作**：全自动研究工作流（趋势扫描 → 评分矩阵 → 素材收集 → 报告生成 → 证伪验证 → 消化入库）

@@ -4,6 +4,36 @@
 
 ---
 
+## 2026-07-01
+
+### ingest | GitHub MCP Server 官方研究 — 自动研究工作流
+
+新增页面：
+- wiki/sources/2026-07-01-github-mcp-server-readme.md
+- wiki/sources/2026-07-01-github-mcp-server-remote-docs.md
+- wiki/sources/2026-07-01-github-mcp-server-architecture-analysis.md
+- wiki/entities/GitHub-MCP-Server.md
+
+更新页面：
+- wiki/topics/Agent集成层.md（添加 GitHub MCP Server 到关键概念、Agent 核心、素材汇总表、相关页面）
+- wiki/index.md（添加 GitHub MCP Server 素材和实体到 Agent 集成层分类，更新统计）
+
+知识库统计：
+- 素材摘要：156（+3）
+- 实体页：98（+1）
+- Agent 集成层素材：~26（+3）
+
+证伪验证：
+- ⚠️ Stars 30.6K → 标注为"约 30K+（第三方估算）"
+- ✅ 22 个工具集验证通过（官方文档）
+- ✅ 远程+本地双模式验证通过
+- ✅ MIT 许可证验证通过
+
+研究报告：
+- raw/notes/2026-07-01-github-mcp-server-report-v1.1.md（证伪修正版）
+
+---
+
 ## 2026-06-30
 
 ### ingest | Hermes Agent 研究 — 自动研究工作流

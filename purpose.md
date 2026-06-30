@@ -199,6 +199,8 @@
 - [x] **codebase-memory-mcp** ✓ (2026-06-30) — 高性能代码智能 MCP Server，纯 C 实现，知识图谱索引，3个素材
 - [x] **gstack** ✓ (2026-06-30) — YC CEO Garry Tan 的 Claude Code 团队扩展，104K+ Stars，23个 slash commands
 - [x] **Hermes Agent** ✓ (2026-06-30) — Nous Research 自进化 AI Agent，204K Stars，内置学习闭环，支持 cua-driver 跨平台桌面控制
+- [x] **GitHub MCP Server** ✓ (2026-07-01) — GitHub 官方 MCP Server，22 个工具集，远程+本地双模式，3个素材
+- [x] **Microsoft Agent Framework** ✓ (2026-07-01) — 微软统一 Semantic Kernel + AutoGen 的企业级 Agent 框架，MAF 1.0 GA，五层架构，3个素材
 
 ### digest 提取指导原则
 
