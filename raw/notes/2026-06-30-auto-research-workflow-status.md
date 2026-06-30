@@ -1,107 +1,68 @@
 # 工作流状态
 
-- 工作流名称：自动研究 - AI Agent PC 控制知识库
+- 工作流名称：自动研究 - 2026年新趋势
 - 开始时间：2026-06-30
-- 当前阶段：已完成
+- 当前阶段：第六阶段（完成）
+
+## 趋势扫描结果
+
+### 已发现新项目
+1. **Hermes Agent** - Nous Research, 204K+ Stars, MIT协议
+   - 跨平台 Computer Use (Windows/Linux/macOS)
+   - 多 Agent 编排系统
+   - 四层记忆架构
+   - 属于：桌面应用控制 + Agent集成层
+
+2. **OpenAgents** - openagents-org/openagents, AI Agent 网络
+   - 开放协作网络
+   - 持久化网络 + 模块化设计
+   - 多协议支持 + 记忆系统
+   - 属于：Agent集成层
+
+3. **Agent.exe** - Claude Computer Use 开源实现
+   - 属于：桌面应用控制
+
+### 知识库去重检查
+- Hermes Agent: 🔴 未研究 → ✅ 已完成研究
+- OpenAgents: 🔴 未研究 → 待后续研究
+- Agent.exe: 🔴 未研究 → 待后续研究
+
+## 研究结果
+
+### Hermes Agent（已深入研究）
+
+**收集素材**：
+1. Hermes Agent GitHub README（官方，Tier 1）
+2. Hermes Agent Computer Use 技术文档（官方，Tier 1）
+3. GitHub API 验证数据
+
+**生成报告**：
+- 技术分析报告 v1.1（证伪后版本）
+
+**知识库更新**：
+- wiki/sources/2026-06-30-hermes-agent-github-readme.md ✅
+- wiki/sources/2026-06-30-hermes-agent-computer-use-tech.md ✅
+- wiki/entities/hermes-agent.md ✅
+- wiki/entities/cua-driver.md ✅
+- wiki/topics/桌面应用控制.md ✅
+- wiki/index.md ✅
+- wiki/log.md ✅
+
+**证伪结果**：
+- ❌ Stars 101K → ✅ 204,328（GitHub API 验证）
+- ⚠️ 发布日期需注意仓库创建于 2025-07-22
 
 ## 阶段状态
 
 | 阶段 | 状态 | 开始时间 | 完成时间 | 产出物 | 备注 |
 |------|------|----------|----------|--------|------|
-| 第一阶段：趋势分析 | completed | 2026-06-30 | 2026-06-30 | 评分矩阵 + 方向选择 | 选定3个新项目 |
-| 第二阶段：素材收集 | completed | 2026-06-30 | 2026-06-30 | 3个Tier 1素材 | Superpowers, Gemini 3.5 Flash, Agent-Reach |
-| 第三阶段：报告生成 | completed | 2026-06-30 | 2026-06-30 | 新趋势技术分析报告 v1.0 | |
-| 第四阶段：证伪验证 | completed | 2026-06-30 | 2026-06-30 | 证伪记录 + 报告 v1.1 | 修正2处数据错误 |
-| 第五阶段：消化入库 | completed | 2026-06-30 | 2026-06-30 | 3个素材摘要 + 3个实体页 + 主题页更新 + index更新 | |
-| 第六阶段：进度更新 | completed | 2026-06-30 | 2026-06-30 | log.md 更新 | |
-
-## 选定研究方向
-
-1. **Superpowers** — AI Agent技能框架（约21万 Stars）
-2. **Gemini 3.5 Flash** — 原生Computer Use能力（Google官方）
-3. **Agent-Reach** — AI Agent全网搜索能力（15.4K+ Stars）
+| 第一阶段：趋势分析 | ✅ completed | 2026-06-30 | 2026-06-30 | 评分矩阵 + 方向选择 | Hermes Agent 选定 |
+| 第二阶段：素材收集 | ✅ completed | 2026-06-30 | 2026-06-30 | 2个官方素材 | GitHub README + 技术文档 |
+| 第三阶段：报告生成 | ✅ completed | 2026-06-30 | 2026-06-30 | 技术分析报告 v1.1 | 已保存到 raw/notes |
+| 第四阶段：证伪验证 | ✅ completed | 2026-06-30 | 2026-06-30 | 证伪记录 | Stars 数据已修正 |
+| 第五阶段：消化入库 | ✅ completed | 2026-06-30 | 2026-06-30 | 4个新 wiki 页面 | entities + sources |
+| 第六阶段：进度更新 | ✅ completed | 2026-06-30 | 2026-06-30 | index.md + log.md | 已更新 |
 
 ## 异常记录
 
 （无）
-
-## 初始状态
-
-所有控制对象均已达到深度研究标准（10+素材）：
-- 浏览器控制：25+素材，已有深度报告
-- 桌面应用控制：17+素材，已有深度报告
-- 文件系统控制：20+素材，已有深度报告
-- 硬件接口控制：18+素材，已有深度报告
-- 系统服务控制：14+素材，已有深度报告
-- Agent集成层：30+素材，已有深度报告
-
-本次工作流重点：扫描 2026 年新趋势，发现值得补充研究的新项目。
-
-## 知识库增长统计
-
-| 指标 | 增长前 | 增长后 | 增量 |
-|------|--------|--------|------|
-| 素材摘要 | 148 | 151 | +3 |
-| 实体页 | 92 | 95 | +3 |
-| 主题页 | 6 | 6 | 0 |
-
-## 控制对象素材统计（更新后）
-
-| 控制对象 | 素材数 | 状态 |
-|----------|--------|------|
-| 浏览器控制 | 26 | ✅ 达标 |
-| 桌面应用控制 | 18 | ✅ 达标 |
-| 文件系统控制 | 20 | ✅ 达标 |
-| 硬件接口控制 | 18 | ✅ 达标 |
-| 系统服务控制 | 14 | ✅ 达标 |
-| Agent集成层 | 32 | ✅ 达标 |
-
-## 完成报告
-
-### 研究成果
-
-本次自动研究工作流成功完成了对2026年AI Agent PC控制新趋势的研究，发现并收录了三个重要新项目：
-
-**1. Superpowers（约21万 Stars）**
-- AI Agent技能框架，将专业开发方法论固化为可复用的Skills
-- 核心是14个Markdown技能文件，定义了完整的开发工作流规范
-- 填补了AI编码Agent"流程纪律"缺口
-
-**2. Gemini 3.5 Flash（Google官方）**
-- 轻量级模型原生集成Computer Use能力
-- 标志着桌面控制能力从"旗舰专属"走向"普惠大众"
-- 单一参数激活，推理速度提升4倍
-
-**3. Agent-Reach（15.4K+ Stars）**
-- AI Agent全网搜索能力脚手架
-- 支持15+平台零API费用访问
-- 解决Agent"上网难"问题
-
-### 证伪验证成果
-
-- 修正 Superpowers Stars：22万+ → 约21万
-- 修正 Agent-Reach Stars：2.7万+ → 15.4K+
-- 补充 Superpowers技术栈说明：核心是14个Markdown技能文件
-
-### 文件产出
-
-- 技术分析报告：raw/notes/2026-06-30-new-trend-report-v1.1.md
-- 证伪记录：raw/notes/2026-06-30-falsification-record.md
-- 素材清单：raw/notes/2026-06-30-source-inventory.md
-- 方向评分：raw/notes/2026-06-30-direction-scoring.md
-
-### Wiki入库成果
-
-- 新增素材摘要：3个
-- 新增实体页：3个（Superpowers、Gemini-3.5-Flash、Agent-Reach）
-- 更新主题页：3个（Agent集成层、浏览器控制、桌面应用控制）
-- 更新索引：index.md、log.md
-
-### 知识积累价值
-
-- 补充了2026年AI Agent PC控制领域的新趋势项目
-- 完善了Agent集成层的技能框架维度
-- 扩展了浏览器控制的网络访问能力
-- 更新了桌面应用控制的Computer Use技术谱系
-
-**状态：完成**

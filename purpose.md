@@ -117,6 +117,8 @@
 - [x] **Goose Getting Started** ✓ (2026-06-29) — 安装配置指南
 - [x] **Goose 官方教程索引** ✓ (2026-06-29) — 20+ 教程
 - [x] **Goose 深度解析** ✓ (2026-06-29) — 架构与竞品分析
+- [x] **Hermes Agent GitHub README** ✓ (2026-06-30) — 204K+ Stars 自进化 AI Agent
+- [x] **Hermes Agent Computer Use 技术文档** ✓ (2026-06-30) — cua-driver 跨平台桌面控制
 - [ ] Office 自动化最佳实践（Excel、Word VBA调用）
 - [ ] Accessibility API 跨平台对比
 
@@ -196,6 +198,7 @@
 - [x] **OpenClaw 全栈 AI Agent** ✓ (2026-06-29) — 20万+ Stars，Gateway 架构 + Skills + 沙箱，6个素材
 - [x] **codebase-memory-mcp** ✓ (2026-06-30) — 高性能代码智能 MCP Server，纯 C 实现，知识图谱索引，3个素材
 - [x] **gstack** ✓ (2026-06-30) — YC CEO Garry Tan 的 Claude Code 团队扩展，104K+ Stars，23个 slash commands
+- [x] **Hermes Agent** ✓ (2026-06-30) — Nous Research 自进化 AI Agent，204K Stars，内置学习闭环，支持 cua-driver 跨平台桌面控制
 
 ### digest 提取指导原则
 

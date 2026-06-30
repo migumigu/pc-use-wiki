@@ -6,6 +6,28 @@
 
 ## 2026-06-30
 
+### ingest | Hermes Agent 研究 — 自动研究工作流
+
+新增页面：
+- wiki/sources/2026-06-30-hermes-agent-github-readme.md
+- wiki/sources/2026-06-30-hermes-agent-computer-use-tech.md
+- wiki/entities/hermes-agent.md
+- wiki/entities/cua-driver.md
+
+更新页面：
+- wiki/topics/桌面应用控制.md（添加 hermes-agent 和 cua-driver 到素材列表、Agent集成层、相关页面）
+- wiki/index.md（添加 hermes-agent 和 cua-driver 到桌面应用控制和Agent集成层分类）
+
+知识库统计：
+- 素材摘要：153（+2）
+- 实体页：97（+2）
+
+证伪验证：
+- ❌ Stars 101K → ✅ 修正为 204,328（GitHub API 验证）
+- ⚠️ 发布日期：仓库创建于 2025-07-22，2026年2月可能是获得关注时间
+
+---
+
 ### ingest | bb-browser 浏览器控制研究 — 自动研究工作流
 
 新增页面：
