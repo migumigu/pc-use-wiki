@@ -14,13 +14,13 @@
 
 ### 浏览器控制
 - 主题页：[[浏览器控制]]
-- 素材摘要：[[browser-use GitHub README]] [[browser-use 官方文档]] [[browser-use 技术架构分析]] [[browser-use vs Playwright MCP 对比]] [[Playwright MCP Server 官方文档]] [[page-agent GitHub README]] [[page-agent MCP Server 文档]] [[page-agent 技术分析报告]] [[Chrome DevTools Protocol 官方文档]] [[Chrome DevTools MCP 官方介绍]] [[Chrome DevTools MCP 技术分析]] [[Playwright CDP/WebSocket 对比分析]] [[Playwright GitHub README]] [[OpenClaw GitHub README]] [[OpenClaw Browser Control]] [[bb-browser GitHub README]] [[bb-browser 技术分析]]
-- 相关实体：[[browser-use]] [[Playwright]] [[浏览器自动化]] [[Agent]] [[LLM]] [[MCP]] [[chrome-devtools-mcp]] [[agent-browser]] [[page-agent]] [[OpenClaw]] [[bb-browser]]
+- 素材摘要：[[browser-use GitHub README]] [[browser-use 官方文档]] [[browser-use 技术架构分析]] [[browser-use vs Playwright MCP 对比]] [[Playwright MCP Server 官方文档]] [[page-agent GitHub README]] [[page-agent MCP Server 文档]] [[page-agent 技术分析报告]] [[Chrome DevTools Protocol 官方文档]] [[Chrome DevTools MCP 官方介绍]] [[Chrome DevTools MCP 技术分析]] [[Playwright CDP/WebSocket 对比分析]] [[Playwright GitHub README]] [[OpenClaw GitHub README]] [[OpenClaw Browser Control]] [[bb-browser GitHub README]] [[bb-browser 技术分析]] [[Agent-Reach GitHub README]]
+- 相关实体：[[browser-use]] [[Playwright]] [[浏览器自动化]] [[Agent]] [[LLM]] [[MCP]] [[chrome-devtools-mcp]] [[agent-browser]] [[page-agent]] [[OpenClaw]] [[bb-browser]] [[Agent-Reach]]
 
 ### 桌面应用控制
 - 主题页：[[桌面应用控制]]
-- 素材摘要：[[UI-TARS-desktop GitHub README]] [[UI-TARS-desktop 技术分析报告]] [[Windows UI Automation 官方文档]] [[PyAutoGUI 官方文档]] [[Open Interpreter GitHub README]] [[Open Interpreter Computer Use 文档]] [[pywinauto GitHub README]] [[Python-UIAutomation GitHub README]] [[Windows GUI 自动化工具对比分析报告]] [[CUA GitHub README]] [[CUA Sandbox 设置文档]] [[CUA 技术分析报告]] [[AutoHotkey GitHub README]] [[AutoHotkey Beginner Tutorial]]
-- 相关实体：[[UI-TARS]] [[PyAutoGUI]] [[Pywinauto]] [[Python-UIAutomation]] [[Open Interpreter]] [[UI Automation]] [[Control-Patterns]] [[Automation-Element]] [[坐标系统]] [[屏幕截图]] [[OCR技术]] [[视觉语言模型]] [[AutoHotkey]]
+- 素材摘要：[[UI-TARS-desktop GitHub README]] [[UI-TARS-desktop 技术分析报告]] [[Windows UI Automation 官方文档]] [[PyAutoGUI 官方文档]] [[Open Interpreter GitHub README]] [[Open Interpreter Computer Use 文档]] [[pywinauto GitHub README]] [[Python-UIAutomation GitHub README]] [[Windows GUI 自动化工具对比分析报告]] [[CUA GitHub README]] [[CUA Sandbox 设置文档]] [[CUA 技术分析报告]] [[AutoHotkey GitHub README]] [[AutoHotkey Beginner Tutorial]] [[Gemini 3.5 Flash Computer Use]]
+- 相关实体：[[UI-TARS]] [[PyAutoGUI]] [[Pywinauto]] [[Python-UIAutomation]] [[Open Interpreter]] [[UI Automation]] [[Control-Patterns]] [[Automation-Element]] [[坐标系统]] [[屏幕截图]] [[OCR技术]] [[视觉语言模型]] [[AutoHotkey]] [[Gemini 3.5 Flash]]
 
 ### 系统服务控制
 - 主题页：[[系统服务控制]]
@@ -46,8 +46,8 @@
 ### Agent 集成层
 - 主题页：[[Agent集成层]]
 - 深度报告：[[MCP-Protocol-深度报告]] [[Computer-Use-深度报告]] [[Tool-Calling-对比报告]] [[Multi-Agent协作-深度报告]]
-- 素材摘要：[[MCP 协议基础]] [[MCP 协议设计文档]] [[Anthropic Computer Use 实现原理]] [[Open Interpreter Computer Use API]] [[A2A Protocol GitHub Official Repository]] [[A2A Protocol Official Documentation Site]] [[A2A Python SDK Official Repository]] [[A2A Protocol Core Concepts]] [[OpenClaw GitHub README]] [[OpenClaw Gateway Architecture]] [[OpenClaw Tools Overview]] [[OpenClaw Skills System]] [[OpenClaw Browser Control]] [[OpenClaw Sandboxing & Security]] [[codebase-memory-mcp GitHub README]] [[codebase-memory-mcp 技术架构深度分析]] [[三款代码智能工具对比]]
-- 相关实体：[[MCP]] [[Computer-Use]] [[Agent]] [[LLM]] [[A2A]] [[OpenClaw]] [[codebase-memory-mcp]] [[CopilotKit]] [[AG-UI-Protocol]]
+- 素材摘要：[[MCP 协议基础]] [[MCP 协议设计文档]] [[Anthropic Computer Use 实现原理]] [[Open Interpreter Computer Use API]] [[A2A Protocol GitHub Official Repository]] [[A2A Protocol Official Documentation Site]] [[A2A Python SDK Official Repository]] [[A2A Protocol Core Concepts]] [[OpenClaw GitHub README]] [[OpenClaw Gateway Architecture]] [[OpenClaw Tools Overview]] [[OpenClaw Skills System]] [[OpenClaw Browser Control]] [[OpenClaw Sandboxing & Security]] [[codebase-memory-mcp GitHub README]] [[codebase-memory-mcp 技术架构深度分析]] [[三款代码智能工具对比]] [[Superpowers GitHub README]] [[Gemini 3.5 Flash Computer Use]]
+- 相关实体：[[MCP]] [[Computer-Use]] [[Agent]] [[LLM]] [[A2A]] [[OpenClaw]] [[codebase-memory-mcp]] [[CopilotKit]] [[AG-UI-Protocol]] [[Superpowers]] [[Gemini 3.5 Flash]]
 
 ---
 
@@ -55,8 +55,8 @@
 
 | 类型 | 数量 |
 |------|------|
-| 素材摘要 | 148 |
-| 实体页 | 92 |
+| 素材摘要 | 151 |
+| 实体页 | 95 |
 | 主题页 | 6 |
 | 对比分析 | 1 |
 | 综合分析 | 12 |
@@ -64,6 +64,16 @@
 ---
 
 ## 最近更新
+
+- **2026-06-30**：2026年新趋势项目研究（自动研究工作流）
+  - 收集 3 个素材（Superpowers、Gemini 3.5 Flash、Agent-Reach）
+  - 创建 3 个素材摘要页
+  - 创建 3 个实体页（Superpowers、Gemini 3.5 Flash、Agent-Reach）
+  - 更新 3 个主题页（Agent集成层、浏览器控制、桌面应用控制）
+  - 执行证伪验证（修正 Stars 数量数据）
+  - 生成新趋势技术分析报告 v1.1
+  - 知识库素材：151（+3）
+  - 知识库实体：95（+3）
 
 - **2026-06-30**：codebase-memory-mcp 代码智能 MCP Server 研究（自动研究工作流）
   - 收集 3 个素材（GitHub README ×1、技术分析 ×2）

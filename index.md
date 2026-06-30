@@ -2,7 +2,7 @@
 title: 知识库索引
 ---
 
-> 最后更新：2026-06-30（codebase-memory-mcp 研究）
+> 最后更新：2026-06-30（gstack 新趋势研究）
 
 ---
 template: default
@@ -13,8 +13,8 @@ page-info: false
 ## 概览
 
 - 主题：AI Agent 控制 PC 电脑
-- 素材总数：148
-- Wiki 页面总数：258
+- 素材总数：154
+- Wiki 页面总数：261
 
 ---
 
@@ -143,6 +143,9 @@ page-info: false
 
 **代码智能 MCP Server 相关**（2026-06-30新增）：
 - [[codebase-memory-mcp]] — 高性能代码智能 MCP Server，纯 C 实现，知识图谱索引
+
+**Skills 框架相关**（2026-06-30新增）：
+- [[gstack]] — YC CEO Garry Tan 的 Claude Code 团队扩展，23个slash commands
 
 ---
 
@@ -285,6 +288,9 @@ page-info: false
 - [[codebase-memory-mcp GitHub README]] — 高性能代码智能 MCP Server，纯 C 实现
 - [[codebase-memory-mcp 技术架构深度分析]] — 三层架构、知识图谱、14+ MCP 工具
 - [[三款代码智能工具对比]] — codebase-memory-mcp vs GitNexus vs codegraph
+
+**gstack 系列（1篇，2026-06-30新增）**：
+- [[gstack GitHub README]] — YC CEO Garry Tan 的 Claude Code 团队扩展，104K+ Stars
 
 ### 文件系统控制素材(2026-06-28新增)
 

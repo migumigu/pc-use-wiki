@@ -4,6 +4,81 @@
 
 ---
 
+## 2026-06-30 — 自动研究工作流：gstack（YC CEO 的 Claude Code 团队扩展）
+
+- **操作**：全自动研究工作流（趋势扫描 → 评分矩阵 → 素材收集 → 报告生成 → 证伪验证 → 消化入库）
+- **研究方向**：2026年AI Agent PC控制新趋势
+- **选定项目**：gstack
+- **素材数量**：1个（Tier1: 1）
+- **素材列表**：
+  - raw/articles/2026-06-30-gstack-github-readme.md
+
+- **新增 Wiki 页面**：
+  - wiki/sources/2026-06-30-gstack-github-readme.md
+  - wiki/entities/gstack.md
+
+- **更新页面**：
+  - index.md — 添加新实体和素材条目，更新计数（154 素材，261 页面）
+
+- **证伪验证**：
+  - gstack Stars：标注为"搜索结果数据，待官方确认"
+  - 810x 生产效率：标注为"Garry Tan 个人案例，统计口径未确认"
+  - 23 个 slash commands：标注为"官方表格列出，待枚举验证"
+  - YC CEO Garry Tan 开发：✅ 已验证
+  - MIT 许可证：✅ 已验证
+
+- **研究价值**：
+  - gstack：2026年6月 GitHub Trending 榜首项目，104K+ Stars
+  - 核心创新：23个 slash commands 将 Claude Code 变成虚拟工程团队
+  - 填补 AI 编码 Agent 的"角色扮演"缺口，与 Superpowers 形成互补
+
+- **知识库增长**：
+  - 素材总数：151 → 154（+3，含报告和证伪文件）
+  - Wiki 页面总数：258 → 261（+3：source + entity + 更新）
+
+---
+
+## 2026-06-30 — 自动研究工作流：2026年新趋势项目（Superpowers、Gemini 3.5 Flash、Agent-Reach）
+
+- **操作**：全自动研究工作流（趋势扫描 → 评分矩阵 → 素材收集 → 报告生成 → 证伪验证 → 消化入库）
+- **研究方向**：2026年AI Agent PC控制新趋势
+- **选定项目**：Superpowers、Gemini 3.5 Flash、Agent-Reach
+- **素材数量**：3个（Tier1: 3）
+- **素材列表**：
+  - raw/articles/2026-06-30-superpowers-github-readme.md
+  - raw/articles/2026-06-30-gemini-35-flash-computer-use.md
+  - raw/articles/2026-06-30-agent-reach-github-readme.md
+
+- **新增 Wiki 页面**：
+  - wiki/sources/2026-06-30-superpowers-github-readme.md
+  - wiki/sources/2026-06-30-gemini-35-flash-computer-use.md
+  - wiki/sources/2026-06-30-agent-reach-github-readme.md
+  - wiki/entities/Superpowers.md
+  - wiki/entities/Gemini-3.5-Flash.md
+  - wiki/entities/Agent-Reach.md
+
+- **更新页面**：
+  - wiki/topics/Agent集成层.md — 添加 Superpowers、Gemini 3.5 Flash
+  - wiki/topics/浏览器控制.md — 添加 Agent-Reach
+  - wiki/topics/桌面应用控制.md — 添加 Gemini 3.5 Flash
+  - index.md — 添加新实体和素材条目，更新计数（151 素材，95 实体）
+
+- **证伪验证**：
+  - Superpowers Stars：修正为约21万（原22万+）
+  - Agent-Reach Stars：修正为15.4K+（原2.7万+）
+  - Superpowers技术栈：补充说明核心是14个Markdown技能文件
+
+- **研究价值**：
+  - Superpowers：填补AI编码Agent流程纪律空白，约21万Stars
+  - Gemini 3.5 Flash：原生集成Computer Use，桌面控制能力普惠化
+  - Agent-Reach：填补Agent全网搜索能力缺口，15.4K+ Stars
+
+- **知识库增长**：
+  - 素材摘要：148 → 151（+3）
+  - 实体页：92 → 95（+3）
+
+---
+
 ## 2026-06-30 — 深度综合 Digest 工作流：Agent 集成层
 
 - **操作**：深度综合 digest 工作流（知识缺口分析 → 方向选择 → 报告生成 → 索引更新）

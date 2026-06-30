@@ -195,6 +195,7 @@
 - [x] **A2A Protocol** ✓ (2026-06-29) — Google 官方 Agent 间通信协议，4个素材
 - [x] **OpenClaw 全栈 AI Agent** ✓ (2026-06-29) — 20万+ Stars，Gateway 架构 + Skills + 沙箱，6个素材
 - [x] **codebase-memory-mcp** ✓ (2026-06-30) — 高性能代码智能 MCP Server，纯 C 实现，知识图谱索引，3个素材
+- [x] **gstack** ✓ (2026-06-30) — YC CEO Garry Tan 的 Claude Code 团队扩展，104K+ Stars，23个 slash commands
 
 ### digest 提取指导原则
 
