@@ -119,6 +119,8 @@
 - [x] **Goose 深度解析** ✓ (2026-06-29) — 架构与竞品分析
 - [x] **Hermes Agent GitHub README** ✓ (2026-06-30) — 204K+ Stars 自进化 AI Agent
 - [x] **Hermes Agent Computer Use 技术文档** ✓ (2026-06-30) — cua-driver 跨平台桌面控制
+- [x] **Agent S GitHub README** ✓ (2026-07-01) — 首个 OSWorld 超越人类的 GUI Agent
+- [x] **Agent S 技术深度分析** ✓ (2026-07-01) — bBoN 机制、三代演进
 - [ ] Office 自动化最佳实践（Excel、Word VBA调用）
 - [ ] Accessibility API 跨平台对比
 

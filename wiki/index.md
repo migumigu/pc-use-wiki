@@ -1,6 +1,6 @@
 # AI Agent PC 控制 — 知识库索引
 
-> 创建于 2026-06-27 | 最后更新：2026-07-01（GitHub MCP Server 官方研究）
+> 创建于 2026-06-27 |> 最后更新：2026-07-01（Agent S 研究 — 首个 OSWorld 超越人类的 GUI Agent）
 
 ---
 
@@ -19,8 +19,8 @@
 
 ### 桌面应用控制
 - 主题页：[[桌面应用控制]]
-- 素材摘要：[[UI-TARS-desktop GitHub README]] [[UI-TARS-desktop 技术分析报告]] [[Windows UI Automation 官方文档]] [[PyAutoGUI 官方文档]] [[Open Interpreter GitHub README]] [[Open Interpreter Computer Use 文档]] [[pywinauto GitHub README]] [[Python-UIAutomation GitHub README]] [[Windows GUI 自动化工具对比分析报告]] [[CUA GitHub README]] [[CUA Sandbox 设置文档]] [[CUA 技术分析报告]] [[AutoHotkey GitHub README]] [[AutoHotkey Beginner Tutorial]] [[Gemini 3.5 Flash Computer Use]] [[Hermes Agent GitHub README]] [[Hermes Agent Computer Use 技术文档]]
-- 相关实体：[[UI-TARS]] [[PyAutoGUI]] [[Pywinauto]] [[Python-UIAutomation]] [[Open Interpreter]] [[UI Automation]] [[Control-Patterns]] [[Automation-Element]] [[坐标系统]] [[屏幕截图]] [[OCR技术]] [[视觉语言模型]] [[AutoHotkey]] [[Gemini 3.5 Flash]] [[hermes-agent]] [[cua-driver]]
+- 素材摘要：[[UI-TARS-desktop GitHub README]] [[UI-TARS-desktop 技术分析报告]] [[Windows UI Automation 官方文档]] [[PyAutoGUI 官方文档]] [[Open Interpreter GitHub README]] [[Open Interpreter Computer Use 文档]] [[pywinauto GitHub README]] [[Python-UIAutomation GitHub README]] [[Windows GUI 自动化工具对比分析报告]] [[CUA GitHub README]] [[CUA Sandbox 设置文档]] [[CUA 技术分析报告]] [[AutoHotkey GitHub README]] [[AutoHotkey Beginner Tutorial]] [[Gemini 3.5 Flash Computer Use]] [[Hermes Agent GitHub README]] [[Hermes Agent Computer Use 技术文档]] [[Agent S GitHub README]] [[Agent S 技术深度分析]]
+- 相关实体：[[UI-TARS]] [[PyAutoGUI]] [[Pywinauto]] [[Python-UIAutomation]] [[Open Interpreter]] [[UI Automation]] [[Control-Patterns]] [[Automation-Element]] [[坐标系统]] [[屏幕截图]] [[OCR技术]] [[视觉语言模型]] [[AutoHotkey]] [[Gemini 3.5 Flash]] [[hermes-agent]] [[cua-driver]] [[Agent-S]]
 
 ### 系统服务控制
 - 主题页：[[系统服务控制]]
@@ -55,8 +55,8 @@
 
 | 类型 | 数量 |
 |------|------|
-| 素材摘要 | 156 |
-| 实体页 | 98 |
+| 素材摘要 | 158（+2） |
+| 实体页 | 99（+1） |
 | 主题页 | 6 |
 | 对比分析 | 1 |
 | 综合分析 | 12 |
@@ -64,6 +64,16 @@
 ---
 
 ## 最近更新
+
+- **2026-07-01**：Agent S 研究 — 首个 OSWorld 超越人类的 GUI Agent
+  - 收集 2 个素材（GitHub README ×1、技术分析 ×1）
+  - 创建 2 个素材摘要页
+  - 创建 1 个实体页（Agent-S）
+  - 更新主题页（桌面应用控制）
+  - 执行证伪验证
+  - 生成技术分析报告
+  - 知识库素材：158（+2）
+  - 知识库实体：99（+1）
 
 - **2026-07-01**：GitHub MCP Server 官方研究（自动研究工作流）
   - 收集 3 个素材（README ×1、远程服务器文档 ×1、架构分析 ×1）

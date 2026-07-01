@@ -6,6 +6,33 @@
 
 ## 2026-07-01
 
+### ingest | Agent S 研究 — 首个 OSWorld 超越人类的 GUI Agent
+
+新增页面：
+- wiki/sources/2026-07-01-agent-s-github-readme.md
+- wiki/sources/2026-07-01-agent-s-technical-analysis.md
+- wiki/entities/Agent-S.md
+
+更新页面：
+- wiki/topics/桌面应用控制.md（添加 Agent-S 到 Agent集成层、相关页面）
+- wiki/index.md（添加 Agent S 素材和实体到桌面应用控制分类，更新统计）
+
+知识库统计：
+- 素材摘要：158（+2）
+- 实体页：99（+1）
+- 桌面应用控制素材：19（+2）
+
+证伪验证：
+- ✅ OSWorld 72.60% 超越人类基线 72.36% 验证通过
+- ✅ 首个超越人类水平声明验证通过
+- ✅ 三代演进时间线和分数验证通过
+- ⚠️ Stars 11.7K 标注为"约 11.7K（第三方估算）"
+
+研究报告：
+- raw/notes/2026-07-01-agent-s-falsification-record.md
+
+---
+
 ### ingest | GitHub MCP Server 官方研究 — 自动研究工作流
 
 新增页面：
