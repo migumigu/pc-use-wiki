@@ -1,27 +1,38 @@
-# 证伪记录 - CLI-Anything & OpenFang 新趋势研究
+# 证伪验证记录
 
-> 生成日期：2026-07-01
-> 报告版本：v1.1
+## 证伪时间：2026-07-01
 
-## 声明验证
+## OpenCUA 关键声明验证
 
-| 声明 | 报告内容 | 验证结果 | 证据 | 修正 |
-|------|----------|----------|------|------|
-| "CLI-Anything 43,937 Stars" | 43,937 | ✅ 已验证 | 今日头条引用同一数据 | 无需修正 |
-| "OpenFang 9,078 Stars" | 9,078 | ✅ 已验证 | GitHub 数据，4天时6,211 Stars 增长至今 | 无需修正 |
-| "CLI-Anything Apache-2.0" | Apache-2.0 | ✅ 已验证 | GitHub README 显示 | 无需修正 |
-| "OpenFang Rust 语言" | Rust | ✅ 已验证 | GitHub README 明确标注 | 无需修正 |
-| "OpenFang 7 个 Hands" | 7 个内置 Hands | ✅ 已验证 | README 列出 Clip/Lead/Collector/Predictor/Researcher/Twitter/Browser | 无需修正 |
-| "OpenFang 16 层安全" | 16 security systems | ✅ 已验证 | README 列出全部 16 项 | 无需修正 |
-| "OpenFang 40 Channel Adapters" | 40 adapters | ✅ 已验证 | README benchmark 数据 | 无需修正 |
-| "OpenFang 180ms 冷启动" | 180ms | ✅ 已验证 | README benchmark 图表 | 无需修正 |
-| "OpenFang 137K LOC" | 137,728 LOC | ⚠️ 待验证 | README 显示 137K LOC，但为估算值 | 标注为"约 137K LOC" |
+| 声明 | 来源 | 验证结果 | 证据 | 修正 |
+|------|------|----------|------|------|
+| "OSWorld-Verified 45.0%" | GitHub README | ✅已验证 | README中明确列出OpenCUA-72B 100 Steps = 45.0% | 无需修正 |
+| "AgentNet 22.6K任务" | GitHub README + 论文 | ✅已验证 | README: "22.6K human-annotated tasks" | 无需修正 |
+| "OpenCUA-72B SOTA" | GitHub README | ✅已验证 | "OpenCUA-72B ranks #1 on OSWorld-Verified leaderboard" | 无需修正 |
+| "三层推理架构" | 论文 arXiv:2508.09123 | ✅已验证 | GitHub详细描述Action Reduction → State-Action Matching → Reflective Long CoT | 无需修正 |
+| "vLLM官方支持" | GitHub README | ✅已验证 | "vLLM now fully supports OpenCUA-7B, OpenCUA-32B, and OpenCUA-72B!" | 无需修正 |
 
-## 注意事项
+## real-browser-mcp 关键声明验证
 
-1. **Stars 数据时效性**: GitHub Stars 是动态变化的，报告中的数据为研究时点的快照
-2. **性能基准**: OpenFang 声称的性能数据是与同类框架的对比测试，来自官方 README，第三方验证有限
+| 声明 | 来源 | 验证结果 | 证据 | 修正 |
+|------|------|----------|------|------|
+| "18个MCP工具" | GitHub README | ✅已验证 | README列出完整工具列表：browser_snapshot/screenshot/text/find/click/click_text/type/press_key/scroll/hover/select/wait/navigate/tabs/console/network/evaluate/handle_dialog | 无需修正 |
+| "会话状态复用核心优势" | GitHub README | ✅已验证 | README标题："Your agent can now see your REAL browser"，明确说明连接用户已有Chrome实例 | 无需修正 |
+| "Chrome Extension + MCP Server架构" | GitHub README | ✅已验证 | 项目结构：mcp-server/ + extension/ | 无需修正 |
+| "browser_click_text创新工具" | GitHub README | ✅已验证 | README描述："click by visible text, works through React portals and overlay layers" | 无需修正 |
 
-## 验证结论
+## Computer-Use-Preview 关键声明验证
 
-报告 v1.0 中的关键声明经过验证基本准确，版本更新为 **v1.1**。
+| 声明 | 来源 | 验证结果 | 证据 | 修正 |
+|------|------|----------|------|------|
+| "Gemini 2.5 Computer Use" | GitHub README + 官方博客 | ✅已验证 | README: "based on the latest Gemini Computer Use model"，配置使用gemini-2.5-flash-preview-05-20 | 无需修正 |
+| "双后端架构 Playwright + Browserbase" | GitHub README | ✅已验证 | computers/playwright/ + computers/browserbase/ 目录结构，README "--env playwright/browserbase" | 无需修正 |
+| "坐标归一化 [0, 1000]" | agent.py源码 | ✅已验证 | 源码中denormalize_x/y函数明确实现归一化转换 | 无需修正 |
+| "截图管理仅保留最近3轮" | agent.py源码 | ✅已验证 | MAX_RECENT_TURN_WITH_SCREENSHOTS = 3 | 无需修正 |
+| "44 Stars" | GitHub页面 | ✅已验证 | WebFetch结果显示44 stars, 7 forks | ⚠️置信度标注：实时数据，可能变化 |
+
+## P1/P2声明全部已验证
+
+所有关键声明均来自官方GitHub README、源码、论文等一级来源，无需修正。
+
+报告版本更新：v1.0 → v1.1（添加置信度标注）

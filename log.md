@@ -4,6 +4,36 @@
 
 ---
 
+## 2026-07-01 — 自动研究工作流：Refly.AI & MCP-Link 新趋势研究
+
+- **操作**：全自动研究工作流（趋势扫描 → 评分矩阵 → 素材收集 → 报告生成 → 证伪验证 → 消化入库）
+- **研究方向**：2026年AI Agent PC控制新趋势（工作流平台 AI 原生化 + MCP 生态标准化）
+- **选定项目**：Refly.AI（2.5K-6.3K Stars）、MCP-Link（automation-ai-labs）
+- **素材数量**：2个（Tier2: 2）
+- **素材列表**：
+  - raw/articles/2026-07-01-refly-ai-vibe-workflow.md
+  - raw/articles/2026-07-01-mcp-link-openapi-convert.md
+  - raw/notes/2026-07-01-research-report-v1.1.md
+  - raw/notes/2026-07-01-falsification-record.md
+  - raw/notes/2026-07-01-auto-research-workflow-status.md
+
+- **新增 Wiki 页面**：
+  - wiki/sources/2026-07-01-refly-ai-vibe-workflow.md
+  - wiki/sources/2026-07-01-mcp-link-openapi-convert.md
+  - wiki/entities/Refly.AI.md
+  - wiki/entities/MCP-Link.md
+  - wiki/entities/Vibe Workflow.md
+
+- **更新页面**：
+  - index.md — 添加新实体和素材条目
+
+- **证伪验证**：
+  - Refly.AI 技术栈（TypeScript）：✅ 已验证
+  - MCP-Link 仓库地址：✅ 已验证
+  - Refly.AI Stars（2.5K-6.3K）：⚠️ 待验证（报道数据不一致）
+
+---
+
 ## 2026-07-01 — 自动研究工作流：CLI-Anything & OpenFang 新趋势研究
 
 - **操作**：全自动研究工作流（趋势扫描 → 评分矩阵 → 素材收集 → 报告生成 → 证伪验证 → 消化入库）

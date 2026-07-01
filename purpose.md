@@ -97,6 +97,8 @@
 - [x] **浏览器控制深度综合报告** ✓ (2026-06-29) — 已完成 digest
 - [x] **bb-browser GitHub README** ✓ (2026-06-30) — 复用登录态的 MCP 浏览器控制
 - [x] **bb-browser 技术分析** ✓ (2026-06-30) — 12 大核心能力详解
+- [x] **real-browser-mcp GitHub README** ✓ (2026-07-01) — 会话状态复用的 MCP 服务器（18个工具）
+- [x] **Computer-Use-Preview GitHub README** ✓ (2026-07-01) — Google 官方 Gemini CUA 实现，双后端架构
 
 **桌面应用控制**：
 - [x] UI-TARS-desktop GitHub README ✓ (2026-06-28)
@@ -121,6 +123,10 @@
 - [x] **Hermes Agent Computer Use 技术文档** ✓ (2026-06-30) — cua-driver 跨平台桌面控制
 - [x] **Agent S GitHub README** ✓ (2026-07-01) — 首个 OSWorld 超越人类的 GUI Agent
 - [x] **Agent S 技术深度分析** ✓ (2026-07-01) — bBoN 机制、三代演进
+- [x] **CLI-Anything CLI-Hub 官方文档** ✓ (2026-07-01) — CLI 包管理器和注册中心
+- [x] **CLI-Anything 深度解析** ✓ (2026-07-01) — Agent-Native 软件世界观
+- [x] **CLI-Anything + OpenClaw 集成** ✓ (2026-07-01) — 全自动数字员工组合
+- [x] **OpenCUA GitHub README** ✓ (2026-07-01) — 港大+月之暗面完整CUA框架，OSWorld SOTA 45.0%，AgentNet 22.6K任务
 - [ ] Office 自动化最佳实践（Excel、Word VBA调用）
 - [ ] Accessibility API 跨平台对比
 
@@ -203,6 +209,10 @@
 - [x] **Hermes Agent** ✓ (2026-06-30) — Nous Research 自进化 AI Agent，204K Stars，内置学习闭环，支持 cua-driver 跨平台桌面控制
 - [x] **GitHub MCP Server** ✓ (2026-07-01) — GitHub 官方 MCP Server，22 个工具集，远程+本地双模式，3个素材
 - [x] **Microsoft Agent Framework** ✓ (2026-07-01) — 微软统一 Semantic Kernel + AutoGen 的企业级 Agent 框架，MAF 1.0 GA，五层架构，3个素材
+- [x] **Refly.AI** ✓ (2026-07-01) — 全球首个 Vibe Workflow 开源平台，自然语言驱动工作流编排，2个素材
+- [x] **MCP-Link** ✓ (2026-07-01) — OpenAPI 到 MCP Server 自动化转换工具，零代码配置，2个素材
+- [x] **Vibe Workflow** ✓ (2026-07-01) — 自然语言驱动的工作流编排范式，核心概念实体
+- [x] **DeerFlow** ✓ (2026-07-01) — 字节跳动开源 SuperAgent Harness，72K+ Stars，登顶 GitHub Trending #1，14层 Middleware + Sub-Agent 编排，4个素材
 
 ### digest 提取指导原则
 

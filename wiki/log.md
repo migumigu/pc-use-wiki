@@ -6,6 +6,80 @@
 
 ## 2026-07-01
 
+### ingest | DeerFlow 研究（自动研究工作流）
+
+新增页面：
+- wiki/sources/2026-07-01-deerflow-github-readme.md
+- wiki/entities/DeerFlow.md
+
+更新页面：
+- wiki/topics/Agent集成层.md（添加 DeerFlow）
+- wiki/index.md（素材统计：165，实体统计：103）
+
+### ingest | 2026年新趋势研究 — OpenCUA + real-browser-mcp + Computer-Use-Preview（自动研究工作流）
+
+新增页面：
+- wiki/sources/2026-07-01-opencua-github-readme.md
+- wiki/sources/2026-07-01-real-browser-mcp-readme.md
+- wiki/sources/2026-07-01-computer-use-preview-readme.md
+- wiki/entities/OpenCUA.md
+- wiki/entities/real-browser-mcp.md
+- wiki/entities/Computer-Use-Preview.md
+
+更新页面：
+- wiki/topics/浏览器控制.md（添加 real-browser-mcp、Computer-Use-Preview）
+- wiki/topics/桌面应用控制.md（添加 OpenCUA）
+- wiki/index.md（添加 3 个素材 + 3 个实体，更新统计）
+
+知识库统计：
+- 素材摘要：164（+3）
+- 实体页：102（+3）
+- 浏览器控制素材：27（+2）
+- 桌面应用控制素材：23（+1）
+
+证伪验证：
+- ✅ OpenCUA OSWorld 45.0% 验证通过（GitHub README）
+- ✅ OpenCUA AgentNet 22.6K任务 验证通过（GitHub README + 论文）
+- ✅ real-browser-mcp 18个工具 验证通过（GitHub README）
+- ✅ Computer-Use-Preview 双后端架构 验证通过（GitHub README）
+
+研究报告：
+- raw/notes/2026-07-01-opencua-analysis.md
+- raw/notes/2026-07-01-real-browser-mcp-analysis.md
+- raw/notes/2026-07-01-computer-use-preview-analysis.md
+- raw/notes/2026-07-01-falsification-record.md
+- raw/notes/2026-07-01-trend-workflow-status.md
+
+---
+
+### ingest | CLI-Anything 深度研究 — 自动研究工作流
+
+新增页面：
+- wiki/sources/2026-07-01-cli-anything-cli-hub-docs.md
+- wiki/sources/2026-07-01-cli-anything-deep-analysis.md
+- wiki/sources/2026-07-01-cli-anything-openclaw-integration.md
+
+更新页面：
+- wiki/entities/CLI-Anything.md（添加 3 个素材来源和相关页面）
+- wiki/index.md（添加 CLI-Anything 素材和实体到桌面应用控制分类，更新统计）
+
+知识库统计：
+- 素材摘要：161（+3）
+- 实体页：99（已更新）
+- 桌面应用控制素材：22（+3）
+
+证伪验证：
+- ✅ Stars 43,937+ 验证通过（多个媒体来源确认）
+- ✅ 支持 18+ 专业软件验证通过（README 明确列出）
+- ✅ OpenClaw 集成可用验证通过（CLI-Hub 文档确认）
+- ⚠️ 测试覆盖 1,774 项标注为"第三方估算"
+
+研究报告：
+- raw/notes/2026-07-01-cli-anything-report-v1.1.md
+- raw/notes/2026-07-01-cli-anything-falsification-record.md
+
+---
+
 ### ingest | Agent S 研究 — 首个 OSWorld 超越人类的 GUI Agent
 
 新增页面：

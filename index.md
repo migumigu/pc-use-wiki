@@ -13,8 +13,8 @@ page-info: false
 ## 概览
 
 - 主题：AI Agent 控制 PC 电脑
-- 素材总数：167
-- Wiki 页面总数：277
+- 素材总数：169
+- Wiki 页面总数：282
 
 ---
 
@@ -147,6 +147,11 @@ page-info: false
 - [[OpenAI-Agents-SDK]] — OpenAI 官方轻量级多 Agent 框架，极简设计，原生 MCP + 沙箱
 - [[CLI-Anything]] — HKUDS 开发的 CLI 工具生成框架，43k+ Stars（2026-07-01新增）
 - [[OpenFang]] — Rust Agent 操作系统，9k+ Stars，7×24 自主运行（2026-07-01新增）
+
+**工作流平台相关**（2026-07-01新增）：
+- [[Refly.AI]] — 全球首个 Vibe Workflow 开源平台，自然语言驱动工作流编排（2026-07-01新增）
+- [[Vibe Workflow]] — 自然语言驱动的工作流编排范式（2026-07-01新增）
+- [[MCP-Link]] — OpenAPI 到 MCP Server 自动化转换工具（2026-07-01新增）
 
 **代码智能 MCP Server 相关**（2026-06-30新增）：
 - [[codebase-memory-mcp]] — 高性能代码智能 MCP Server，纯 C 实现，知识图谱索引
@@ -311,6 +316,10 @@ page-info: false
 - [[OpenFang GitHub README]] — Rust Agent 操作系统，9k+ Stars，7×24 自主运行
 - [[CLI-Anything 技术分析报告]] — 7 阶段 Harness 生成流水线、CLI-Hub 生态
 - [[OpenFang 技术分析报告]] — Hands 架构、16 层安全、40 Channel Adapters
+
+**Refly.AI & MCP-Link 系列（2篇，2026-07-01新增）**：
+- [[2026-07-01-refly-ai-vibe-workflow]] — 全球首个 Vibe Workflow 开源平台，自然语言驱动工作流
+- [[2026-07-01-mcp-link-openapi-convert]] — OpenAPI 到 MCP Server 自动化转换工具
 
 ### 文件系统控制素材(2026-06-28新增)
 

@@ -1,5 +1,5 @@
 ---
-tags: [主题]
+tags: [主题, Agent集成]
 created: 2026-06-27
 updated: 2026-07-01
 sources:
@@ -53,6 +53,7 @@ sources:
   - wiki/sources/2026-07-01-openai-agents-sdk-major-update.md
   - wiki/sources/2026-07-01-openai-agents-sdk-runtime-architecture.md
   - wiki/sources/2026-07-01-langgraph-vs-openai-agents-vs-google-adk.md
+  - wiki/sources/2026-07-01-deerflow-github-readme.md
 ---
 
 # Agent 集成层
