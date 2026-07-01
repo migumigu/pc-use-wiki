@@ -4,6 +4,97 @@
 
 ---
 
+## 2026-07-02（续）
+
+### ingest | Skyvern + Steel Browser 研究（自动研究工作流）
+
+新增页面：
+- wiki/sources/2026-07-02-skyvern-github-readme.md
+- wiki/sources/2026-07-02-steel-browser-github-readme.md
+- wiki/entities/Skyvern.md
+- wiki/entities/Steel-Browser.md
+
+更新页面：
+- wiki/topics/浏览器控制.md（添加 Skyvern、Steel-Browser）
+- wiki/index.md（添加 2 个素材 + 2 个实体，更新统计）
+
+知识库统计：
+- 素材摘要：179（+2）
+- 实体页：112（+2）
+- 浏览器控制素材：33（+2）
+
+素材内容：
+- Skyvern：基于 LLM+计算机视觉的浏览器自动化，WebVoyager 85.85% SOTA，Playwright 兼容 SDK
+- Steel Browser：专为 AI Agent 设计的开源浏览器 API，Puppeteer+CDP，支持 Playwright/Puppeteer/Selenium
+
+证伪修正：
+- Skyvern Stars 17.6K → 标注为"约17.6K+（第三方报道）"
+- Steel Stars 6,475 → 标注为"约6,475+（第三方报道）"
+- WebVoyager 85.8% → 修正为 85.85%（多源确认）
+
+### ingest | Atlas Agent 记忆 + AionUi Cowork 平台（自动研究工作流）
+
+新增页面：
+- wiki/sources/2026-07-02-atlas-agent-memory-github-readme.md
+- wiki/sources/2026-07-02-atlas-infoq-report.md
+- wiki/sources/2026-07-02-aionui-github-readme.md
+- wiki/sources/2026-07-02-aionui-eigent-comparison.md
+- wiki/entities/Atlas.md
+- wiki/entities/AionUi.md
+
+更新页面：
+- wiki/topics/Agent集成层.md（添加 Atlas）
+- wiki/topics/桌面应用控制.md（添加 AionUi）
+- wiki/index.md（添加 4 个素材 + 2 个实体，更新统计）
+
+知识库统计：
+- 素材摘要：177（+4）
+- 实体页：110（+2）
+- Agent 集成层素材：66（+2）
+- 桌面应用控制素材：27（+2）
+
+素材内容：
+- Atlas：Elastic 开源 Agent 记忆系统，基于认知科学三重索引（Episodic/Semantic/Procedural），MCP 集成，Recall@10=0.89
+- AionUi：iOfficeAI 开源 AI Agent Cowork 平台，17+ Agent 统一管理，Team 多Agent协作，内置 Office 文档生成
+
+证伪修正：
+- Atlas 仓库归属修正（个人仓库非 Elastic 官方组织）
+- AionUi Stars 修正（24K+ 非 24.7K+）
+- 框架归属澄清（CAMEL-AI 属于 Eigent 非 AionUi）
+
+## 2026-07-02
+
+### ingest | 2026年新趋势研究 — Qoder与Kun（自动研究工作流）
+
+新增页面：
+- wiki/sources/2026-07-02-qoder-official-site.md
+- wiki/sources/2026-07-02-qoder-computer-use-tech.md
+- wiki/sources/2026-07-02-deepseek-gui-readme.md
+- wiki/sources/2026-07-02-kun-cache-optimization.md
+- wiki/entities/Qoder.md
+- wiki/entities/Kun.md
+
+更新页面：
+- wiki/topics/Agent集成层.md（添加 Qoder、Kun）
+- wiki/index.md（添加 4 个素材 + 2 个实体，更新统计）
+
+知识库统计：
+- 素材摘要：173（+4）
+- 实体页：108（+2）
+- Agent 集成层素材：64（+4）
+
+素材内容：
+- Qoder：阿里巴巴 Agentic Platform，集成 Computer Use + Browser Use，后台桌面控制
+- Kun：DeepSeek-GUI 本地 Agent 运行时，Cache-first agent loop，90%+ 缓存命中率
+- 技术分析报告 v1.0：Qoder与Kun对比分析
+
+证伪验证：
+- "后台运行不打扰用户" → ⚠️ 待验证（标注官网声称）
+- "90%+ cache hit 率" → ✅ 已验证
+- "Windows Computer Use 支持" → ✅ 已验证
+
+---
+
 ## 2026-07-01
 
 ### ingest | Stagehand/Browserbase 技术分析（自动研究工作流）

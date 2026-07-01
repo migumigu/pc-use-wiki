@@ -64,7 +64,23 @@
 
 ### 素材收集清单（待消化）
 
+**2026年新趋势**：
+- [x] **Qoder 官网** ✓ (2026-07-02) — 阿里巴巴 Agentic Platform，Computer Use + Browser Use
+- [x] **Qoder Computer Use 技术实践** ✓ (2026-07-02) — 后台桌面控制，Mac + Windows 支持
+- [x] **Kun/DeepSeek-GUI GitHub README** ✓ (2026-07-02) — 本地 Agent 工作台，4.1K+ Stars
+- [x] **Kun Cache-First Agent Loop** ✓ (2026-07-02) — Token ROI 核心，90%+ 缓存命中率
+- [x] **Mem0 GitHub README** ✓ (2026-07-02) — 通用 AI Agent 记忆层，41K-60K+ Stars
+- [x] **Mem0 技术分析** ✓ (2026-07-02) — 事实提取范式演进，与 Memora 对比
+- [x] **Memora ICML 2026** ✓ (2026-07-02) — 微软 Harmonic Memory，上下文减少 98%
+- [x] **Memora 技术深度分析** ✓ (2026-07-02) — 消融实验，企业部署考量
+- [x] **Eigent GitHub README** ✓ (2026-07-02) — 多智能体工作流桌面应用，5K-10K Stars
+- [x] **Eigent 技术分析** ✓ (2026-07-02) — Workforce 引擎，与记忆系统互补
+- [x] **Atlas Agent 记忆** — 三索引+MCP，企业级记忆方案 ✓ (2026-07-02)
+- [x] **AionUi AI 桌面协作** — 24K+ Stars，AI 协作桌面应用 ✓ (2026-07-02)
+
 **浏览器控制**：
+- [x] **Skyvern GitHub README** ✓ (2026-07-02) — LLM+CV浏览器自动化，WebVoyager 85.85% SOTA
+- [x] **Steel Browser GitHub README** ✓ (2026-07-02) — AI Agent浏览器API，Puppeteer+CDP
 - [x] browser-use GitHub README ✓
 - [x] browser-use 官方文档 ✓
 - [x] browser-use 技术架构分析 ✓
@@ -156,6 +172,10 @@
 - [x] **netifaces GitHub README** ✓ (2026-06-28) — 跨平台网络接口信息
 - [x] **py-cpuinfo GitHub README** ✓ (2026-06-28) — 纯 Python CPU 信息检测
 - [x] **WMI Reference 官方文档** ✓ (2026-06-30) — WMI 参考文档完整参考，包含类、提供商、API
+- [x] **E2B 沙箱云平台** ✓ (2026-07-02) — Firecracker microVM，Agent Sandbox 事实标准
+- [x] **agent-sandbox/agent-sandbox** ✓ (2026-07-02) — E2B 开源替代，K8s 云原生 Agent 运行时
+- [x] **CubeSandbox** ✓ (2026-07-02) — 60ms 启动 Rust+KVM 硬件级隔离沙箱（腾讯云）
+- [x] **kubernetes-sigs/agent-sandbox** ✓ (2026-07-02) — K8s SIG Apps 官方 Agent 沙箱 CRD
 - [ ] 进程通信机制深度解析
 
 **文件系统控制**：
@@ -220,6 +240,7 @@
 - [x] **GitHub MCP Server** ✓ (2026-07-01) — GitHub 官方 MCP Server，22 个工具集，远程+本地双模式，3个素材
 - [x] **Microsoft Agent Framework** ✓ (2026-07-01) — 微软统一 Semantic Kernel + AutoGen 的企业级 Agent 框架，MAF 1.0 GA，五层架构，3个素材
 - [x] **Refly.AI** ✓ (2026-07-01) — 全球首个 Vibe Workflow 开源平台，自然语言驱动工作流编排，2个素材
+- [x] **Anthropic Managed Agents** ✓ (2026-07-02) — Brain-Hands-Session 三层解耦架构，托管式 Agent 运行平台，1个素材
 - [x] **MCP-Link** ✓ (2026-07-01) — OpenAPI 到 MCP Server 自动化转换工具，零代码配置，2个素材
 - [x] **Vibe Workflow** ✓ (2026-07-01) — 自然语言驱动的工作流编排范式，核心概念实体
 - [x] **DeerFlow** ✓ (2026-07-01) — 字节跳动开源 SuperAgent Harness，72K+ Stars，登顶 GitHub Trending #1，14层 Middleware + Sub-Agent 编排，4个素材

@@ -2,9 +2,10 @@
 title: 知识库索引
 ---
 
-> 最后更新：2026-07-01（OmniParser + UFO²/UFO³ 微软桌面控制研究）
+> 最后更新：2026-07-02（Agent Sandbox + Managed Agents）
 
 ---
+
 template: default
 sidebar: false
 comment: false
@@ -13,8 +14,8 @@ page-info: false
 ## 概览
 
 - 主题：AI Agent 控制 PC 电脑
-- 素材总数：186
-- Wiki 页面总数：308
+- 素材总数：215
+- Wiki 页面总数：350
 
 ---
 
@@ -55,6 +56,7 @@ page-info: false
 - [[屏幕截图]] — Computer Use的视觉信息获取方法
 - [[代码执行环境]] — LLM Agent执行代码的能力
 - [[no-foreground-contract]] — 后台桌面控制核心概念（2026-07-01新增）
+- [[AionUi]] — iOfficeAI 开源 AI Agent Cowork 协同办公平台，17+ Agent 统一管理，24K+ Stars（2026-07-02新增）
 
 ### 系统服务控制领域
 - [[PowerShell]] — Microsoft跨平台自动化框架
@@ -65,6 +67,12 @@ page-info: false
 - [[netifaces]] — 跨平台网络接口信息库（68K+ 依赖）
 - [[py-cpuinfo]] — 纯 Python CPU 信息检测库（57K+ 依赖）
 - [[Cmdlet]] — PowerShell的命令单元
+
+**Agent 沙箱基础设施**（2026-07-02新增）：
+- [[E2B]] — AI Agent 安全沙箱云平台，Firecracker microVM，生态事实标准
+- [[Agent-Sandbox]] — E2B 开源替代，企业级云原生 K8s Agent 运行时
+- [[CubeSandbox]] — 60ms 启动的 Rust+KVM 硬件级隔离沙箱（腾讯云）
+- [[K8s-Agent-Sandbox]] — Kubernetes SIG Apps 官方 Agent 沙箱 CRD
 
 ### 文件系统控制领域（2026-06-28新增，2026-06-29扩展）
 
@@ -163,6 +171,22 @@ page-info: false
 - [[Vibe Workflow]] — 自然语言驱动的工作流编排范式（2026-07-01新增）
 - [[MCP-Link]] — OpenAPI 到 MCP Server 自动化转换工具（2026-07-01新增）
 
+**长时记忆系统相关**（2026-07-02新增）：
+- [[Mem0]] — 通用 AI Agent 记忆层，事实提取范式，41K-60K+ Stars（2026-07-02新增）
+- [[Memora]] — 微软 ICML 2026 Agent 长期记忆系统，Harmonic Memory 三重索引（2026-07-02新增）
+- [[Eigent]] — 全球首个多智能体工作流桌面应用，5K-10K Stars（2026-07-02新增）
+- [[agentmemory]] — AI 编程助手持久记忆系统，零外部数据库依赖，95.2% R@5 检索精度，23K+ Stars（2026-07-02新增）
+- [[iii-engine]] — agentmemory 底层运行时，三原语设计模型（Worker/Function/Trigger）（2026-07-02新增）
+
+**安全测试/渗透测试相关**（2026-07-02新增）：
+- [[VulnClaw]] — AI 驱动的渗透测试 CLI 工具，说人话打漏洞，1.5K+ Stars（2026-07-02新增）
+
+**Agent 运行时基础设施相关**（2026-07-02新增）：
+- [[Managed-Agents]] — Anthropic 托管式 Agent 运行平台，Brain-Hands-Session 三层解耦架构（2026-07-02新增）
+
+**Agent 记忆系统相关**（2026-07-02新增）：
+- [[Atlas]] — Elastic 开源 Agent 记忆系统，基于认知科学三重索引（Episodic/Semantic/Procedural），MCP 集成，Recall@10=0.89
+
 **代码智能 MCP Server 相关**（2026-06-30新增）：
 - [[codebase-memory-mcp]] — 高性能代码智能 MCP Server，纯 C 实现，知识图谱索引
 
@@ -209,6 +233,11 @@ page-info: false
 - [[Chrome DevTools Protocol 官方文档]] — CDP 协议规范（2026-06-29新增）
 - [[Playwright Library 官方文档]] — API 参考与使用指南（2026-06-29新增）
 - [[Playwright CDP/WebSocket 对比分析]] — 通信机制详解（2026-06-29新增）
+
+### Agent-Reach 网络访问素材（2026-07-02新增）
+- [[Agent-Reach GitHub README]] — AI Agent 全网访问脚手架，15+ 平台零 API 费用
+- [[Agent-Reach 安装指南]] — 官方安装文档，一键安装流程
+- [[Agent-Reach 技术深度分析]] — 三层架构、零 API 费用实现原理、反爬策略
 
 ### 桌面自动化素材(2026-06-28新增)
 - [[UI-TARS-desktop GitHub README]] — 字节跳动GUI Agent项目介绍
@@ -265,6 +294,16 @@ page-info: false
 - [[netifaces GitHub README]] — 跨平台网络接口信息库（2026-06-28新增）
 - [[py-cpuinfo GitHub README]] — 纯Python CPU信息检测库（2026-06-28新增）
 - [[WMI Reference 官方文档]] — WMI 参考文档完整参考，包含类、提供商、API（2026-06-30新增）
+
+### Agent 沙箱基础设施素材(2026-07-02新增)
+- [[agent-sandbox GitHub README]] — E2B 开源替代，企业级云原生 K8s Agent 运行时
+- [[kubernetes-sigs/agent-sandbox GitHub README]] — K8s 原生 Agent 沙箱 CRD
+- [[CubeSandbox GitHub README]] — 60ms 启动 Rust+KVM 硬件级隔离沙箱
+- [[E2B 沙箱云平台参考]] — Firecracker microVM，Agent Sandbox 事实标准
+- [[Agent Sandbox 生态横向对比]] — 6 大竞品对比与趋势分析
+
+### Anthropic Managed Agents 素材(2026-07-02新增)
+- [[Anthropic Managed Agents Architecture]] — Brain-Hands-Session 三层解耦架构
 
 ### Agent集成层素材(2026-06-28新增)
 **MCP Protocol系列（8篇）**：
@@ -360,6 +399,42 @@ page-info: false
 - [[Headroom 技术报告 v1.0]] — 综合分析 Headroom 核心架构与生态位
 - [[Context-mode 技术报告 v1.0]] — 综合分析 Context-mode 四项机制与平台覆盖
 - [[trycua/cua 技术报告 v1.0]] — 综合分析 CUA 四大组件与 MCP 集成
+
+### Agent 记忆系统素材(2026-07-02新增)
+- [[2026-07-02-atlas-agent-memory-github-readme]] — Elastic 开源 Agent 记忆系统，三重索引+MCP 集成
+- [[2026-07-02-atlas-infoq-report]] — InfoQ 报道 Atlas，认知科学三重分类，Recall@10=0.89
+
+### AionUi 桌面协作素材(2026-07-02新增)
+- [[2026-07-02-aionui-github-readme]] — iOfficeAI 开源 AI Agent Cowork 平台，17+ Agent 统一管理
+- [[2026-07-02-aionui-eigent-comparison]] — Eigent 与 AionUi 对比分析
+
+### Mem0 长时记忆素材(2026-07-02新增)
+- [[2026-07-02-mem0-github-readme]] — 事实提取范式、新算法改进、三级记忆层级
+- [[2026-07-02-mem0-technical-analysis]] — 范式演进、与 Memora 对比、Mem0g 图增强
+
+### Memora 长时记忆素材(2026-07-02新增)
+- [[2026-07-02-memora-icml2026]] — ICML 2026、三重索引、MDP 策略检索
+- [[2026-07-02-memora-technical-deep-dive]] — Harmonic Memory 设计、消融实验
+
+### Eigent 多Agent桌面素材(2026-07-02新增)
+- [[2026-07-02-eigent-github-readme]] — Multi-Agent Workforce、四类 Agent Worker
+- [[2026-07-02-eigent-technical-analysis]] — Workforce 引擎架构、与记忆系统互补
+
+### Agent 记忆技术报告素材(2026-07-02新增)
+- [[2026-07-02-agent-memory-technical-report]] — 三大范式对比、六层技术栈
+- [[2026-07-02-falsification-record]] — 13 项声明验证、Stars 修正
+
+### agentmemory 记忆系统素材(2026-07-02新增)
+- [[2026-07-02-agentmemory-github-readme]] — AI 编程助手持久记忆系统，95.2% R@5 检索精度
+- [[2026-07-02-agentmemory-iii-engine-architecture]] — iii-engine 三原语设计模型
+- [[2026-07-02-agentmemory-deep-analysis]] — 四层记忆架构、三层检索融合
+- [[2026-07-02-agentmemory-six-tools-comparison]] — 六款开源记忆工具大横评
+- [[2026-07-02-agentmemory-zero-db-architecture]] — 零数据库依赖架构设计
+
+### VulnClaw 渗透测试素材(2026-07-02新增)
+- [[2026-07-02-vulnclaw-github-readme]] — AI 驱动的渗透测试 CLI 工具
+- [[2026-07-02-vulnclaw-official-website]] — 官方网站，自然语言驱动渗透测试
+- [[2026-07-02-vulnclaw-technical-blog]] — AI Agent 安全测试框架实践
 
 ### 文件系统控制素材(2026-06-28新增)
 

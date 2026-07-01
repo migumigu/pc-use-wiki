@@ -4,6 +4,219 @@
 
 ---
 
+## 2026-07-02 — 自动研究工作流：Agent Sandbox 基础设施 + Anthropic Managed Agents
+
+- **操作**：全自动研究工作流（趋势扫描 → 评分矩阵 → 素材收集 → 报告生成 → 证伪验证 → 消化入库）
+- **研究方向**：Agent Sandbox 基础设施 + Anthropic Managed Agents 架构
+- **选定项目**：E2B（事实标准）、CubeSandbox（60ms启动Rust沙箱）、agent-sandbox（E2B开源替代）、kubernetes-sigs/agent-sandbox（K8s官方CRD）、Anthropic Managed Agents（Brain-Hands-Session架构）
+- **素材数量**：6个（Tier1: 5, Tier2: 1）
+- **素材列表**：
+  - raw/articles/2026-07-02-agent-sandbox-github-readme.md — E2B开源替代，K8s云原生Agent运行时
+  - raw/articles/2026-07-02-k8s-agent-sandbox-github-readme.md — K8s SIG Apps官方Agent沙箱CRD
+  - raw/articles/2026-07-02-cubesandbox-github-readme.md — 60ms启动Rust+KVM硬件级隔离沙箱
+  - raw/articles/2026-07-02-e2b-sandbox-reference.md — E2B沙箱云平台，Firecracker microVM
+  - raw/articles/2026-07-02-anthropic-managed-agents-architecture.md — Brain-Hands-Session三层解耦架构
+  - raw/articles/2026-07-02-agent-sandbox-ecosystem-comparison.md — 6大竞品横向对比
+
+**新增 Wiki 页面**：
+- 素材摘要页（6）：
+  - wiki/sources/2026-07-02-agent-sandbox-github-readme.md
+  - wiki/sources/2026-07-02-k8s-agent-sandbox-github-readme.md
+  - wiki/sources/2026-07-02-cubesandbox-github-readme.md
+  - wiki/sources/2026-07-02-e2b-sandbox-reference.md
+  - wiki/sources/2026-07-02-anthropic-managed-agents-architecture.md
+  - wiki/sources/2026-07-02-agent-sandbox-ecosystem-comparison.md
+- 实体页（5）：
+  - wiki/entities/Agent-Sandbox.md — E2B开源替代，K8s云原生Agent运行时
+  - wiki/entities/CubeSandbox.md — 60ms启动Rust+KVM硬件级隔离沙箱
+  - wiki/entities/K8s-Agent-Sandbox.md — K8s SIG Apps官方Agent沙箱CRD
+  - wiki/entities/E2B.md — Agent沙箱生态事实标准，Firecracker microVM
+  - wiki/entities/Managed-Agents.md — Anthropic托管式Agent，Brain-Hands-Session三层解耦
+
+**更新页面**：
+- index.md — 添加 Agent Sandbox + Managed Agents 实体和素材条目，更新计数（215素材，350页面）
+
+**证伪验证**：
+- CubeSandbox 冷启动<60ms：⚠️ 官方声称，修正为"单并发<60ms，50并发P95 90ms，P99 137ms"
+- CubeSandbox 内存<5MB：⚠️ 官方声称，缺乏独立验证
+- agent-sandbox E2B兼容：⚠️ v0.7.0，兼容性待生产验证
+- Managed Agents 延迟降低60%：⚠️ Anthropic内部测试
+- E2B 94% Fortune 100：⚠️ 营销数据
+- k8s-sigs v1beta1：✅ 已验证
+- Managed Agents 发布日期：✅ 已验证
+
+**核心发现**：
+- Agent Sandbox 生态半年内从零到6+竞品，E2B SDK成为事实标准
+- 隔离层级分化：Docker共享内核 → gVisor/Kata → Firecracker microVM → KVM+eBPF
+- 启动速度军备竞赛：秒级 → 亚百毫秒 → 60ms
+- Anthropic Managed Agents 提出Brain-Hands-Session三层解耦
+- Session-as-Event-Log 成为Agent运行时新范式
+- Sandbox-as-Cattle vs Pets：生产型必须用Cattle模式
+
+**研究价值**：
+- 填补系统服务控制中"Agent沙箱基础设施"空白
+- 填补Agent集成层中"托管式Agent运行时"空白
+- 发现Agent执行环境从"裸跑"走向"沙箱化"的结构性变化
+- 发现Agent运行时从"自建Harness"走向"托管平台"的趋势
+
+**素材控制对象**：system_service / agent_integration
+**技术层级**：tool_implementation / agent_integration
+
+- **状态**：完成
+
+---
+
+## 2026-07-02 — agentmemory + VulnClaw 批量消化
+
+- **操作**：批量 ingest 8 个素材文件（TOP 2 agentmemory 5个 + TOP 3 VulnClaw 3个）
+- **素材数量**：8 个（Tier1: 8）
+- **素材列表**：
+  - raw/articles/2026-07-02-agentmemory-github-readme.md — GitHub README（23K+ Stars）
+  - raw/articles/2026-07-02-agentmemory-iii-engine-architecture.md — iii-engine 架构分析
+  - raw/articles/2026-07-02-agentmemory-deep-analysis.md — 深度分析（四层记忆架构）
+  - raw/articles/2026-07-02-agentmemory-six-tools-comparison.md — 六款记忆工具横评
+  - raw/articles/2026-07-02-agentmemory-zero-db-architecture.md — 零数据库依赖架构
+  - raw/articles/2026-07-02-vulnclaw-github-readme.md — GitHub README（1.5K+ Stars）
+  - raw/articles/2026-07-02-vulnclaw-official-website.md — 官方网站
+  - raw/articles/2026-07-02-vulnclaw-technical-blog.md — 技术博客
+
+**新增 Wiki 页面**：
+- 素材摘要页（8）：
+  - wiki/sources/2026-07-02-agentmemory-github-readme.md
+  - wiki/sources/2026-07-02-agentmemory-iii-engine-architecture.md
+  - wiki/sources/2026-07-02-agentmemory-deep-analysis.md
+  - wiki/sources/2026-07-02-agentmemory-six-tools-comparison.md
+  - wiki/sources/2026-07-02-agentmemory-zero-db-architecture.md
+  - wiki/sources/2026-07-02-vulnclaw-github-readme.md
+  - wiki/sources/2026-07-02-vulnclaw-official-website.md
+  - wiki/sources/2026-07-02-vulnclaw-technical-blog.md
+- 实体页（3）：
+  - wiki/entities/agentmemory.md — AI 编程助手持久记忆系统，95.2% R@5 检索精度
+  - wiki/entities/iii-engine.md — agentmemory 底层运行时，三原语设计模型
+  - wiki/entities/VulnClaw.md — AI 驱动的渗透测试 CLI 工具
+
+**更新页面**：
+- index.md — 添加 agentmemory、iii-engine、VulnClaw 实体和素材条目，更新计数（205 素材，333 页面）
+
+**核心发现**：
+- agentmemory：23K+ Stars，零外部数据库依赖，95.2% R@5 检索精度（LongMemEval-S）
+- 四层记忆架构：Working Memory → Episodic Memory → Semantic Memory → Procedural Memory
+- 三层检索融合：BM25 + Vector + Graph（RRF fusion）
+- iii-engine：三原语设计模型（Worker/Function/Trigger），agentmemory 构建在其上
+- VulnClaw：AI 驱动的渗透测试 CLI 工具，说人话打漏洞，1.5K+ Stars
+- 黑板图状态空间搜索：Fact + Intent 双原语驱动
+- 证据级反幻觉闸门：flag 必须在真实工具输出里逐字符出现
+
+**研究价值**：
+- 填补 Agent 集成层中"编程助手记忆系统"空白
+- agentmemory 与 Mem0/Memora 形成完整记忆系统参照系
+- 发现 iii-engine 作为 Agent 运行时的创新设计
+- VulnClaw 补充安全测试领域的 AI Agent 应用案例
+
+**素材控制对象**：agent_integration / security_testing
+**技术层级**：agent_integration
+
+- **状态**：完成
+
+---
+
+## 2026-07-02 — Agent-Reach 全网访问脚手架研究
+
+- **操作**：批量 ingest 3 个素材文件（Agent-Reach TOP 1 项目）
+- **素材数量**：3 个（Tier1: 3）
+- **素材列表**：
+  - raw/articles/2026-07-02-agent-reach-github-readme.md — GitHub README（37K+ Stars）
+  - raw/articles/2026-07-02-agent-reach-install-guide.md — 官方安装文档
+  - raw/articles/2026-07-02-agent-reach-technical-analysis.md — 技术深度分析
+
+**新增 Wiki 页面**：
+- 素材摘要页（3）：
+  - wiki/sources/2026-07-02-agent-reach-github-readme.md
+  - wiki/sources/2026-07-02-agent-reach-install-guide.md
+  - wiki/sources/2026-07-02-agent-reach-technical-analysis.md
+- 实体页（1）：
+  - wiki/entities/Agent-Reach.md — AI Agent 全网访问脚手架，37K+ Stars
+
+**更新页面**：
+- index.md — 添加 Agent-Reach 实体和素材条目，更新计数（197 素材，323 页面）
+
+**核心发现**：
+- Agent-Reach 定位为"脚手架而非框架"，三层架构（工具编排层 + CLI 集合层 + MCP/技能脚手架）
+- 零 API 费用：通过 Cookie 认证、开源工具集成、浏览器登录态复用绕过官方付费 API
+- 支持 15+ 平台：零配置平台（网页/YouTube/GitHub/RSS） + 需配置平台（Twitter/Reddit/小红书）
+- MCP 协议集成：Exa 搜索、douyin-mcp-server、linkedin-scraper-mcp 等
+- 安全设计：Cookie 本地存储（文件权限 600）、安全模式、Dry Run、可插拔架构
+
+**研究价值**：
+- 填补 Agent 集成层中"全网访问"能力缺口
+- 与 browser-use 互补：Agent-Reach 提供数据源访问，browser-use 提供浏览器操作
+- 与 OpenClaw 集成：可作为 OpenClaw 的 Skills 扩展
+- Web 4.0 基建贡献：为 AI Agent 提供互联网能力，降低数据获取门槛
+
+**素材控制对象**：agent_integration
+**技术层级**：agent_integration
+
+- **状态**：完成（TOP 1 项目）
+
+---
+
+## 2026-07-02 — 自动研究工作流：Agent 长时记忆系统（Mem0 + Memora + Eigent）
+
+- **操作**：全自动研究工作流（趋势扫描 → 评分矩阵 → 素材收集 → 报告生成 → 证伪验证 → 消化入库）
+- **研究方向**：Agent 长时记忆系统（2026年最热门新趋势）
+- **选定项目**：Mem0（41K-60K+ Stars）、Memora（微软 ICML 2026）、Eigent（5K-10K Stars）
+- **素材数量**：8个（Tier1: 4, Tier2: 2, 报告: 1, 证伪: 1）
+- **素材列表**：
+  - raw/articles/2026-07-02-mem0-github-readme.md
+  - raw/articles/2026-07-02-mem0-technical-analysis.md
+  - raw/articles/2026-07-02-memora-icml2026.md
+  - raw/articles/2026-07-02-memora-technical-deep-dive.md
+  - raw/articles/2026-07-02-eigent-github-readme.md
+  - raw/articles/2026-07-02-eigent-technical-analysis.md
+  - raw/notes/2026-07-02-agent-memory-technical-report-v1.0.md
+  - raw/notes/2026-07-02-falsification-record.md
+
+- **新增 Wiki 页面**：
+  - wiki/sources/2026-07-02-mem0-github-readme.md
+  - wiki/sources/2026-07-02-mem0-technical-analysis.md
+  - wiki/sources/2026-07-02-memora-icml2026.md
+  - wiki/sources/2026-07-02-memora-technical-deep-dive.md
+  - wiki/sources/2026-07-02-eigent-github-readme.md
+  - wiki/sources/2026-07-02-eigent-technical-analysis.md
+  - wiki/sources/2026-07-02-falsification-record.md
+  - wiki/sources/2026-07-02-agent-memory-technical-report.md
+  - wiki/entities/Mem0.md
+  - wiki/entities/Memora.md
+  - wiki/entities/Eigent.md
+
+- **更新页面**：
+  - wiki/topics/Agent集成层.md — 新增长时记忆系统子分类、新素材表、新实体列表
+  - index.md — 添加新实体和素材条目，更新计数（194 素材，319 页面）
+
+- **证伪验证**：
+  - Mem0 Stars 数据不一致（41K/57K/59.8K）：⚠️ 修正为"41K-60K+"
+  - Eigent Stars 数据波动（4.5K-9.2K）：⚠️ 修正为"5K-10K"
+  - Mem0 LoCoMo 91.6：⚠️ 官方声称，缺乏独立验证
+  - Memora 上下文减少 98%：⚠️ 论文数据，缺乏独立验证
+  - Memora GitHub 仓库地址：⚠️ 待确认
+  - Memora 策略检索延迟 5-6s：⚠️ 论文数据
+
+- **研究价值**：
+  - 填补 Agent 集成层中"长时记忆"子领域空白
+  - 三大范式并存：事实提取（Mem0）、解耦索引（Memora）、多Agent执行+记忆消费（Eigent）
+  - 发现 Agent 记忆已成为 2026 年独立基础设施品类
+  - Eigent + Mem0 组合方案是桌面级 Agent 系统的事实组合
+
+- **知识积累成果**：
+  - Agent 集成层新增长时记忆系统子分类
+  - 新增三个核心实体：Mem0、Memora、Eigent
+  - 发现三大范式分化：事实提取 vs 解耦索引 vs 多Agent执行
+  - 确认与上下文管理（Headroom/Context-mode）的互补关系
+
+- **状态**：完成
+
+---
+
 ## 2026-07-01 — 自动研究工作流：OmniParser + UFO²/UFO³ 微软桌面控制研究
 
 - **操作**：全自动研究工作流（趋势扫描 → 评分矩阵 → 素材收集 → 报告生成 → 证伪验证 → 消化入库）
