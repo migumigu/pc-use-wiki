@@ -1,11 +1,14 @@
 ---
 tags: [CUA, Computer-Use, Agent基础设施, 开源]
 created: 2026-06-28
-updated: 2026-06-28
+updated: 2026-07-01
 sources:
   - wiki/sources/2026-06-28-cua-github-readme.md
   - wiki/sources/2026-06-28-cua-sandbox-setup.md
   - wiki/sources/2026-06-28-cua-analysis.md
+  - wiki/sources/2026-07-01-trycua-cua-github-readme.md
+  - wiki/sources/2026-07-01-cua-architecture-docs.md
+  - wiki/sources/2026-07-01-cua-driver-technical-docs.md
 ---
 
 # CUA (Computer Use Agent)
@@ -37,21 +40,65 @@ CUA (Computer Use Agent) 是由 trycua 开发的开源基础设施项目，为 A
 <!-- evidence: GitHub README 原文 "后台计算机使用，支持 macOS、Windows，Linux 预发布。Agents 可点击、输入、验证而不占用光标或焦点" -->
 
 后台 computer-use agent，支持 macOS、Windows，Linux 预发布。核心特性：
-- Agents 可点击、输入、验证而不占用光标或焦点
+- **no-foreground contract**：Agents 可点击、输入、验证而不占用光标或焦点（真实光标停留原位，目标窗口保持当前 z-rank）
+- **三模态捕获**：`som`（accessibility+截图）、`ax`（纯 accessibility）、`vision`（纯视觉）
 - 提供 CLI 和 MCP Server
 - 支持 Claude Code、Cursor、Codex、OpenClaw 等主流 Agent
+
+<!-- confidence: EXTRACTED -->
+<!-- evidence: Cua Driver Technical Docs "The no-foreground contract" -->
+
+#### Platform Backends
+
+| 平台 | 技术栈 |
+|------|--------|
+| macOS | Accessibility API + ScreenCaptureKit + LaunchServices + Signed CuaDriver.app（TCC权限） |
+| Windows | UI Automation + Win32 APIs + Named pipes + Optional logon Scheduled Task（Session 0 bypass） |
+| Linux（pre-release） | AT-SPI + X11/XWayland + XTest-style input |
+
+<!-- confidence: EXTRACTED -->
+<!-- evidence: Cua Driver Technical Docs "Platform Backends" -->
 
 ### 2. Cua (Sandbox)
 
 <!-- confidence: EXTRACTED -->
 <!-- evidence: GitHub README 原文 "适用于任何 OS 的 Agent 就绪沙箱" -->
 
-适用于任何 OS 的 Agent 就绪沙箱，支持平台：
-- Linux container/VM
-- macOS
-- Windows
-- Android
-- BYOI (Bring Your Own Image)
+适用于任何 OS 的 Agent 就绪沙箱，统一 API：
+
+```python
+async with Sandbox.ephemeral(Image.linux()) as sb:      # cloud Linux container
+async with Sandbox.ephemeral(Image.macos()) as sb:      # cloud macOS VM
+async with Sandbox.ephemeral(Image.windows()) as sb:    # cloud Windows VM
+async with Sandbox.ephemeral(Image.android()) as sb:    # cloud Android VM
+async with Sandbox.ephemeral(Image.linux(), local=True) as sb:  # local Docker
+```
+
+<!-- confidence: EXTRACTED -->
+<!-- evidence: Cua Architecture Docs Sandbox API -->
+
+支持平台：
+- Linux container/VM（cloud + local Docker）
+- macOS（cloud VM）
+- Windows（cloud VM）
+- Android（cloud VM）
+- BYOI（.qcow2/.iso）
+
+#### Sandbox API 操作
+
+```python
+await sb.shell.run("npm install")           # shell 命令
+await sb.screenshot()                       # 截屏
+await sb.mouse.click(x, y)                  # 点击
+await sb.keyboard.type("hello")             # 输入
+await sb.keyboard.press("ctrl+c")           # 组合键
+await sb.mobile.tap(x, y)                   # Android touch
+async with sb.tunnel.forward(3000) as t:    # 端口转发
+    print(t.url)
+```
+
+<!-- confidence: EXTRACTED -->
+<!-- evidence: Cua Architecture Docs 沙箱内操作示例 -->
 
 ### 3. Cua-Bench
 
@@ -115,6 +162,21 @@ macOS 虚拟化工具，在 Apple Silicon 上使用 Apple Virtualization.Framewo
 - 强调沙箱隔离和安全价值
 - YC 支持反映商业认可
 
+### [[trycua/cua GitHub README]]（2026-07-01新增）
+- 四大组件完整说明
+- MIT License + 第三方组件依赖说明
+
+### [[CUA Architecture Docs]]（2026-07-01新增）
+- Sandbox SDK 统一 API
+- Agent SDK plug 任何 VLM
+- Image Builder 配置环境
+
+### [[Cua Driver Technical Docs]]（2026-07-01新增）
+- no-foreground contract 详细说明
+- 三模态捕获（som、ax、vision）
+- Platform Backends 技术栈详解
+- Claude Code Computer-Use 兼容模式
+
 ## 与其他工具的关系
 
 | 工具 | 定位 | 关系 |
@@ -132,3 +194,7 @@ macOS 虚拟化工具，在 Apple Silicon 上使用 Apple Virtualization.Framewo
 - [[Docker]] — 容器化隔离
 - [[MCP]] — 模型上下文协议
 - [[桌面应用控制]] — 控制对象主题
+- [[no-foreground-contract]] — 后台桌面控制核心概念（2026-07-01新增）
+- [[2026-07-01-trycua-cua-github-readme]] — GitHub README（2026-07-01新增）
+- [[2026-07-01-cua-architecture-docs]] — 架构文档（2026-07-01新增）
+- [[2026-07-01-cua-driver-technical-docs]] — Driver 技术文档（2026-07-01新增）

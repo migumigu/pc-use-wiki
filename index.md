@@ -2,7 +2,7 @@
 title: 知识库索引
 ---
 
-> 最后更新：2026-07-01（MAF + Windows Agent + OpenAI Agents SDK 研究）
+> 最后更新：2026-07-01（OmniParser + UFO²/UFO³ 微软桌面控制研究）
 
 ---
 template: default
@@ -13,8 +13,8 @@ page-info: false
 ## 概览
 
 - 主题：AI Agent 控制 PC 电脑
-- 素材总数：169
-- Wiki 页面总数：282
+- 素材总数：186
+- Wiki 页面总数：308
 
 ---
 
@@ -31,6 +31,9 @@ page-info: false
 - [[浏览器自动化]] — 通过程序控制浏览器的技术
 - [[Agent-Reach]] — AI Agent 全网访问脚手架，15+平台零API费用（2026-07-01新增）
 
+- [[OmniParser]] — Microsoft 纯视觉 GUI 截图解析工具，视觉理解基础设施（18K-22K+ Stars，2026-07-01新增）
+- [[UFO²]] — Microsoft Windows 桌面 AgentOS，GUI+API 混合执行（7K+ Stars，2026-07-01新增）
+
 ### 桌面自动化领域
 - [[Goose]] — Linux Foundation 本地 AI Agent（49.7K+ Stars，2026-06-29新增）
 - [[Bytebot]] — 开源容器化虚拟桌面AI Desktop Agent（Apache 2.0，2026-06-29新增）
@@ -41,7 +44,7 @@ page-info: false
 - [[Python-UIAutomation]] — Windows UI Automation的Python封装
 - [[Open Interpreter]] — LLM代码执行和Computer Use框架
 - [[Computer-Use]] — AI通过屏幕截图和输入模拟控制桌面的技术模式
-- [[CUA]] — Computer Use Agent开源基础设施（14.8k+ Stars）
+- [[CUA]] — Computer Use Agent开源基础设施（14.8k+ Stars，2026-07-01已更新）
 - [[Lume]] — macOS虚拟化工具（Apple Silicon）
 - [[视觉语言模型]] — 理解屏幕截图并生成操作指令的核心技术
 - [[UI Automation]] — Windows无障碍框架
@@ -51,6 +54,7 @@ page-info: false
 - [[OCR技术]] — 光学字符识别技术
 - [[屏幕截图]] — Computer Use的视觉信息获取方法
 - [[代码执行环境]] — LLM Agent执行代码的能力
+- [[no-foreground-contract]] — 后台桌面控制核心概念（2026-07-01新增）
 
 ### 系统服务控制领域
 - [[PowerShell]] — Microsoft跨平台自动化框架
@@ -66,8 +70,14 @@ page-info: false
 
 **上下文管理**：
 - [[watchdog]] — Python 文件系统监控库（跨平台事件驱动）
-- [[上下文工程]] — 核心概念
+- [[上下文工程]] — AI Agent 上下文管理的技术与方法论（2026-07-01新增）
 - [[上下文窗口极简主义]] — 核心原则
+- [[上下文压缩]] — 减少 AI Agent 上下文窗口占用，提升 Token 利用效率（2026-07-01新增）
+- [[Think in Code]] — LLM 从数据处理器转变为代码生成器（2026-07-01新增）
+- [[CCR]] — Compressed Context Retrieval，可逆压缩机制（2026-07-01新增）
+- [[Session Continuity]] — 会话连续性，压缩后状态恢复（2026-07-01新增）
+- [[Headroom]] — AI Agent 上下文压缩层，60-95% Token 节省，可逆压缩（CCR）（2026-07-01新增）
+- [[Context-mode]] — MCP 上下文管理框架，98% Token 压缩，Session Continuity（2026-07-01新增）
 
 **文件同步**：
 - [[Syncthing]] — P2P 持续文件同步工具（73K+ Stars）
@@ -172,6 +182,7 @@ page-info: false
 - [[文件系统控制]] — AI Agent 上下文管理与文件系统作为智能基础设施（2026-06-28新增）
 - [[硬件接口控制]] — AI Agent 控制硬件设备的完整技术栈（摄像头、麦克风、传感器）（2026-06-28新增）
 - [[Agent集成层]] — AI Agent 与外部工具和系统集成的技术与协议
+- [[上下文工程]] — AI Agent 上下文管理的技术与方法论（2026-07-01新增）
 
 ---
 
@@ -208,6 +219,15 @@ page-info: false
 - [[Open Interpreter GitHub README]] — 代码执行和Computer Use框架
 - [[Open Interpreter Computer Use文档]] — 桌面控制模式详细文档
 - [[Windows UI Automation官方文档]] — Microsoft无障碍框架文档
+
+### OmniParser素材(2026-07-01新增)
+- [[OmniParser GitHub README]] — Microsoft 纯视觉 GUI 截图解析工具
+- [[OmniParser V2 Blog Post]] — V2 将任何 LLM 变为 Computer Use Agent
+- [[OmniParser Project Page]] — 论文主页，数据集与即插即用能力
+
+### UFO²/UFO³素材(2026-07-01新增)
+- [[UFO/UFO²/UFO³ GitHub README]] — Microsoft Windows 桌面 Agent 系统
+- [[UFO² 深度分析]] — 业内首个 Windows AgentOS 五大核心突破
 
 ### Goose素材(2026-06-29新增)
 - [[Goose GitHub README]] — Linux Foundation AAIF 孵化的开源本地 AI Agent（49.7K+ Stars）
@@ -321,6 +341,26 @@ page-info: false
 - [[2026-07-01-refly-ai-vibe-workflow]] — 全球首个 Vibe Workflow 开源平台，自然语言驱动工作流
 - [[2026-07-01-mcp-link-openapi-convert]] — OpenAPI 到 MCP Server 自动化转换工具
 
+**Headroom 系列（3篇，2026-07-01新增）**：
+- [[Headroom GitHub README]] — 四种接入模式、六种压缩器、CCR 可逆压缩
+- [[Headroom 技术分析]] — 解决"上下文内容质量"问题而非"窗口大小"问题
+- [[Headroom 实战指南]] — 月 LLM API 支出超 $100 的开发者必装
+
+**Context-mode 系列（3篇，2026-07-01新增）**：
+- [[Context-mode GitHub README]] — 11 MCP Tools、16 平台覆盖、企业采用 18+
+- [[Context-mode 技术分析]] — 四项机制详解、与 Anthropic 原则关联
+- [[Claude Code 使用指南]] — 6 个避坑指南、statusLine 配置
+
+**trycua/cua 系列（3篇，2026-07-01新增）**：
+- [[trycua/cua GitHub README]] — 四大组件完整说明
+- [[CUA Architecture Docs]] — Sandbox SDK 统一 API、Agent SDK
+- [[Cua Driver Technical Docs]] — no-foreground contract、三模态捕获
+
+**技术报告系列（3篇，2026-07-01新增）**：
+- [[Headroom 技术报告 v1.0]] — 综合分析 Headroom 核心架构与生态位
+- [[Context-mode 技术报告 v1.0]] — 综合分析 Context-mode 四项机制与平台覆盖
+- [[trycua/cua 技术报告 v1.0]] — 综合分析 CUA 四大组件与 MCP 集成
+
 ### 文件系统控制素材(2026-06-28新增)
 
 **上下文管理素材**：
@@ -387,3 +427,4 @@ page-info: false
 - [[硬件接口控制-深度报告]] — 5大领域、18个素材深度综合分析（2026-06-29新增）
 - [[系统服务控制-深度报告]] — Windows/Linux双栈体系、14个素材深度综合分析（2026-06-30新增）
 - [[Agent集成层-深度报告]] — 三层协议架构、全栈运行时、代码智能、50+素材深度综合分析（2026-06-30新增）
+- [[上下文管理-综合报告]] — 上下文管理三大范式、Token压缩60-98%、MCP集成标准、12个素材深度综合分析（2026-07-01新增）

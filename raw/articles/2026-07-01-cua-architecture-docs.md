@@ -1,0 +1,110 @@
+---
+source_id: auto-20260701-archdocs01
+title: CUA Architecture - What is Cua?
+source_type: official_docs
+tier: 1
+control_object: agent_integration
+tech_layer: agent_integration
+collected_date: 2026-07-01
+confidence: high
+source_url: https://cua.ai/docs/cua/guide/get-started/what-is-cua
+---
+
+# What is Cua?
+
+Open-source sandboxes and agent framework for computer-use AI
+
+Cua lets you spin up isolated desktop environments — Linux, macOS, Windows, Android — and build agents that can see and control them. One SDK, any OS, cloud or local.
+
+```python
+import asyncio
+from cua import Sandbox, Image, ComputerAgent
+
+async def main():
+    async with Sandbox.ephemeral(Image.linux(), local=True) as sb:
+        agent = ComputerAgent(
+            model="cua/anthropic/claude-sonnet-4-5",
+            tools=[sb],
+        )
+        async for result in agent.run([{
+            "role": "user",
+            "content": "Open Firefox and search for 'open source computer use'",
+        }]):
+            for item in result["output"]:
+                if item["type"] == "message":
+                    print(item["content"][0]["text"])
+
+asyncio.run(main())
+```
+
+## Install
+
+```bash
+pip install cua
+```
+
+No account needed to run locally with Docker. For cloud sandboxes and hosted models, get a free API key at [cua.ai](https://cua.ai/signin).
+
+## What it includes
+
+**Sandbox SDK** — create and control sandboxes programmatically. Same API everywhere:
+
+```python
+async with Sandbox.ephemeral(Image.linux()) as sb:      # cloud Linux container
+async with Sandbox.ephemeral(Image.macos()) as sb:      # cloud macOS VM
+async with Sandbox.ephemeral(Image.windows()) as sb:    # cloud Windows VM
+async with Sandbox.ephemeral(Image.android()) as sb:    # cloud Android VM
+async with Sandbox.ephemeral(Image.linux(), local=True) as sb:  # local Docker
+```
+
+Inside any sandbox:
+
+```python
+await sb.shell.run("npm install")           # run shell commands
+await sb.screenshot()                       # capture the screen
+await sb.mouse.click(x, y)                  # click
+await sb.keyboard.type("hello")             # type
+await sb.keyboard.press("ctrl+c")           # key combos
+await sb.mobile.tap(x, y)                   # Android touch
+async with sb.tunnel.forward(3000) as t:    # forward ports
+    print(t.url)
+```
+
+**Agent SDK** — plug any vision-language model into a computer-use loop:
+
+```python
+agent = ComputerAgent(
+    model="cua/anthropic/claude-sonnet-4-5",  # or openai, gemini, qwen, ...
+    tools=[sb],
+)
+async for result in agent.run(messages):
+    ...
+```
+
+**Image builder** — configure the environment before the sandbox starts:
+
+```python
+img = (
+    Image.linux()
+    .apt_install("curl", "ffmpeg")
+    .pip_install("playwright")
+    .env(API_KEY="...")
+    .run("playwright install chromium")
+)
+async with Sandbox.ephemeral(img) as sb:
+    ...
+```
+
+## Use cases
+
+- **AI coding assistants** — safe isolated environments for Claude Code, Codex, and similar tools
+- **Browser and desktop automation** — agents that interact with any real UI
+- **Cross-platform testing** — run the same test against Linux, macOS, Windows, and Android
+- **Benchmarking** — evaluate agents on OSWorld, ScreenSpot, and custom task sets
+
+## Next
+
+- [Quickstart](https://cua.ai/docs/cua/guide/get-started/quickstart) — running in 5 minutes
+- [Sandbox Lifecycle](https://cua.ai/docs/cua/guide/sandbox/lifecycle) — ephemeral, persistent, connect
+- [Images](https://cua.ai/docs/cua/guide/sandbox/images) — customizing your environment
+- [Examples](https://cua.ai/docs/cua/examples/sandboxes/linux) — runnable samples for every OS

@@ -99,6 +99,16 @@
 - [x] **bb-browser 技术分析** ✓ (2026-06-30) — 12 大核心能力详解
 - [x] **real-browser-mcp GitHub README** ✓ (2026-07-01) — 会话状态复用的 MCP 服务器（18个工具）
 - [x] **Computer-Use-Preview GitHub README** ✓ (2026-07-01) — Google 官方 Gemini CUA 实现，双后端架构
+- [x] **Stagehand GitHub README** ✓ (2026-07-01) — AI+代码混合控制浏览器自动化，20K+ Stars
+- [x] **Stagehand Official Docs** ✓ (2026-07-01) — 四大API详解
+- [x] **Stagehand Quickstart Guide** ✓ (2026-07-01) — 快速入门指南
+- [x] **BrowserBase MCP Server README** ✓ (2026-07-01) — 官方 MCP 服务器，6工具
+- [x] **BrowserBase Official Homepage** ✓ (2026-07-01) — 云浏览器平台，36M+月活会话
+- [x] **BrowserBase API Reference** ✓ (2026-07-01) — Sessions API 文档
+- [x] **Stagehand技术分析** ✓ (2026-07-01) — AI+代码混合新范式
+- [x] **MCP-Server-Browserbase性能优化** ✓ (2026-07-01) — 20-40%性能提升
+- [x] **Stagehand+Playwright集成** ✓ (2026-07-01) — 100%兼容性分析
+- [x] **BrowserBase AI Agent基础设施** ✓ (2026-07-01) — Web as API新趋势
 
 **桌面应用控制**：
 - [x] UI-TARS-desktop GitHub README ✓ (2026-06-28)
@@ -213,6 +223,11 @@
 - [x] **MCP-Link** ✓ (2026-07-01) — OpenAPI 到 MCP Server 自动化转换工具，零代码配置，2个素材
 - [x] **Vibe Workflow** ✓ (2026-07-01) — 自然语言驱动的工作流编排范式，核心概念实体
 - [x] **DeerFlow** ✓ (2026-07-01) — 字节跳动开源 SuperAgent Harness，72K+ Stars，登顶 GitHub Trending #1，14层 Middleware + Sub-Agent 编排，4个素材
+- [x] **Headroom** ✓ (2026-07-01) — AI Agent 上下文压缩层，24,534+ Stars，CCR可逆压缩，60-95% Token节省，跨Agent共享记忆，3个素材
+- [x] **Context-mode** ✓ (2026-07-01) — MCP 上下文管理框架，15,616+ Stars，98% Token压缩，Session Continuity，Think in Code范式，3个素材
+- [x] **trycua/cua** ✓ (2026-07-01) — Computer-Use Agent 基础设施，后台桌面控制（no-foreground），三模态捕获，MCP集成，3个素材（补充已有 cua-driver）
+- [x] **OmniParser** ✓ (2026-07-01) — Microsoft 纯视觉 GUI 截图解析工具，V2.0 SOTA ScreenSpot Pro 39.6%，视觉理解基础设施，3个素材
+- [x] **UFO²/UFO³** ✓ (2026-07-01) — Microsoft Windows 桌面 AgentOS，GUI+API混合执行，推测式多步执行(-51.5% LLM调用)，UFO³ Galaxy多设备编排，2个素材
 
 ### digest 提取指导原则
 

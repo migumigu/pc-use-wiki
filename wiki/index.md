@@ -1,6 +1,6 @@
 # AI Agent PC 控制 — 知识库索引
 
-> 创建于 2026-06-27 |> 最后更新：2026-07-01（DeerFlow 研究 — 2026年新趋势 TOP1）
+> 创建于 2026-06-27 |> 最后更新：2026-07-01（Stagehand/Browserbase 技术分析 — 浏览器自动化新范式）
 
 ---
 
@@ -14,8 +14,8 @@
 
 ### 浏览器控制
 - 主题页：[[浏览器控制]]
-- 素材摘要：[[browser-use GitHub README]] [[browser-use 官方文档]] [[browser-use 技术架构分析]] [[browser-use vs Playwright MCP 对比]] [[Playwright MCP Server 官方文档]] [[page-agent GitHub README]] [[page-agent MCP Server 文档]] [[page-agent 技术分析报告]] [[Chrome DevTools Protocol 官方文档]] [[Chrome DevTools MCP 官方介绍]] [[Chrome DevTools MCP 技术分析]] [[Playwright CDP/WebSocket 对比分析]] [[Playwright GitHub README]] [[OpenClaw GitHub README]] [[OpenClaw Browser Control]] [[bb-browser GitHub README]] [[bb-browser 技术分析]] [[Agent-Reach GitHub README]] [[real-browser-mcp GitHub README]] [[Computer-Use-Preview GitHub README]]
-- 相关实体：[[browser-use]] [[Playwright]] [[浏览器自动化]] [[Agent]] [[LLM]] [[MCP]] [[chrome-devtools-mcp]] [[agent-browser]] [[page-agent]] [[OpenClaw]] [[bb-browser]] [[Agent-Reach]] [[real-browser-mcp]] [[Computer-Use-Preview]]
+- 素材摘要：[[browser-use GitHub README]] [[browser-use 官方文档]] [[browser-use 技术架构分析]] [[browser-use vs Playwright MCP 对比]] [[Playwright MCP Server 官方文档]] [[page-agent GitHub README]] [[page-agent MCP Server 文档]] [[page-agent 技术分析报告]] [[Chrome DevTools Protocol 官方文档]] [[Chrome DevTools MCP 官方介绍]] [[Chrome DevTools MCP 技术分析]] [[Playwright CDP/WebSocket 对比分析]] [[Playwright GitHub README]] [[OpenClaw GitHub README]] [[OpenClaw Browser Control]] [[bb-browser GitHub README]] [[bb-browser 技术分析]] [[Agent-Reach GitHub README]] [[real-browser-mcp GitHub README]] [[Computer-Use-Preview GitHub README]] [[Stagehand：浏览器自动化的新革命]] [[mcp-server-browserbase 性能优化技巧]] [[Playwright + AI = Stagehand 技术架构]] [[Browserbase 架构深度解析]]
+- 相关实体：[[browser-use]] [[Playwright]] [[浏览器自动化]] [[Agent]] [[LLM]] [[MCP]] [[chrome-devtools-mcp]] [[agent-browser]] [[page-agent]] [[OpenClaw]] [[bb-browser]] [[Agent-Reach]] [[real-browser-mcp]] [[Computer-Use-Preview]] [[Stagehand]] [[Browserbase]] [[mcp-server-browserbase]]
 
 ### 桌面应用控制
 - 主题页：[[桌面应用控制]]
@@ -55,8 +55,8 @@
 
 | 类型 | 数量 |
 |------|------|
-| 素材摘要 | 165（+1） |
-| 实体页 | 103（+1） |
+| 素材摘要 | 169（+4） |
+| 实体页 | 106（+3） |
 | 主题页 | 6 |
 | 对比分析 | 1 |
 | 综合分析 | 12 |
@@ -64,6 +64,14 @@
 ---
 
 ## 最近更新
+
+- **2026-07-01**：Stagehand/Browserbase 技术分析（自动研究工作流）
+  - 收集 4 个素材（Stagehand ×2、Browserbase ×2）
+  - 创建 4 个素材摘要页
+  - 创建 3 个实体页（Stagehand、Browserbase、mcp-server-browserbase）
+  - 更新浏览器控制分类
+  - 知识库素材：169（+4）
+  - 知识库实体：106（+3）
 
 - **2026-07-01**：2026年新趋势研究（自动研究工作流）
   - 收集 3 个素材（OpenCUA ×1、real-browser-mcp ×1、Computer-Use-Preview ×1）

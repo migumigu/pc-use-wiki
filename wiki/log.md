@@ -6,6 +6,30 @@
 
 ## 2026-07-01
 
+### ingest | Stagehand/Browserbase 技术分析（自动研究工作流）
+
+新增页面：
+- wiki/sources/2026-07-01-stagehand-ai-browser-automation.md
+- wiki/sources/2026-07-01-mcp-server-browserbase-performance.md
+- wiki/sources/2026-07-01-stagehand-playwright-integration.md
+- wiki/sources/2026-07-01-browserbase-ai-agent-browser.md
+
+更新页面：
+- wiki/index.md（添加 4 个素材 + 3 个实体，更新统计）
+
+知识库统计：
+- 素材摘要：169（+4）
+- 实体页：106（+3）
+- 浏览器控制素材：31（+4）
+
+素材内容：
+- Stagehand：AI与代码混合控制的浏览器自动化框架（20K+ Stars）
+- mcp-server-browserbase：性能优化技巧（20-40% 速度提升）
+- Playwright + AI 架构分析：三大核心API（act、extract、observe）
+- Browserbase 架构解析：为 AI Agent 构建浏览器基础设施
+
+---
+
 ### ingest | DeerFlow 研究（自动研究工作流）
 
 新增页面：

@@ -4,6 +4,156 @@
 
 ---
 
+## 2026-07-01 — 自动研究工作流：OmniParser + UFO²/UFO³ 微软桌面控制研究
+
+- **操作**：全自动研究工作流（趋势扫描 → 评分矩阵 → 素材收集 → 报告生成 → 证伪验证 → 消化入库）
+- **研究方向**：Microsoft 桌面控制关键技术（视觉理解基础设施 + Windows AgentOS）
+- **选定项目**：OmniParser（18K-22K+ Stars）、UFO²/UFO³（7K+ Stars）
+- **素材数量**：5个（Tier1: 4, Tier2: 1）
+- **素材列表**：
+  - raw/articles/2026-07-01-omniparser-github-readme.md
+  - raw/articles/2026-07-01-omniparser-v2-blog.md
+  - raw/articles/2026-07-01-omniparser-project-page.md
+  - raw/articles/2026-07-01-ufo2-github-readme.md
+  - raw/articles/2026-07-01-ufo2-deep-analysis.md
+  - raw/notes/2026-07-01-omniparser-ufo2-technical-report-v1.0.md
+  - raw/notes/2026-07-01-falsification-record.md
+
+- **新增 Wiki 页面**：
+  - wiki/sources/2026-07-01-omniparser-github-readme.md
+  - wiki/sources/2026-07-01-omniparser-v2-blog.md
+  - wiki/sources/2026-07-01-omniparser-project-page.md
+  - wiki/sources/2026-07-01-ufo2-github-readme.md
+  - wiki/sources/2026-07-01-ufo2-deep-analysis.md
+  - wiki/entities/OmniParser.md
+  - wiki/entities/UFO².md
+
+- **更新页面**：
+  - index.md — 添加 OmniParser、UFO² 实体和素材条目，更新计数（186 素材，308 页面）
+
+- **证伪验证**：
+  - OmniParser Stars 数据不一致（18.3K/21.7K）：⚠️ 修正为"18K-22K+"
+  - V2延迟降低60%：✅ 官方声称，标注"缺乏独立验证"
+  - UFO²成功率30.5%/32.7%：⚠️ 论文数据，评测细节需确认
+  - AIP与MCP关系：⚠️ 待确认
+
+- **研究价值**：
+  - OmniParser：填补"视觉理解基础设施"空白，任何LLM即插即用的屏幕解析能力
+  - UFO²：填补"Windows深度集成AgentOS"空白，GUI+API混合执行新范式
+  - 两者技术协同：UFO²直接集成OmniParser-v2作为混合控件感知组件
+  - UFO³：多设备编排（Galaxy框架），AIP协议+MCP集成
+
+- **知识积累成果**：
+  - 桌面应用控制领域新增视觉理解基础设施（OmniParser）
+  - 桌面应用控制领域新增 Windows AgentOS（UFO²/UFO³）
+  - 发现 OmniParser ↔ UFO² 技术协同关系
+  - 新增概念：屏幕结构化解析、AgentOS、GUI-API混合执行、推测式多步执行
+
+- **状态**：完成
+
+---
+
+## 2026-07-01 — 批量消化 Headroom + Context-mode + trycua/cua 上下文管理素材
+
+- **操作**：批量 ingest 12 个素材文件 + digest 综合报告生成
+- **研究方向**：上下文管理（Headroom、Context-mode、trycua/cua）
+- **素材数量**：12 个（Tier1: 12）
+- **综合报告**：wiki/synthesis/上下文管理-综合报告.md（450行，10章节）
+
+**核心发现**：
+1. 三大范式并行发展：可逆压缩（Headroom）、沙箱隔离+检索（Context-mode）、后台桌面控制（trycua/cua）
+2. Token节省惊人：实测60-98%压缩率，准确率保持不变（GSM8K 0.870→0.870）
+3. 跨Agent共享记忆成为标配：多Agent复用同一压缩索引，避免重复扫描成本
+4. MCP协议成为集成标准：三大工具均支持MCP集成，实现零代码接入
+
+**素材列表**：
+
+**Headroom 项目（3 个）**：
+- raw/articles/2026-07-01-headroom-github-readme.md
+- raw/articles/2026-07-01-headroom-technical-analysis.md
+- raw/articles/2026-07-01-headroom-practical-guide.md
+
+**Context-mode 项目（3 个）**：
+- raw/articles/2026-07-01-context-mode-github-readme.md
+- raw/articles/2026-07-01-context-mode-98-percent-compression-tech-analysis.md
+- raw/articles/2026-07-01-context-mode-claude-code-usage-guide.md
+
+**trycua/cua 项目（3 个）**：
+- raw/articles/2026-07-01-trycua-cua-github-readme.md
+- raw/articles/2026-07-01-cua-architecture-docs.md
+- raw/articles/2026-07-01-cua-driver-technical-docs.md
+
+**技术报告（3 个）**：
+- raw/notes/2026-07-01-headroom-technical-report-v1.0.md
+- raw/notes/2026-07-01-context-mode-technical-report-v1.0.md
+- raw/notes/2026-07-01-trycua-cua-technical-report-v1.0.md
+
+**新增 Wiki 页面**：
+
+- 素材摘要页（12）：
+  - wiki/sources/2026-07-01-headroom-github-readme.md
+  - wiki/sources/2026-07-01-headroom-technical-analysis.md
+  - wiki/sources/2026-07-01-headroom-practical-guide.md
+  - wiki/sources/2026-07-01-context-mode-github-readme.md
+  - wiki/sources/2026-07-01-context-mode-98-percent-compression-tech-analysis.md
+  - wiki/sources/2026-07-01-context-mode-claude-code-usage-guide.md
+  - wiki/sources/2026-07-01-trycua-cua-github-readme.md
+  - wiki/sources/2026-07-01-cua-architecture-docs.md
+  - wiki/sources/2026-07-01-cua-driver-technical-docs.md
+  - wiki/sources/2026-07-01-headroom-technical-report-v1.0.md
+  - wiki/sources/2026-07-01-context-mode-technical-report-v1.0.md
+  - wiki/sources/2026-07-01-trycua-cua-technical-report-v1.0.md
+
+- 实体页（6）：
+  - wiki/entities/Headroom.md — AI Agent 上下文压缩层，60-95% Token 节省
+  - wiki/entities/Context-mode.md — MCP 上下文管理框架，98% Token 压缩
+  - wiki/entities/上下文压缩.md — 减少 AI Agent 上下文窗口占用
+  - wiki/entities/Think in Code.md — LLM 从数据处理器转变为代码生成器
+  - wiki/entities/CCR.md — Compressed Context Retrieval，可逆压缩机制
+  - wiki/entities/Session Continuity.md — 会话连续性，压缩后状态恢复
+
+- 主题页（1）：
+  - wiki/topics/上下文工程.md — AI Agent 上下文管理的技术与方法论
+
+**更新页面**：
+- wiki/entities/CUA.md — 补充 no-foreground contract、三模态捕获、Platform Backends
+- wiki/topics/Agent集成层.md — 新增上下文管理章节、Headroom/Context-mode/trycua/cua 系列素材表
+- index.md — 新增素材摘要 + 实体页 + 主题页条目，更新计数（181 素材，301 页面）
+
+**核心发现**：
+
+**Headroom（24,534+ Stars）**：
+- 四种接入模式：Library、Proxy、Agent wrap、MCP server
+- 六种压缩器：SmartCrusher、CodeCompressor、Kompress-base、CacheAligner、ImageRouter、CCR
+- CCR 可逆压缩：原始内容缓存 + 检索恢复
+- 跨 Agent 共享记忆：多 Agent 共享压缩索引
+- 实测数据：代码搜索 92% 节省、SRE调试 92% 节省、GSM8K ±0.000
+
+**Context-mode（15,616+ Stars）**：
+- 四项机制：Context Saving（98%）、Session Continuity、Think in Code、输出压缩
+- 11 MCP Tools：沙箱工具（6）+ 管理工具（5）
+- 16 平台支持：Claude Code、Gemini CLI 等
+- 企业采用：Microsoft、Google、Meta、NVIDIA 等 18+ 公司
+
+**trycua/cua**：
+- 四大组件：Cua Drivers、Cua Sandbox、Cua Bench、Lume
+- no-foreground contract：后台桌面控制，不占用光标和焦点
+- 三模态捕获：som、ax、vision
+- Platform Backends：macOS（Accessibility API）、Windows（UI Automation）、Linux（AT-SPI）
+
+**知识积累成果**：
+- Agent 集成层新增上下文管理子领域
+- 新增概念实体：上下文压缩、Think in Code、CCR、Session Continuity
+- 新增主题页：上下文工程
+- CUA 实体页补充完整：no-foreground contract、三模态捕获
+
+**素材控制对象**：agent_integration
+**技术层级**：agent_integration
+
+- **状态**：完成
+
+---
+
 ## 2026-07-01 — 自动研究工作流：Refly.AI & MCP-Link 新趋势研究
 
 - **操作**：全自动研究工作流（趋势扫描 → 评分矩阵 → 素材收集 → 报告生成 → 证伪验证 → 消化入库）

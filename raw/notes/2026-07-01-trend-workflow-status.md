@@ -1,61 +1,75 @@
-# 新趋势研究工作流状态
+---
+source_id: auto-20260701-status
+title: 2026年新趋势研究工作流状态
+source_type: notes
+tier: 1
+control_object: agent_integration
+tech_layer: agent_integration
+collected_date: 2026-07-01
+collected_by: auto_research
+confidence: high
+---
 
-- 工作流名称：自动研究 - 2026年新趋势
+# 工作流状态
+
+- 工作流名称：新趋势研究 - 2026年 AI Agent PC 控制新项目
 - 开始时间：2026-07-01
-- 当前阶段：第2阶段完成
+- 当前阶段：第一阶段 - 趋势扫描与项目评估
 
 ## 阶段状态
 
 | 阶段 | 状态 | 开始时间 | 完成时间 | 产出物 | 备注 |
 |------|------|----------|----------|--------|------|
-| 第一阶段：趋势扫描 | completed | 2026-07-01 | 2026-07-01 | 发现6个项目 | GitHub Trending + 技术新闻 |
-| 第二阶段：去重过滤 | completed | 2026-07-01 | 2026-07-01 | 过滤后4个🔴项目 | OpenCUA/Computer-Use-Preview/open-notebook/real-browser-mcp未研究 |
-| 第三阶段：评分评估 | completed | 2026-07-01 | 2026-07-01 | 评分矩阵 + TOP 3选择 | 见下方评分表 |
-| 第四阶段：项目研究 | completed | 2026-07-01 | 2026-07-01 | 3个技术分析报告 + 证伪记录 | 子Agent并行完成 |
-| 第五阶段：消化入库 | completed | 2026-07-01 | 2026-07-01 | 3素材页 + 3实体页 + 2主题页 + index + log | 按llm-wiki规范执行 |
-| 第六阶段：完成报告 | completed | 2026-07-01 | 2026-07-01 | 最终报告 + purpose.md更新 | 所有阶段全部完成 |
+| 第一阶段：趋势扫描 | in_progress | 2026-07-01 | - | 评分矩阵 | 正在获取项目详情 |
+| 第二阶段：素材收集 | pending | - | - | | |
+| 第三阶段：报告生成 | pending | - | - | | |
+| 第四阶段：证伪验证 | pending | - | - | | |
+| 第五阶段：消化入库 | pending | - | - | | |
+| 第六阶段：进度更新 | pending | - | - | | |
+
+## 扫描发现的项目
+
+### 项目列表与去重状态
+
+| 项目 | GitHub URL | Stars | 契合度 | 知识库状态 | 研究深度标记 |
+|------|-----------|-------|--------|-----------|--------------|
+| trycua/cua | github.com/trycua/cua | 未知 | 高（Computer Use 框架） | 有相关实体（cua-driver） | 🟡 初步研究（需补充完整框架研究） |
+| mksglu/context-mode | github.com/mksglu/context-mode | 16,044+ | 高（MCP 上下文压缩） | 无实体页 | 🔴 未研究 |
+| headroomlabs-ai/headroom | github.com/headroomlabs-ai/headroom | 50,103+ | 高（上下文压缩层） | 无实体页 | 🔴 未研究 |
+| OpenMontage | github.com/calesthiro/openmontage | 未知 | 中（视频 Agent） | 有实体页（OpenMontage） | 🟡 初步研究（需补充素材） |
+| agent-desktop | 未知 | 未知 | 高（Accessibility Tree） | 无实体页 | 🔴 未研究 |
 
 ## 去重检查结果
 
-| 项目 | 实体页 | 素材数 | 综合报告 | 研究深度 | 决策 |
-|------|--------|--------|----------|----------|------|
-| OpenCUA | ❌ 无 | 0 | ❌ 无 | 🔴 未研究 | 纳入研究 |
-| Computer-Use-Preview | ❌ 无 | 0 | ❌ 无 | 🔴 未研究 | 纳入研究 |
-| open-notebook | ❌ 无 | 0 | ❌ 无 | 🔴 未研究 | 契合度低，不纳入TOP3 |
-| real-browser-mcp | ❌ 无 | 0 | ❌ 无 | 🔴 未研究 | 纳入研究 |
-| CopilotKit | ✅ 有 | 1 | ✅ 有(浏览器控制深度报告提及) | 🟡 初步研究 | 可补充研究，但不作为TOP |
-| agent-browser | ✅ 有 | 4+ | ✅ 有 | 🟢 深度研究 | 跳过 |
+**已检查的实体页：**
+- cua-driver.md（桌面应用控制）— 仅涉及 driver，未覆盖完整 cua 框架
+- OpenMontage.md（Agent集成层）— 只有实体页，素材 < 5
 
-## 评分矩阵
+**需要新增研究：**
+- trycua/cua（完整框架研究）
+- context-mode（🔴 未研究）
+- headroom（🔴 未研究）
+- agent-desktop（🔴 未研究）
 
-| 项目 | 热度(30%) | 新颖性(30%) | 契合度(25%) | 可获取性(15%) | 总分 | 排名 |
-|------|-----------|-------------|-------------|---------------|------|------|
-| **OpenCUA** | 8 | 10 | 10 | 10 | **9.4** | **TOP 1** |
-| **real-browser-mcp** | 5 | 8 | 10 | 7 | **7.6** | **TOP 2** |
-| **Computer-Use-Preview** | 3 | 8 | 10 | 10 | **6.4** | **TOP 3** |
-| open-notebook | 10 | 5 | 5 | 10 | 7.3 | 契合度低，排除 |
-| CopilotKit | - | - | - | - | - | 🟡初步研究，跳过TOP |
+## 初步评分矩阵
 
-**评分说明**：
-- 热度：Stars > 10K=10, > 5K=8, > 1K=6, > 100=5, < 100=3
-- 新颖性：2025+发布=10, 2024+=8, 2023+=5
-- 契合度：命中五大控制对象核心=10, 辅助分类=5, 无匹配=0
-- 可获取性：完整论文+官方文档=10, README+博客=7, 仅README=5
+| 项目 | 热度（30%） | 契合度（30%） | 可获取性（25%） | 研究价值（15%） | 总分预估 |
+|------|-------------|---------------|-----------------|-----------------|----------|
+| headroom | 10（50K+ Stars） | 10（Agent集成层核心） | 10（GitHub README） | 8（上下文工程） | 9.6 |
+| context-mode | 8（16K+ Stars） | 10（MCP/Agent集成） | 10（GitHub README） | 8（98%压缩） | 9.0 |
+| trycua/cua | 未知 | 10（Computer Use） | 10（GitHub README） | 9（全栈CUA） | 待计算 |
+| agent-desktop | 未知 | 10（桌面控制） | 待确认 | 9（Accessibility Tree） | 待计算 |
 
-**TOP 3 选择**：
-1. **OpenCUA** (9.4分) — 港大XLANG Lab+月之暗面，全球首个完整CUA框架，OSWorld SOTA，论文+数据集+模型全开源
-2. **real-browser-mcp** (7.6分) — MCP浏览器控制，直接契合浏览器控制分类
-3. **Computer-Use-Preview** (6.4分) — Google官方Gemini CUA实现，权威性高
+## 选定研究方向（待确认）
 
-## 选定研究方向
-
-**方向**：OpenCUA + real-browser-mcp + Computer-Use-Preview 三项目并行研究
-
-**理由**：
-- OpenCUA：学术价值最高，完整框架，填补CUA基础模型空白
-- real-browser-mcp：MCP生态重要项目，填补浏览器控制MCP Server空白
-- Computer-Use-Preview：Google官方方案，对比价值高
+**TOP 1**: headroom（上下文压缩层）— 50K+ Stars，核心契合度
+**TOP 2**: context-mode（MCP上下文管理）— 16K+ Stars，Agent集成层
+**TOP 3**: trycua/cua（完整CUA框架）— 补充已有 cua-driver 研究
 
 ## 异常记录
 
-（无）
+（暂无）
+
+---
+
+*状态文件将在每个阶段完成后更新*
