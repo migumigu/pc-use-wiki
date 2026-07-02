@@ -18,8 +18,16 @@
 }
 
 /* Adjust main content width on wide screens */
-@media (min-width: 80rem) {
-  .main-content {
-    max-width: 60rem !important;
+/* Just the Docs 默认将 .main 限制在 800px，宽屏时大幅展宽 */
+@media (min-width: 66rem) {
+  .main {
+    max-width: 75rem !important;
+  }
+}
+
+/* 超宽屏（>1600px）进一步展宽 */
+@media (min-width: 100rem) {
+  .main {
+    max-width: calc(100% - 22rem) !important;
   }
 }
