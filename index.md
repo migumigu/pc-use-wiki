@@ -1,21 +1,17 @@
-#---
+---
 title: 知识库索引
+layout: home
 ---
 
-> 最后更新：2026-07-02（Agent Sandbox + Managed Agents）
+> 最后更新：2026-07-02（NemoClaw + OpenShell 企业级 Agent 安全运行时）
 
 ---
-
-template: default
-sidebar: false
-comment: false
-page-info: false
 
 ## 概览
 
 - 主题：AI Agent 控制 PC 电脑
-- 素材总数：215
-- Wiki 页面总数：350
+- 素材总数：219
+- Wiki 页面总数：357
 
 ---
 
@@ -73,6 +69,8 @@ page-info: false
 - [[Agent-Sandbox]] — E2B 开源替代，企业级云原生 K8s Agent 运行时
 - [[CubeSandbox]] — 60ms 启动的 Rust+KVM 硬件级隔离沙箱（腾讯云）
 - [[K8s-Agent-Sandbox]] — Kubernetes SIG Apps 官方 Agent 沙箱 CRD
+- [[NemoClaw]] — NVIDIA 企业级 Agent 安全运行时，OpenClaw 安全外壳（2026-07-02新增）
+- [[OpenShell]] — NVIDIA AI Agent 内核级沙箱运行时，Landlock+seccomp+netns（2026-07-02新增）
 
 ### 文件系统控制领域（2026-06-28新增，2026-06-29扩展）
 

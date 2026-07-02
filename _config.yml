@@ -1,0 +1,9 @@
+title: AI Agent PC 控制知识库
+description: 系统研究 AI Agent 控制 PC 电脑的技术方案，构建可复用的知识体系
+theme: jekyll-theme-cayman
+markdown: kramdown
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
