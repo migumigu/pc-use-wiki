@@ -4,6 +4,66 @@
 
 ---
 
+## 2026-07-02 — 自动研究工作流：NemoClaw + OpenShell 企业级 Agent 安全运行时
+
+- **操作**：全自动研究工作流（趋势扫描 → 评分矩阵 → 素材收集 → 报告生成 → 证伪验证 → 消化入库）
+- **研究方向**：NVIDIA NemoClaw 企业级 Agent 安全运行时
+- **选定项目**：NemoClaw（OpenClaw 安全外壳）+ OpenShell（内核级沙箱运行时）
+- **评分结果**：热度 7.0 / 契合度 10.0 / 可获取性 8.0 / 研究价值 8.0 → 总分 8.30（排名第1）
+- **选择理由**：填补知识库中"企业级 Agent 安全运行时"空白，与已有的 E2B/CubeSandbox 等形成完整的 Agent 沙箱基础设施参照系
+- **素材数量**：4 个（Tier1: 1, Tier2: 3）
+- **素材列表**：
+  - raw/articles/2026-07-02-nemoclaw-github-overview.md — GitHub 项目概览（13.9K-14.5K Stars）
+  - raw/articles/2026-07-02-nemoclaw-deep-analysis.md — 深度技术分析（两层架构 + 四层安全模型）
+  - raw/articles/2026-07-02-nemoclaw-openshell-tutorial.md — OpenShell 三重沙箱隔离开发教程
+  - raw/articles/2026-07-02-nemoclaw-enterprise-security-standard.md — 企业级 AI 部署安全新范式
+
+**新增 Wiki 页面**：
+- 素材摘要页（4）：
+  - wiki/sources/2026-07-02-nemoclaw-github-overview.md
+  - wiki/sources/2026-07-02-nemoclaw-deep-analysis.md
+  - wiki/sources/2026-07-02-nemoclaw-openshell-tutorial.md
+  - wiki/sources/2026-07-02-nemoclaw-enterprise-security-standard.md
+- 实体页（2）：
+  - wiki/entities/NemoClaw.md — NVIDIA 企业级 AI Agent 安全运行时，OpenClaw 安全外壳
+  - wiki/entities/OpenShell.md — NVIDIA AI Agent 内核级沙箱运行时
+
+**更新页面**：
+- index.md — 添加 NemoClaw + OpenShell 实体条目，更新计数（219素材，357页面）
+
+**证伪验证**：
+- NemoClaw 是 NVIDIA GTC 2026 发布项目：✅ 多源一致确认
+- Landlock + seccomp + netns 三层沙箱：✅ 多源一致确认
+- 是 OpenClaw 的安全外壳/插件：✅ 多源一致确认
+- K3s + Docker 底层实现：⚠️ 单一来源，降为 LOW 置信度
+- Python Blueprint 四阶段工作流：⚠️ 单一来源，降为 LOW 置信度
+- Privacy Router 功能：⚠️ 部分确认，本地推理仍在实验阶段
+- Apache 2.0 协议：⚠️ 单一来源，待官方确认
+- GitHub Stars 数字：⚠️ 不同来源有差异，范围估计
+- macOS Landlock 模拟实现：⚠️ 单一来源，降为 LOW 置信度
+- 无已知 CVE/沙箱逃逸：✅ 搜索未发现（但项目太新）
+
+**核心发现**：
+- NemoClaw 提出"进程外安全执行"架构思路，修正了 in-process 安全模型的根本缺陷
+- 四层内核级安全模型（netns + Landlock + seccomp + 推理网关）实现了纵深防御
+- Privacy Router 开创了"敏感数据本地推理 + 复杂任务云端推理"的混合部署模式
+- 声明式 YAML 策略 + 热加载降低了安全策略运维成本
+- Agent 安全正在从应用层下沉到基础设施层（类似容器安全的演进路径）
+- 目前与 OpenClaw 紧密耦合，尚未成为通用 Agent 沙箱工具
+
+**研究价值**：
+- 填补系统服务控制中"企业级 Agent 安全运行时"空白
+- 补充 Agent 沙箱基础设施参照系（NVIDIA 方案 vs E2B/Firecracker 方案）
+- 引入"进程外安全执行"架构模式，丰富 Agent 安全设计方法论
+- 发现 Agent 安全从应用层下沉到基础设施层的趋势
+
+**素材控制对象**：system_service
+**技术层级**：tool_implementation / agent_integration
+
+- **状态**：完成
+
+---
+
 ## 2026-07-02 — 自动研究工作流：Agent Sandbox 基础设施 + Anthropic Managed Agents
 
 - **操作**：全自动研究工作流（趋势扫描 → 评分矩阵 → 素材收集 → 报告生成 → 证伪验证 → 消化入库）

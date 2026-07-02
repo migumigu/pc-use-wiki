@@ -1,9 +1,28 @@
 title: AI Agent PC 控制知识库
 description: 系统研究 AI Agent 控制 PC 电脑的技术方案，构建可复用的知识体系
+baseurl: "/pc-use-wiki"
+url: "https://migumigu.github.io"
 theme: jekyll-theme-cayman
 markdown: kramdown
+permalink: /:path/:basename
 defaults:
   - scope:
       path: ""
     values:
       layout: default
+  - scope:
+      path: "wiki"
+    values:
+      layout: wiki
+include:
+  - wiki
+exclude:
+  - raw
+  - .obsidian
+  - .trae
+  - .wiki-cache.json
+  - .wiki-schema.md
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock

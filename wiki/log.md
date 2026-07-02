@@ -1,3 +1,7 @@
+---
+title: 知识库操作日志
+---
+
 # 知识库操作日志
 
 > 记录所有知识库的 ingest、digest、lint 等操作
@@ -5,6 +9,52 @@
 ---
 
 ## 2026-07-02（续）
+
+### ingest | 2026年新趋势研究（自动研究工作流）— agency-agents、Cognee、Orca
+
+新增页面：
+- wiki/sources/2026-07-02-agency-agents-readme.md
+- wiki/sources/2026-07-02-cognee-readme.md
+- wiki/sources/2026-07-02-orca-readme.md
+- wiki/entities/agency-agents.md
+- wiki/entities/Cognee.md
+- wiki/entities/Orca.md
+
+更新页面：
+- wiki/topics/Agent集成层.md（添加 Agent Skills 系统、Agent 编排平台、知识图谱记忆系统）
+- wiki/index.md（添加 3 个素材 + 3 个实体，更新统计）
+
+评分矩阵：
+- agency-agents：122K Stars，热度10 + 契合度10 + 可获取性10 + 研究价值8 → 总分 9.6（排名1）
+- Cognee：24K Stars，热度9 + 契合度8 + 可获取性10 + 研究价值8 → 总分 8.7（排名2）
+- Orca：7K Stars，热度6 + 契合度10 + 可获取性10 + 研究价值9 → 总分 8.65（排名3）
+
+素材文件：
+- raw/articles/2026-07-02-agency-agents-readme.md
+- raw/articles/2026-07-02-cognee-readme.md
+- raw/articles/2026-07-02-orca-readme.md
+- raw/notes/2026-07-02-trend-evaluation-matrix.md
+
+### ingest | OpenHands 全栈 Coding Agent 平台研究（自动研究工作流）
+
+新增页面：
+- wiki/sources/2026-07-02-openhands-github-readme.md
+- wiki/sources/2026-07-02-openhands-architecture-analysis.md
+- wiki/entities/OpenHands.md
+- wiki/entities/EventStream.md
+- wiki/entities/Runtime.md
+- wiki/entities/Sandbox.md
+
+更新页面：
+- wiki/topics/Agent集成层.md（添加 OpenHands、EventStream）
+- wiki/index.md（添加 2 个素材 + 4 个实体，更新统计）
+
+证伪验证：
+- Stars 75.9K：✅ 多来源一致验证
+- SWEBench 77.6%：✅ 技术博客 + HuggingFace 验证
+- 1000+ Agent 云端规模：✅ 官方 README 验证
+
+技术报告：raw/notes/2026-07-02-openhands-technical-report-v1.1.md
 
 ### ingest | Skyvern + Steel Browser 研究（自动研究工作流）
 

@@ -77,6 +77,9 @@
 - [x] **Eigent 技术分析** ✓ (2026-07-02) — Workforce 引擎，与记忆系统互补
 - [x] **Atlas Agent 记忆** — 三索引+MCP，企业级记忆方案 ✓ (2026-07-02)
 - [x] **AionUi AI 桌面协作** — 24K+ Stars，AI 协作桌面应用 ✓ (2026-07-02)
+- [x] **agency-agents GitHub README** ✓ (2026-07-02) — 122K+ Stars，16 Division 架构，51+ Agent
+- [x] **Cognee GitHub README** ✓ (2026-07-02) — 24K+ Stars，三层存储架构，知识图谱引擎
+- [x] **Orca GitHub README** ✓ (2026-07-02) — 7K+ Stars，并行 Agent 编排器，Git worktree 隔离
 
 **浏览器控制**：
 - [x] **Skyvern GitHub README** ✓ (2026-07-02) — LLM+CV浏览器自动化，WebVoyager 85.85% SOTA
@@ -176,6 +179,8 @@
 - [x] **agent-sandbox/agent-sandbox** ✓ (2026-07-02) — E2B 开源替代，K8s 云原生 Agent 运行时
 - [x] **CubeSandbox** ✓ (2026-07-02) — 60ms 启动 Rust+KVM 硬件级隔离沙箱（腾讯云）
 - [x] **kubernetes-sigs/agent-sandbox** ✓ (2026-07-02) — K8s SIG Apps 官方 Agent 沙箱 CRD
+- [x] **NemoClaw (NVIDIA)** ✓ (2026-07-02) — 企业级 Agent 安全运行时，OpenClaw 安全外壳，OpenShell 内核级沙箱
+- [x] **OpenShell (NVIDIA)** ✓ (2026-07-02) — AI Agent 内核级沙箱运行时，Landlock+seccomp+netns 三重隔离
 - [ ] 进程通信机制深度解析
 
 **文件系统控制**：
@@ -249,6 +254,7 @@
 - [x] **trycua/cua** ✓ (2026-07-01) — Computer-Use Agent 基础设施，后台桌面控制（no-foreground），三模态捕获，MCP集成，3个素材（补充已有 cua-driver）
 - [x] **OmniParser** ✓ (2026-07-01) — Microsoft 纯视觉 GUI 截图解析工具，V2.0 SOTA ScreenSpot Pro 39.6%，视觉理解基础设施，3个素材
 - [x] **UFO²/UFO³** ✓ (2026-07-01) — Microsoft Windows 桌面 AgentOS，GUI+API混合执行，推测式多步执行(-51.5% LLM调用)，UFO³ Galaxy多设备编排，2个素材
+- [x] **OpenHands** ✓ (2026-07-02) — 75.9K Stars 全栈 AI Coding Agent 平台，SWEBench 77.6% SOTA，五层架构 + 三层 Harness（SDK/CLI/GUI/Cloud/Enterprise + EventStream/Runtime/Sandbox），2个素材
 
 ### digest 提取指导原则
 

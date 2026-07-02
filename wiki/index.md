@@ -1,6 +1,10 @@
+---
+title: 知识库索引
+---
+
 # AI Agent PC 控制 — 知识库索引
 
-> 创建于 2026-06-27 |> 最后更新：2026-07-02（Skyvern与Steel Browser研究）
+> 创建于 2026-06-27 |> 最后更新：2026-07-02（OpenHands研究）
 
 ---
 
@@ -14,8 +18,8 @@
 
 ### 浏览器控制
 - 主题页：[[浏览器控制]]
-- 素材摘要：[[browser-use GitHub README]] [[browser-use 官方文档]] [[browser-use 技术架构分析]] [[browser-use vs Playwright MCP 对比]] [[Playwright MCP Server 官方文档]] [[page-agent GitHub README]] [[page-agent MCP Server 文档]] [[page-agent 技术分析报告]] [[Chrome DevTools Protocol 官方文档]] [[Chrome DevTools MCP 官方介绍]] [[Chrome DevTools MCP 技术分析]] [[Playwright CDP/WebSocket 对比分析]] [[Playwright GitHub README]] [[OpenClaw GitHub README]] [[OpenClaw Browser Control]] [[bb-browser GitHub README]] [[bb-browser 技术分析]] [[Agent-Reach GitHub README]] [[real-browser-mcp GitHub README]] [[Computer-Use-Preview GitHub README]] [[Stagehand：浏览器自动化的新革命]] [[mcp-server-browserbase 性能优化技巧]] [[Playwright + AI = Stagehand 技术架构]] [[Browserbase 架构深度解析]]
-- 相关实体：[[browser-use]] [[Playwright]] [[浏览器自动化]] [[Agent]] [[LLM]] [[MCP]] [[chrome-devtools-mcp]] [[agent-browser]] [[page-agent]] [[OpenClaw]] [[bb-browser]] [[Agent-Reach]] [[real-browser-mcp]] [[Computer-Use-Preview]] [[Stagehand]] [[Browserbase]] [[mcp-server-browserbase]] [[Skyvern]] [[Steel-Browser]]
+- 素材摘要：[[browser-use GitHub README]] [[browser-use 官方文档]] [[browser-use 技术架构分析]] [[browser-use vs Playwright MCP 对比]] [[Playwright MCP Server 官方文档]] [[page-agent GitHub README]] [[page-agent MCP Server 文档]] [[page-agent 技术分析报告]] [[Chrome DevTools Protocol 官方文档]] [[Chrome DevTools MCP 官方介绍]] [[Chrome DevTools MCP 技术分析]] [[Playwright CDP/WebSocket 对比分析]] [[Playwright GitHub README]] [[OpenClaw GitHub README]] [[OpenClaw Browser Control]] [[bb-browser GitHub README]] [[bb-browser 技术分析]] [[Agent-Reach GitHub README]] [[real-browser-mcp GitHub README]] [[Computer-Use-Preview GitHub README]] [[Stagehand：浏览器自动化的新革命]] [[mcp-server-browserbase 性能优化技巧]] [[Playwright + AI = Stagehand 技术架构]] [[Browserbase 架构深度解析]] [[2026-07-02-openhands-github-readme]] [[2026-07-02-openhands-architecture-analysis]]
+- 相关实体：[[browser-use]] [[Playwright]] [[浏览器自动化]] [[Agent]] [[LLM]] [[MCP]] [[chrome-devtools-mcp]] [[agent-browser]] [[page-agent]] [[OpenClaw]] [[bb-browser]] [[Agent-Reach]] [[real-browser-mcp]] [[Computer-Use-Preview]] [[Stagehand]] [[Browserbase]] [[mcp-server-browserbase]] [[Skyvern]] [[Steel-Browser]] [[OpenHands]] [[EventStream]] [[Runtime]] [[Sandbox]]
 
 ### 桌面应用控制
 - 主题页：[[桌面应用控制]]
@@ -46,8 +50,8 @@
 ### Agent 集成层
 - 主题页：[[Agent集成层]]
 - 深度报告：[[MCP-Protocol-深度报告]] [[Computer-Use-深度报告]] [[Tool-Calling-对比报告]] [[Multi-Agent协作-深度报告]]
-- 素材摘要：[[MCP 协议基础]] [[MCP 协议设计文档]] [[Anthropic Computer Use 实现原理]] [[Open Interpreter Computer Use API]] [[A2A Protocol GitHub Official Repository]] [[A2A Protocol Official Documentation Site]] [[A2A Python SDK Official Repository]] [[A2A Protocol Core Concepts]] [[OpenClaw GitHub README]] [[OpenClaw Gateway Architecture]] [[OpenClaw Tools Overview]] [[OpenClaw Skills System]] [[OpenClaw Browser Control]] [[OpenClaw Sandboxing & Security]] [[codebase-memory-mcp GitHub README]] [[codebase-memory-mcp 技术架构深度分析]] [[三款代码智能工具对比]] [[Superpowers GitHub README]] [[Gemini 3.5 Flash Computer Use]] [[Hermes Agent GitHub README]] [[Hermes Agent Computer Use 技术文档]] [[GitHub MCP Server 官方 README]] [[GitHub MCP Server 远程服务器文档]] [[GitHub MCP Server 架构与生态分析]] [[DeerFlow GitHub README]]
-- 相关实体：[[MCP]] [[Computer-Use]] [[Agent]] [[LLM]] [[A2A]] [[OpenClaw]] [[codebase-memory-mcp]] [[CopilotKit]] [[AG-UI-Protocol]] [[Superpowers]] [[Gemini 3.5 Flash]] [[hermes-agent]] [[cua-driver]] [[GitHub-MCP-Server]] [[DeerFlow]] [[Qoder]] [[Kun]]
+- 素材摘要：[[MCP 协议基础]] [[MCP 协议设计文档]] [[Anthropic Computer Use 实现原理]] [[Open Interpreter Computer Use API]] [[A2A Protocol GitHub Official Repository]] [[A2A Protocol Official Documentation Site]] [[A2A Python SDK Official Repository]] [[A2A Protocol Core Concepts]] [[OpenClaw GitHub README]] [[OpenClaw Gateway Architecture]] [[OpenClaw Tools Overview]] [[OpenClaw Skills System]] [[OpenClaw Browser Control]] [[OpenClaw Sandboxing & Security]] [[codebase-memory-mcp GitHub README]] [[codebase-memory-mcp 技术架构深度分析]] [[三款代码智能工具对比]] [[Superpowers GitHub README]] [[Gemini 3.5 Flash Computer Use]] [[Hermes Agent GitHub README]] [[Hermes Agent Computer Use 技术文档]] [[GitHub MCP Server 官方 README]] [[GitHub MCP Server 远程服务器文档]] [[GitHub MCP Server 架构与生态分析]] [[DeerFlow GitHub README]] [[2026-07-02-openhands-github-readme]] [[2026-07-02-openhands-architecture-analysis]] [[2026-07-02-agency-agents-readme]] [[2026-07-02-cognee-readme]] [[2026-07-02-orca-readme]]
+- 相关实体：[[MCP]] [[Computer-Use]] [[Agent]] [[LLM]] [[A2A]] [[OpenClaw]] [[codebase-memory-mcp]] [[CopilotKit]] [[AG-UI-Protocol]] [[Superpowers]] [[Gemini 3.5 Flash]] [[hermes-agent]] [[cua-driver]] [[GitHub-MCP-Server]] [[DeerFlow]] [[Qoder]] [[Kun]] [[OpenHands]] [[EventStream]] [[Runtime]] [[Sandbox]] [[agency-agents]] [[Cognee]] [[Orca]]
 
 ---
 
@@ -55,8 +59,8 @@
 
 | 类型 | 数量 |
 |------|------|
-| 素材摘要 | 179（+2） |
-| 实体页 | 112（+2） |
+| 素材摘要 | 184（+3） |
+| 实体页 | 119（+3） |
 | 主题页 | 6 |
 | 对比分析 | 1 |
 | 综合分析 | 12 |
@@ -64,6 +68,25 @@
 ---
 
 ## 最近更新
+
+- **2026-07-02**：2026年新趋势研究（自动研究工作流）— agency-agents、Cognee、Orca
+  - 收集 3 个素材（GitHub README ×3）
+  - 创建 3 个素材摘要页
+  - 创建 3 个实体页（agency-agents、Cognee、Orca）
+  - 更新 Agent 集成层主题页
+  - 执行评分矩阵（TOP 3 选择）
+  - 知识库素材：184（+3）
+  - 知识库实体：119（+3）
+
+- **2026-07-02**：OpenHands 全栈 Coding Agent 平台研究（自动研究工作流）
+  - 收集 2 个素材（GitHub README ×1、架构分析 ×1）
+  - 创建 2 个素材摘要页
+  - 创建 4 个实体页（OpenHands、EventStream、Runtime、Sandbox）
+  - 更新 Agent 集成层主题页
+  - 执行证伪验证（Stars 75.9K 多来源验证，SWEBench 77.6% 已验证）
+  - 生成技术分析报告 v1.1
+  - 知识库素材：181（+2）
+  - 知识库实体：116（+4）
 
 - **2026-07-02**：Skyvern与Steel Browser研究（自动研究工作流）
   - 收集 2 个素材（Skyvern ×1、Steel Browser ×1）

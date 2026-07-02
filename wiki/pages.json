@@ -1,0 +1,18 @@
+---
+layout: null
+permalink: /wiki/pages.json
+---
+[
+  {% assign pages_list = site.pages | where_exp: "p", "p.path contains 'wiki/'" %}
+  {% for p in pages_list %}
+    {% if p.url and p.url != empty %}
+      {% assign basename = p.path | split: '/' | last | replace: '.md', '' | replace: '.html', '' %}
+      {
+        "name": {{ basename | jsonify }},
+        "title": {{ p.title | default: basename | jsonify }},
+        "url": {{ p.url | relative_url | jsonify }},
+        "path": {{ p.path | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+    {% endif %}
+  {% endfor %}
+]
