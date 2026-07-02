@@ -22,6 +22,19 @@
   border-right: 1px solid var(--claude-border) !important;
 }
 
+/* 减少侧边栏左边浪费的区域：缩短整体宽度 + 缩小内边距 */
+@media (min-width: 66rem) {
+  .side-bar {
+    width: 17rem !important;
+  }
+  .side-bar .site-header,
+  .side-bar > div,
+  .side-bar > nav {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
 .site-header {
   background-color: var(--claude-bg) !important;
   border-bottom: 1px solid var(--claude-border) !important;
@@ -249,6 +262,6 @@ hr {
 }
 @media (min-width: 100rem) {
   .main {
-    max-width: calc(100% - 22rem) !important;
+    max-width: calc(100% - 19rem) !important;
   }
 }
