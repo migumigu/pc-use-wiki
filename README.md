@@ -88,6 +88,10 @@ wiki/
 
 ### 查看知识库
 
+在线访问（推荐）：**[https://migumigu.github.io/pc-use-wiki/](https://migumigu.github.io/pc-use-wiki/)** — 知识库主页，支持双链导航
+
+本地浏览：
+
 ```bash
 # 克隆仓库
 git clone git@github.com:migumigu/pc-use-wiki.git
@@ -110,7 +114,8 @@ llm-wiki status
 
 ## 相关链接
 
-- GitHub: https://github.com/migumigu/pc-use-wiki
+- 在线访问: [https://migumigu.github.io/pc-use-wiki/](https://migumigu.github.io/pc-use-wiki/)
+- GitHub: [https://github.com/migumigu/pc-use-wiki](https://github.com/migumigu/pc-use-wiki)
 - 知识库索引: [wiki/index.md](wiki/index.md)
 - 研究目的: [purpose.md](purpose.md)
 
