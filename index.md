@@ -1,6 +1,6 @@
 ---
 title: 知识库索引
-layout: home
+layout: default
 ---
 
 > 最后更新：2026-07-02（NemoClaw + OpenShell 企业级 Agent 安全运行时）

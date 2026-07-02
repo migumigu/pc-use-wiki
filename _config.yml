@@ -13,7 +13,7 @@ defaults:
   - scope:
       path: "wiki"
     values:
-      layout: wiki
+      layout: default
 include:
   - wiki
 exclude:
