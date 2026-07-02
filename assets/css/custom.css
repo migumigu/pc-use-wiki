@@ -1,0 +1,59 @@
+/* Custom overrides for pc-use-wiki */
+
+/* Page header: reduce height and use a more elegant dark gradient */
+.page-header {
+  padding: 2rem 1rem 2rem !important;
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%) !important;
+  color: #fff !important;
+  text-align: left !important;
+}
+
+.page-header .project-name {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  margin: 0 0 0.5rem !important;
+}
+
+.page-header .project-name a {
+  color: #fff !important;
+}
+
+.page-header .project-tagline {
+  font-size: 1.1rem !important;
+  font-weight: 400 !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  margin-bottom: 1rem !important;
+  opacity: 1 !important;
+}
+
+.page-header .btn {
+  color: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 6px !important;
+  padding: 0.5rem 1rem !important;
+}
+
+.page-header .btn:hover {
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  text-decoration: none !important;
+}
+
+/* Main content area: tighten top spacing on small screens */
+.main-content {
+  padding-top: 2rem !important;
+}
+
+/* Wiki link styles are injected by JS; provide subtle default here too */
+.wikilink {
+  color: #0366d6 !important;
+  text-decoration: none !important;
+  border-bottom: 1px dotted #0366d6 !important;
+}
+
+.wikilink-broken {
+  color: #6a737d !important;
+  border-bottom: 1px dashed #6a737d !important;
+}
