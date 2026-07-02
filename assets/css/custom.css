@@ -1,28 +1,79 @@
 /* ============================================
-   Claude Code 风格浅色主题覆盖
+   pc-use-wiki — Impeccable Reﬁned Theme
+   Design: Clean · Technical · Modern
+   Font: DM Sans · Accent: Purple (oklch)
+   Base unit: 4px spacing system
    ============================================ */
 
 :root {
-  --claude-purple: #7c3aed;
-  --claude-purple-dark: #6d28d9;
-  --claude-purple-light: #ede9fe;
-  --claude-purple-subtle: #f5f3ff;
-  --claude-text: #1f2937;
-  --claude-text-muted: #6b7280;
-  --claude-border: #e5e7eb;
-  --claude-bg: #ffffff;
-  --claude-sidebar: #f8f9fa;
-  --claude-code-bg: #f3f4f6;
-  --claude-accent-bg: #f0f0ff;
+  /* --- Brand palette (OKLCH) --- */
+  --purple-hue: 275;
+  --claude-primary:      oklch(55% 0.22 var(--purple-hue));
+  --claude-primary-dark: oklch(42% 0.20 var(--purple-hue));
+  --claude-primary-light: oklch(90% 0.06 var(--purple-hue));
+  --claude-primary-subtle: oklch(96% 0.03 var(--purple-hue));
+
+  /* --- Tinted neutrals (brand hint) --- */
+  --claude-text:         oklch(22% 0.01 var(--purple-hue));
+  --claude-text-muted:   oklch(50% 0.015 var(--purple-hue));
+  --claude-text-faint:   oklch(70% 0.015 var(--purple-hue));
+  --claude-border:       oklch(88% 0.01 var(--purple-hue));
+  --claude-border-light: oklch(93% 0.008 var(--purple-hue));
+  --claude-bg:           oklch(99% 0.005 var(--purple-hue));
+  --claude-sidebar:      oklch(97% 0.008 var(--purple-hue));
+  --claude-code-bg:      oklch(96% 0.008 var(--purple-hue));
+
+  /* --- Surfaces --- */
+  --claude-surface-raised: oklch(99% 0.005 var(--purple-hue));
+  --claude-surface-overlay: oklch(99% 0.005 var(--purple-hue));
+
+  /* --- Semantic (keeping simple) --- */
+  --claude-success: oklch(55% 0.18 145);
+  --claude-error:   oklch(55% 0.20 25);
+
+  /* --- Font --- */
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace;
+
+  /* --- Type scale (minor third 1.2) --- */
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 0.9375rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.5rem;
+  --text-2xl:  1.75rem;
+  --text-3xl:  2.25rem;
+
+  /* --- Spacing (4pt base) --- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
 }
 
-/* ===== 侧边栏 ===== */
+/* ============================================
+   Base
+   ============================================ */
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================
+   Sidebar
+   ============================================ */
 .side-bar {
   background-color: var(--claude-sidebar) !important;
   border-right: 1px solid var(--claude-border) !important;
 }
 
-/* 减少侧边栏左边浪费的区域：整体加宽一点、缩小内边距、字体稍小 */
 @media (min-width: 66rem) {
   .side-bar {
     width: 20rem !important;
@@ -33,239 +84,322 @@
     padding-left: 0.75rem !important;
     padding-right: 0.75rem !important;
   }
-  /* 保持 .main 与侧边栏右边界对齐，消除间隙 */
-  .main {
-    margin-left: 20rem !important;
-  }
 }
 
 .site-header {
-  background-color: var(--claude-bg) !important;
-  border-bottom: 1px solid var(--claude-border) !important;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.04) !important;
+  background-color: transparent !important;
+  border-bottom: 1px solid var(--claude-border-light) !important;
 }
 
 .site-title {
-  color: var(--claude-text) !important;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm) !important;
   font-weight: 600 !important;
+  color: var(--claude-text) !important;
+  letter-spacing: 0 !important;
+  padding: var(--space-4) var(--space-3) !important;
 }
 
+/* ============================================
+   Navigation
+   ============================================ */
 .nav-list-link {
-  color: var(--claude-text) !important;
-  font-size: 0.8rem !important;
-  border-radius: 4px !important;
+  font-family: var(--font-sans);
+  font-size: var(--text-xs) !important;
+  font-weight: 450 !important;
+  color: var(--claude-text-muted) !important;
+  border-radius: 6px !important;
   margin-right: 0 !important;
-  transition: all 0.15s ease !important;
+  padding: var(--space-1) var(--space-2) !important;
+  transition: all 0.12s ease !important;
+  letter-spacing: 0.01em !important;
 }
 
 .nav-list-link:hover {
-  background-color: var(--claude-purple-light) !important;
-  color: var(--claude-purple-dark) !important;
+  background-color: var(--claude-primary-light) !important;
+  color: var(--claude-primary) !important;
 }
 
 .nav-list-link.active {
-  background-color: var(--claude-purple-light) !important;
-  color: var(--claude-purple-dark) !important;
+  background-color: var(--claude-primary-light) !important;
+  color: var(--claude-primary-dark) !important;
   font-weight: 600 !important;
   border-right: none !important;
-  border-left: 3px solid var(--claude-purple) !important;
+  border-left: 2px solid var(--claude-primary) !important;
 }
 
-/* 子导航缩进更清晰 */
 .nav-list .nav-list-item > .nav-list {
-  padding-left: 0.75rem !important;
-  border-left: 1px solid var(--claude-border) !important;
-  margin-left: 0.5rem !important;
+  padding-left: var(--space-3) !important;
+  border-left: 1px solid var(--claude-border-light) !important;
+  margin-left: var(--space-2) !important;
 }
 
-/* ===== 链接 ===== */
-a {
-  color: var(--claude-purple) !important;
-}
-a:hover {
-  color: var(--claude-purple-dark) !important;
-  text-decoration: underline !important;
-}
-
-/* Wiki 双链（由 JS 注入，但确保浅色主题下可见） */
-.wikilink {
-  color: var(--claude-purple) !important;
-  text-decoration: none !important;
-  border-bottom: 1px dotted var(--claude-purple) !important;
-}
-.wikilink:hover {
-  color: var(--claude-purple-dark) !important;
-  border-bottom-color: var(--claude-purple-dark) !important;
-}
-.wikilink-broken {
-  color: var(--claude-text-muted) !important;
-  border-bottom: 1px dashed var(--claude-border) !important;
-}
-
-/* ===== 顶栏辅助链接 ===== */
-.aux-nav-list-item a {
-  color: var(--claude-text-muted) !important;
-  font-size: 0.85rem !important;
-}
-.aux-nav-list-item a:hover {
-  color: var(--claude-purple) !important;
-}
-
-/* ===== 搜索 ===== */
-.search-input-wrap {
-  border: 1px solid var(--claude-border) !important;
-  border-radius: 8px !important;
-  background-color: var(--claude-bg) !important;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease !important;
-}
-.search-input-wrap:hover {
-  border-color: #d1d5db !important;
-}
-.search-input:focus {
-  border-color: var(--claude-purple) !important;
-  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12) !important;
-}
-.search-result-doc .search-result-icon {
-  color: var(--claude-purple) !important;
-}
-.search-result {
-  background-color: var(--claude-bg) !important;
-  border: 1px solid var(--claude-border) !important;
-  border-radius: 8px !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
-}
-.search-result:hover {
-  background-color: var(--claude-purple-subtle) !important;
-}
-.search-result-title {
-  color: var(--claude-text) !important;
-  font-weight: 600 !important;
-}
-.search-result-preview {
-  color: var(--claude-text-muted) !important;
-  font-size: 0.8rem !important;
-}
-
-/* ===== 内容区 ===== */
+/* ============================================
+   Main content
+   ============================================ */
 .main {
   background-color: var(--claude-bg) !important;
 }
 
 .main-content {
-  color: var(--claude-text) !important;
-  font-size: 0.95rem !important;
+  font-family: var(--font-sans);
+  font-size: var(--text-base) !important;
   line-height: 1.7 !important;
-}
-
-/* 标题 */
-.main-content h1,
-.main-content h2,
-.main-content h3,
-.main-content h4 {
   color: var(--claude-text) !important;
-  font-weight: 700 !important;
-  letter-spacing: -0.01em !important;
-}
-.main-content h1 {
-  font-size: 2rem !important;
-  border-bottom: 1px solid var(--claude-border) !important;
-  padding-bottom: 0.5rem !important;
-  margin-bottom: 1.5rem !important;
-}
-.main-content h2 {
-  font-size: 1.5rem !important;
-  margin-top: 2rem !important;
-  margin-bottom: 0.75rem !important;
 }
 
-/* ===== 代码块 ===== */
-.highlight {
-  background-color: var(--claude-code-bg) !important;
+/* --- Headings — modular scale, clear hierarchy --- */
+.main-content h1 {
+  font-size: var(--text-2xl) !important;
+  font-weight: 700 !important;
+  color: var(--claude-text) !important;
+  letter-spacing: -0.02em !important;
+  border-bottom: 1px solid var(--claude-border-light) !important;
+  padding-bottom: var(--space-3) !important;
+  margin-bottom: var(--space-6) !important;
+  margin-top: var(--space-8) !important;
+}
+
+.main-content h2 {
+  font-size: var(--text-xl) !important;
+  font-weight: 650 !important;
+  color: var(--claude-text) !important;
+  letter-spacing: -0.01em !important;
+  margin-top: var(--space-8) !important;
+  margin-bottom: var(--space-3) !important;
+}
+
+.main-content h3 {
+  font-size: var(--text-lg) !important;
+  font-weight: 600 !important;
+  color: var(--claude-text) !important;
+  margin-top: var(--space-6) !important;
+  margin-bottom: var(--space-2) !important;
+}
+
+/* ============================================
+   Links
+   ============================================ */
+a {
+  color: var(--claude-primary) !important;
+  transition: color 0.12s ease !important;
+}
+
+a:hover {
+  color: var(--claude-primary-dark) !important;
+  text-decoration: underline !important;
+}
+
+/* ============================================
+   Wiki links (injected by JS)
+   ============================================ */
+.wikilink {
+  color: var(--claude-primary) !important;
+  text-decoration: none !important;
+  border-bottom: 1px dotted var(--claude-primary) !important;
+  transition: color 0.12s ease !important;
+}
+
+.wikilink:hover {
+  color: var(--claude-primary-dark) !important;
+  border-bottom-color: var(--claude-primary-dark) !important;
+}
+
+.wikilink-broken {
+  color: var(--claude-text-faint) !important;
+  border-bottom: 1px dashed var(--claude-border) !important;
+}
+
+/* ============================================
+   Top bar aux links
+   ============================================ */
+.aux-nav-list-item a {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs) !important;
+  font-weight: 500 !important;
+  color: var(--claude-text-muted) !important;
+}
+
+.aux-nav-list-item a:hover {
+  color: var(--claude-primary) !important;
+}
+
+/* ============================================
+   Search
+   ============================================ */
+.search-input-wrap {
   border: 1px solid var(--claude-border) !important;
   border-radius: 8px !important;
-  font-size: 0.85rem !important;
+  background-color: var(--claude-sidebar) !important;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+.search-input-wrap:hover {
+  border-color: var(--claude-text-faint) !important;
+}
+
+.search-input:focus {
+  border-color: var(--claude-primary) !important;
+  box-shadow: 0 0 0 3px oklch(55% 0.22 var(--purple-hue) / 0.15) !important;
+}
+
+.search-result-doc .search-result-icon {
+  color: var(--claude-primary) !important;
+}
+
+.search-results {
+  background-color: transparent !important;
+}
+
+.search-result {
+  background-color: var(--claude-surface-raised) !important;
+  border: 1px solid var(--claude-border) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 16px oklch(0% 0 0 / 0.08) !important;
+  padding: var(--space-2) var(--space-3) !important;
+}
+
+.search-result:hover {
+  background-color: var(--claude-primary-subtle) !important;
+  border-color: var(--claude-primary-light) !important;
+}
+
+.search-result-title {
+  font-family: var(--font-sans);
+  font-weight: 600 !important;
+  color: var(--claude-text) !important;
+  font-size: var(--text-sm) !important;
+}
+
+.search-result-preview {
+  color: var(--claude-text-muted) !important;
+  font-size: var(--text-xs) !important;
+}
+
+/* ============================================
+   Code
+   ============================================ */
+.highlight {
+  background-color: var(--claude-code-bg) !important;
+  border: 1px solid var(--claude-border-light) !important;
+  border-radius: 8px !important;
+  font-size: var(--text-sm) !important;
+  font-family: var(--font-mono) !important;
 }
 
 code.highlighter-rouge {
   background-color: var(--claude-code-bg) !important;
-  color: #e11d48 !important;
-  padding: 0.2em 0.4em !important;
+  color: oklch(50% 0.20 350) !important;
+  padding: 0.15em 0.35em !important;
   border-radius: 4px !important;
   font-size: 0.85em !important;
+  font-family: var(--font-mono) !important;
 }
 
-/* ===== 表格 ===== */
+/* ============================================
+   Tables
+   ============================================ */
 table {
   border-collapse: separate !important;
   border-spacing: 0 !important;
   border: 1px solid var(--claude-border) !important;
   border-radius: 8px !important;
   overflow: hidden !important;
+  font-size: var(--text-sm) !important;
 }
+
 thead {
   background-color: var(--claude-sidebar) !important;
 }
+
 th {
   font-weight: 600 !important;
   color: var(--claude-text) !important;
-  border-bottom: 2px solid var(--claude-border) !important;
-}
-td, th {
-  padding: 0.6rem 0.8rem !important;
-  border: 1px solid var(--claude-border) !important;
+  border-bottom: 1px solid var(--claude-border) !important;
+  padding: var(--space-2) var(--space-3) !important;
+  font-size: var(--text-xs) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em !important;
 }
 
-/* ===== 引用块 ===== */
+td {
+  padding: var(--space-2) var(--space-3) !important;
+  border: 1px solid var(--claude-border-light) !important;
+}
+
+/* ============================================
+   Blockquote
+   ============================================ */
 blockquote {
-  border-left: 4px solid var(--claude-purple) !important;
-  background-color: var(--claude-purple-subtle) !important;
-  padding: 0.75rem 1rem !important;
+  border-left: 3px solid var(--claude-primary) !important;
+  background-color: var(--claude-primary-subtle) !important;
+  padding: var(--space-3) var(--space-4) !important;
   border-radius: 0 8px 8px 0 !important;
   color: var(--claude-text) !important;
+  font-size: var(--text-sm) !important;
 }
 
-/* ===== 分割线 ===== */
+/* ============================================
+   HR
+   ============================================ */
 hr {
   border: none !important;
-  border-top: 1px solid var(--claude-border) !important;
-  margin: 2rem 0 !important;
+  border-top: 1px solid var(--claude-border-light) !important;
+  margin: var(--space-8) 0 !important;
 }
 
-/* ===== 列表 ===== */
+/* ============================================
+   Lists
+   ============================================ */
 .main-content ul,
 .main-content ol {
-  padding-left: 1.5rem !important;
+  padding-left: var(--space-5) !important;
 }
 
 .main-content li {
-  margin-bottom: 0.3rem !important;
+  margin-bottom: var(--space-1) !important;
+  line-height: 1.6 !important;
 }
 
-/* ===== 按钮 ===== */
+/* ============================================
+   Buttons
+   ============================================ */
 .btn-primary {
-  background: linear-gradient(135deg, var(--claude-purple), var(--claude-purple-dark)) !important;
+  background: linear-gradient(135deg, var(--claude-primary), var(--claude-primary-dark)) !important;
   border: none !important;
   color: #fff !important;
   border-radius: 6px !important;
-  padding: 0.5rem 1rem !important;
+  padding: var(--space-2) var(--space-4) !important;
+  font-family: var(--font-sans);
   font-weight: 500 !important;
+  font-size: var(--text-sm) !important;
 }
 
-/* ===== 底部页脚 ===== */
+.btn-primary:hover {
+  box-shadow: 0 2px 8px oklch(55% 0.22 var(--purple-hue) / 0.25) !important;
+}
+
+/* ============================================
+   Footer
+   ============================================ */
 .site-footer {
-  border-top: 1px solid var(--claude-border) !important;
+  border-top: 1px solid var(--claude-border-light) !important;
   color: var(--claude-text-muted) !important;
-  font-size: 0.8rem !important;
+  font-size: var(--text-xs) !important;
 }
 
-/* ===== 宽屏适配（保持之前的改动） ===== */
+/* ============================================
+   Wide-screen layout
+   ============================================ */
 @media (min-width: 66rem) {
   .main {
+    margin-left: 20rem !important;
     max-width: 75rem !important;
   }
 }
+
 @media (min-width: 100rem) {
   .main {
-    max-width: calc(100% - 19rem) !important;
+    max-width: calc(100% - 22rem) !important;
   }
 }

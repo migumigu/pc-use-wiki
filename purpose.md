@@ -128,6 +128,10 @@
 - [x] **MCP-Server-Browserbase性能优化** ✓ (2026-07-01) — 20-40%性能提升
 - [x] **Stagehand+Playwright集成** ✓ (2026-07-01) — 100%兼容性分析
 - [x] **BrowserBase AI Agent基础设施** ✓ (2026-07-01) — Web as API新趋势
+- [x] **Nanobrowser GitHub README** ✓ (2026-07-02) — 开源AI网页自动化工具，Planner+Navigator双智能体协作系统
+- [x] **Nanobrowser 技术架构分析** ✓ (2026-07-02) — TypeScript/React/Vite技术栈，Chrome Extension Manifest V3
+- [x] **Nanobrowser 使用案例** ✓ (2026-07-02) — 新闻摘要、数据收集、价格监控等场景
+- [x] **Nanobrowser 与其他浏览器自动化工具对比** ✓ (2026-07-02) — 与browser-use/Playwright/agent-browser横向对比
 
 **桌面应用控制**：
 - [x] UI-TARS-desktop GitHub README ✓ (2026-06-28)

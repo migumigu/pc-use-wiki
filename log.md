@@ -4,6 +4,60 @@
 
 ---
 
+## 2026-07-02 — 自动研究工作流：Nanobrowser 开源AI网页自动化工具
+
+- **操作**：全自动研究工作流（趋势扫描 → 评分矩阵 → 素材收集 → 报告生成 → 证伪验证 → 消化入库）
+- **研究方向**：Nanobrowser 开源AI网页自动化工具（Chrome扩展形式运行，Planner+Navigator双智能体协作系统）
+- **选定项目**：Nanobrowser（OpenAI Operator免费替代方案）
+- **素材数量**：4个（Tier1: 2, Tier2: 2）
+- **素材列表**：
+  - raw/articles/2026-07-02-nanobrowser-github-readme.md — GitHub README（Apache-2.0）
+  - raw/articles/2026-07-02-nanobrowser-technical-analysis.md — 技术架构分析（双智能体模式）
+  - raw/articles/2026-07-02-nanobrowser-use-cases.md — 使用案例（新闻摘要、数据收集、价格监控）
+  - raw/articles/2026-07-02-nanobrowser-comparison.md — 与browser-use/Playwright/agent-browser对比
+
+**新增 Wiki 页面**：
+- 素材摘要页（4）：
+  - wiki/sources/2026-07-02-nanobrowser-github-readme.md
+  - wiki/sources/2026-07-02-nanobrowser-technical-analysis.md
+  - wiki/sources/2026-07-02-nanobrowser-use-cases.md
+  - wiki/sources/2026-07-02-nanobrowser-comparison.md
+- 实体页（1）：
+  - wiki/entities/Nanobrowser.md — 开源AI网页自动化工具，Chrome扩展形式运行，Planner+Navigator双智能体协作系统
+
+**更新页面**：
+- wiki/topics/浏览器控制.md — 添加 Nanobrowser 关键概念和工具实现层条目
+- index.md — 添加 Nanobrowser 实体和素材条目，更新计数（223素材，362页面）
+
+**证伪验证**：
+- 多智能体系统（Planner+Navigator）：✅ 已验证（GitHub README确认）
+- 支持Chrome和Edge：✅ 已验证（GitHub README确认）
+- 支持多种LLM提供商：✅ 已验证（GitHub README确认）
+- Apache-2.0许可证：✅ 已验证（GitHub LICENSE文件确认）
+- TypeScript 89.5%：✅ 已验证（GitHub语言统计显示）
+- 隐私保护，本地运行：⚠️ 修正为"操作逻辑在浏览器本地执行，但LLM调用仍需通过外部API传输数据"
+
+**核心发现**：
+- Nanobrowser 采用双智能体协作架构（Planner+Navigator），分工明确
+- 作为Chrome扩展运行，无需安装额外软件，即装即用
+- 提供可视化侧边栏交互界面，适合非技术用户
+- 支持8+ LLM提供商，灵活配置
+- 与browser-use互补：browser-use适合开发者，Nanobrowser适合普通用户
+- 与Playwright对比：Nanobrowser更高层，基于LLM的自然语言驱动
+
+**研究价值**：
+- 填补浏览器控制领域"Chrome扩展形式运行的AI网页自动化工具"空白
+- 与已有的browser-use/agent-browser/Playwright形成完整的浏览器自动化工具矩阵
+- 发现"浏览器内运行+可视化交互"成为浏览器自动化工具的新趋势
+- 双智能体架构为复杂网页任务提供更好的规划和执行能力
+
+**素材控制对象**：browser_control
+**技术层级**：tool_implementation
+
+- **状态**：完成
+
+---
+
 ## 2026-07-02 — 深度综合 Digest 工作流：Agent 记忆系统
 
 - **操作**：深度综合 digest 工作流（分类选择 + L3去重 → 素材深度分析 → 综合报告生成 → 索引更新）

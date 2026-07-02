@@ -3,15 +3,15 @@ title: 知识库索引
 layout: home
 ---
 
-> 最后更新：2026-07-02（NemoClaw + OpenShell 企业级 Agent 安全运行时）
+> 最后更新：2026-07-02（Nanobrowser 开源AI网页自动化工具）
 
 ---
 
 ## 概览
 
 - 主题：AI Agent 控制 PC 电脑
-- 素材总数：219
-- Wiki 页面总数：357
+- 素材总数：223
+- Wiki 页面总数：362
 
 ---
 
@@ -27,6 +27,7 @@ layout: home
 - [[Playwright-Test-Agents]] — 官方 AI 测试智能体系统（Planner/Generator/Healer）
 - [[浏览器自动化]] — 通过程序控制浏览器的技术
 - [[Agent-Reach]] — AI Agent 全网访问脚手架，15+平台零API费用（2026-07-01新增）
+- [[Nanobrowser]] — 开源AI网页自动化工具，Chrome扩展形式运行，Planner+Navigator双智能体协作系统（2026-07-02新增）
 
 - [[OmniParser]] — Microsoft 纯视觉 GUI 截图解析工具，视觉理解基础设施（18K-22K+ Stars，2026-07-01新增）
 - [[UFO²]] — Microsoft Windows 桌面 AgentOS，GUI+API 混合执行（7K+ Stars，2026-07-01新增）
@@ -231,6 +232,10 @@ layout: home
 - [[Chrome DevTools Protocol 官方文档]] — CDP 协议规范（2026-06-29新增）
 - [[Playwright Library 官方文档]] — API 参考与使用指南（2026-06-29新增）
 - [[Playwright CDP/WebSocket 对比分析]] — 通信机制详解（2026-06-29新增）
+- [[Nanobrowser GitHub README]] — 开源AI网页自动化工具，多智能体系统（2026-07-02新增）
+- [[Nanobrowser 技术架构分析]] — Planner+Navigator双智能体架构详解（2026-07-02新增）
+- [[Nanobrowser 使用案例]] — 新闻摘要、数据收集等适用场景（2026-07-02新增）
+- [[Nanobrowser 与其他浏览器自动化工具对比]] — 与browser-use/Playwright/agent-browser对比（2026-07-02新增）
 
 ### Agent-Reach 网络访问素材（2026-07-02新增）
 - [[Agent-Reach GitHub README]] — AI Agent 全网访问脚手架，15+ 平台零 API 费用
