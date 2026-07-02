@@ -225,45 +225,111 @@ a:hover {
 }
 
 /* ============================================
-   Search
+   Search — refined input + overlay results
    ============================================ */
+
+/* --- Search bar container --- */
 .search-input-wrap {
   border: 1px solid var(--claude-border) !important;
   border-radius: 8px !important;
-  background-color: var(--claude-sidebar) !important;
+  background-color: var(--claude-bg) !important;
   transition: border-color 0.15s ease, box-shadow 0.15s ease !important;
+  padding: 0 var(--space-2) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: var(--space-2) !important;
 }
 
 .search-input-wrap:hover {
-  border-color: var(--claude-text-faint) !important;
+  border-color: var(--claude-primary-light) !important;
 }
 
-.search-input:focus {
-  border-color: var(--claude-primary) !important;
-  box-shadow: 0 0 0 3px oklch(55% 0.22 var(--purple-hue) / 0.15) !important;
+/* --- Search icon --- */
+.search-label {
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
-.search-result-doc .search-result-icon {
+.search-icon {
+  color: var(--claude-text-faint) !important;
+  width: 16px !important;
+  height: 16px !important;
+  transition: color 0.15s ease !important;
+}
+
+.search-input-wrap:focus-within .search-icon {
   color: var(--claude-primary) !important;
 }
 
+/* --- Search input --- */
+.search-input {
+  font-family: var(--font-sans) !important;
+  font-size: var(--text-xs) !important;
+  color: var(--claude-text) !important;
+  background: transparent !important;
+  border: none !important;
+  padding: var(--space-2) 0 !important;
+  outline: none !important;
+  width: 100% !important;
+}
+
+.search-input::placeholder {
+  color: var(--claude-text-faint) !important;
+  font-size: var(--text-xs) !important;
+  font-weight: 400 !important;
+}
+
+.search-input:focus {
+  box-shadow: none !important;
+}
+
+.search-input-wrap:focus-within {
+  border-color: var(--claude-primary) !important;
+  box-shadow: 0 0 0 3px oklch(55% 0.22 var(--purple-hue) / 0.12) !important;
+}
+
+/* --- Search active overlay backdrop --- */
+.search-active .side-bar {
+  z-index: 11 !important;
+}
+
+.search-active .search-input-wrap {
+  position: relative !important;
+  z-index: 12 !important;
+  border-color: var(--claude-primary) !important;
+  box-shadow: 0 0 0 3px oklch(55% 0.22 var(--purple-hue) / 0.12) !important;
+}
+
+/* --- Search results container --- */
 .search-results {
   background-color: transparent !important;
+  padding: var(--space-2) 0 !important;
 }
 
+/* --- Individual search result card --- */
 .search-result {
   background-color: var(--claude-surface-raised) !important;
-  border: 1px solid var(--claude-border) !important;
+  border: 1px solid var(--claude-border-light) !important;
   border-radius: 8px !important;
-  box-shadow: 0 4px 16px oklch(0% 0 0 / 0.08) !important;
+  box-shadow: 0 2px 8px oklch(0% 0 0 / 0.06) !important;
   padding: var(--space-2) var(--space-3) !important;
+  margin-bottom: var(--space-1) !important;
+  transition: background-color 0.12s ease, border-color 0.12s ease !important;
 }
 
-.search-result:hover {
+.search-result:last-child {
+  margin-bottom: 0 !important;
+}
+
+.search-result:hover,
+.search-result.active {
   background-color: var(--claude-primary-subtle) !important;
   border-color: var(--claude-primary-light) !important;
 }
 
+/* --- Search result title --- */
 .search-result-title {
   font-family: var(--font-sans);
   font-weight: 600 !important;
@@ -271,9 +337,29 @@ a:hover {
   font-size: var(--text-sm) !important;
 }
 
+.search-result-doc .search-result-icon {
+  color: var(--claude-primary) !important;
+  width: 18px !important;
+  height: 18px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+/* --- Search result preview text --- */
 .search-result-preview {
   color: var(--claude-text-muted) !important;
   font-size: var(--text-xs) !important;
+  line-height: 1.5 !important;
+  margin-top: var(--space-1) !important;
+}
+
+/* --- Search result highlight match --- */
+.search-result-highlight {
+  color: var(--claude-primary-dark) !important;
+  background-color: var(--claude-primary-light) !important;
+  font-weight: 500 !important;
+  border-radius: 2px !important;
+  padding: 0 2px !important;
 }
 
 /* ============================================
