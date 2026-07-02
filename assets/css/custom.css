@@ -33,6 +33,10 @@
     padding-left: 0.75rem !important;
     padding-right: 0.75rem !important;
   }
+  /* 保持 .main 与侧边栏右边界对齐，消除间隙 */
+  .main {
+    margin-left: 20rem !important;
+  }
 }
 
 .site-header {
