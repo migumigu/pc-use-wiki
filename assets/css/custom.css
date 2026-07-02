@@ -22,16 +22,16 @@
   border-right: 1px solid var(--claude-border) !important;
 }
 
-/* 减少侧边栏左边浪费的区域：缩短整体宽度 + 缩小内边距 */
+/* 减少侧边栏左边浪费的区域：整体加宽一点、缩小内边距、字体稍小 */
 @media (min-width: 66rem) {
   .side-bar {
-    width: 17rem !important;
+    width: 20rem !important;
   }
   .side-bar .site-header,
   .side-bar > div,
   .side-bar > nav {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
   }
 }
 
@@ -46,12 +46,11 @@
   font-weight: 600 !important;
 }
 
-/* ===== 导航 ===== */
 .nav-list-link {
   color: var(--claude-text) !important;
-  font-size: 0.85rem !important;
-  border-radius: 0 20px 20px 0 !important;
-  margin-right: 8px !important;
+  font-size: 0.8rem !important;
+  border-radius: 4px !important;
+  margin-right: 0 !important;
   transition: all 0.15s ease !important;
 }
 
@@ -64,7 +63,8 @@
   background-color: var(--claude-purple-light) !important;
   color: var(--claude-purple-dark) !important;
   font-weight: 600 !important;
-  border-right: 3px solid var(--claude-purple) !important;
+  border-right: none !important;
+  border-left: 3px solid var(--claude-purple) !important;
 }
 
 /* 子导航缩进更清晰 */
