@@ -1,31 +1,252 @@
-/* Custom styles for pc-use-wiki (Just the Docs) */
+/* ============================================
+   Claude Code 风格浅色主题覆盖
+   ============================================ */
 
-/* Wiki link styles (fallback, also injected by wikilinks.js) */
+:root {
+  --claude-purple: #7c3aed;
+  --claude-purple-dark: #6d28d9;
+  --claude-purple-light: #ede9fe;
+  --claude-purple-subtle: #f5f3ff;
+  --claude-text: #1f2937;
+  --claude-text-muted: #6b7280;
+  --claude-border: #e5e7eb;
+  --claude-bg: #ffffff;
+  --claude-sidebar: #f8f9fa;
+  --claude-code-bg: #f3f4f6;
+  --claude-accent-bg: #f0f0ff;
+}
+
+/* ===== 侧边栏 ===== */
+.side-bar {
+  background-color: var(--claude-sidebar) !important;
+  border-right: 1px solid var(--claude-border) !important;
+}
+
+.site-header {
+  background-color: var(--claude-bg) !important;
+  border-bottom: 1px solid var(--claude-border) !important;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04) !important;
+}
+
+.site-title {
+  color: var(--claude-text) !important;
+  font-weight: 600 !important;
+}
+
+/* ===== 导航 ===== */
+.nav-list-link {
+  color: var(--claude-text) !important;
+  font-size: 0.85rem !important;
+  border-radius: 0 20px 20px 0 !important;
+  margin-right: 8px !important;
+  transition: all 0.15s ease !important;
+}
+
+.nav-list-link:hover {
+  background-color: var(--claude-purple-light) !important;
+  color: var(--claude-purple-dark) !important;
+}
+
+.nav-list-link.active {
+  background-color: var(--claude-purple-light) !important;
+  color: var(--claude-purple-dark) !important;
+  font-weight: 600 !important;
+  border-right: 3px solid var(--claude-purple) !important;
+}
+
+/* 子导航缩进更清晰 */
+.nav-list .nav-list-item > .nav-list {
+  padding-left: 0.75rem !important;
+  border-left: 1px solid var(--claude-border) !important;
+  margin-left: 0.5rem !important;
+}
+
+/* ===== 链接 ===== */
+a {
+  color: var(--claude-purple) !important;
+}
+a:hover {
+  color: var(--claude-purple-dark) !important;
+  text-decoration: underline !important;
+}
+
+/* Wiki 双链（由 JS 注入，但确保浅色主题下可见） */
 .wikilink {
-  color: #58a6ff !important;
+  color: var(--claude-purple) !important;
   text-decoration: none !important;
-  border-bottom: 1px dotted #58a6ff !important;
+  border-bottom: 1px dotted var(--claude-purple) !important;
 }
-
+.wikilink:hover {
+  color: var(--claude-purple-dark) !important;
+  border-bottom-color: var(--claude-purple-dark) !important;
+}
 .wikilink-broken {
-  color: #8b949e !important;
-  border-bottom: 1px dashed #8b949e !important;
+  color: var(--claude-text-muted) !important;
+  border-bottom: 1px dashed var(--claude-border) !important;
 }
 
-/* Sidebar: adjust wiki page title font */
-.side-bar .fs-3 .nav-list-link {
+/* ===== 顶栏辅助链接 ===== */
+.aux-nav-list-item a {
+  color: var(--claude-text-muted) !important;
+  font-size: 0.85rem !important;
+}
+.aux-nav-list-item a:hover {
+  color: var(--claude-purple) !important;
+}
+
+/* ===== 搜索 ===== */
+.search-input-wrap {
+  border: 1px solid var(--claude-border) !important;
+  border-radius: 8px !important;
+  background-color: var(--claude-bg) !important;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease !important;
+}
+.search-input-wrap:hover {
+  border-color: #d1d5db !important;
+}
+.search-input:focus {
+  border-color: var(--claude-purple) !important;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12) !important;
+}
+.search-result-doc .search-result-icon {
+  color: var(--claude-purple) !important;
+}
+.search-result {
+  background-color: var(--claude-bg) !important;
+  border: 1px solid var(--claude-border) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+}
+.search-result:hover {
+  background-color: var(--claude-purple-subtle) !important;
+}
+.search-result-title {
+  color: var(--claude-text) !important;
+  font-weight: 600 !important;
+}
+.search-result-preview {
+  color: var(--claude-text-muted) !important;
+  font-size: 0.8rem !important;
+}
+
+/* ===== 内容区 ===== */
+.main {
+  background-color: var(--claude-bg) !important;
+}
+
+.main-content {
+  color: var(--claude-text) !important;
+  font-size: 0.95rem !important;
+  line-height: 1.7 !important;
+}
+
+/* 标题 */
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4 {
+  color: var(--claude-text) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em !important;
+}
+.main-content h1 {
+  font-size: 2rem !important;
+  border-bottom: 1px solid var(--claude-border) !important;
+  padding-bottom: 0.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+.main-content h2 {
+  font-size: 1.5rem !important;
+  margin-top: 2rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+/* ===== 代码块 ===== */
+.highlight {
+  background-color: var(--claude-code-bg) !important;
+  border: 1px solid var(--claude-border) !important;
+  border-radius: 8px !important;
   font-size: 0.85rem !important;
 }
 
-/* Adjust main content width on wide screens */
-/* Just the Docs 默认将 .main 限制在 800px，宽屏时大幅展宽 */
+code.highlighter-rouge {
+  background-color: var(--claude-code-bg) !important;
+  color: #e11d48 !important;
+  padding: 0.2em 0.4em !important;
+  border-radius: 4px !important;
+  font-size: 0.85em !important;
+}
+
+/* ===== 表格 ===== */
+table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border: 1px solid var(--claude-border) !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+thead {
+  background-color: var(--claude-sidebar) !important;
+}
+th {
+  font-weight: 600 !important;
+  color: var(--claude-text) !important;
+  border-bottom: 2px solid var(--claude-border) !important;
+}
+td, th {
+  padding: 0.6rem 0.8rem !important;
+  border: 1px solid var(--claude-border) !important;
+}
+
+/* ===== 引用块 ===== */
+blockquote {
+  border-left: 4px solid var(--claude-purple) !important;
+  background-color: var(--claude-purple-subtle) !important;
+  padding: 0.75rem 1rem !important;
+  border-radius: 0 8px 8px 0 !important;
+  color: var(--claude-text) !important;
+}
+
+/* ===== 分割线 ===== */
+hr {
+  border: none !important;
+  border-top: 1px solid var(--claude-border) !important;
+  margin: 2rem 0 !important;
+}
+
+/* ===== 列表 ===== */
+.main-content ul,
+.main-content ol {
+  padding-left: 1.5rem !important;
+}
+
+.main-content li {
+  margin-bottom: 0.3rem !important;
+}
+
+/* ===== 按钮 ===== */
+.btn-primary {
+  background: linear-gradient(135deg, var(--claude-purple), var(--claude-purple-dark)) !important;
+  border: none !important;
+  color: #fff !important;
+  border-radius: 6px !important;
+  padding: 0.5rem 1rem !important;
+  font-weight: 500 !important;
+}
+
+/* ===== 底部页脚 ===== */
+.site-footer {
+  border-top: 1px solid var(--claude-border) !important;
+  color: var(--claude-text-muted) !important;
+  font-size: 0.8rem !important;
+}
+
+/* ===== 宽屏适配（保持之前的改动） ===== */
 @media (min-width: 66rem) {
   .main {
     max-width: 75rem !important;
   }
 }
-
-/* 超宽屏（>1600px）进一步展宽 */
 @media (min-width: 100rem) {
   .main {
     max-width: calc(100% - 22rem) !important;

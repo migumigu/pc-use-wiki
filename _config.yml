@@ -8,7 +8,7 @@ permalink: /:path/:basename
 # Just the Docs 配置
 search_enabled: true
 heading_anchors: true
-color_scheme: dark
+color_scheme: light
 
 aux_links:
   "GitHub":
